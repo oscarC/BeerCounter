@@ -20,7 +20,7 @@
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, retain) SignUpTableViewController *signUpView;
-@property (nonatomic, retain) UITabBarController *tabBar
+@property (nonatomic, retain) UITabBarController *tabBar;
 
 - (IBAction) login:(id)sender;
 - (void) loginResponse;

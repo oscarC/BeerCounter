@@ -15,7 +15,7 @@
 @implementation LoginFooterViewController
 
 @synthesize username, password;
-@synthesize signUpView, homeView;
+@synthesize signUpView, tabBar;
 
 - (IBAction) login:(id)sender {
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
@@ -43,7 +43,7 @@
 
 - (void) gotoDashboard {
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	UITabBarController *tabBar = [beerCounterDelegate tabBar]; 
+	self.tabBar = [beerCounterDelegate tabBar];
 	[beerCounterDelegate.navController pushViewController:tabBar animated:YES];
 }
 
