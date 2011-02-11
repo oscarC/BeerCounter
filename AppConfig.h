@@ -11,7 +11,7 @@
 #define USE_BASIC_AUTH YES
 #define APP_USERNAME @"admin"
 #define APP_PASSWORD @"admin"
-#define APP_HOST @"10.0.1.58:9292"
+#define APP_HOST @"localhost:9292" //@"10.0.1.58:9292"
 
 #define CACHE_POLICY NSURLRequestUseProtocolCachePolicy
 #define TIMEOUT_INTERVAL 60

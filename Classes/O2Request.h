@@ -29,6 +29,5 @@
 - (NSString *) paramsToString:(NSDictionary *)data;
 - (void) createRequest:(NSString *)type withParms:(NSString *)params;
 - (NSDictionary *) data;
-- (void) freeMemory;
 
 @end

@@ -17,6 +17,8 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		3F234A5613020AD100D116A3 /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */; };
 		3F234A5713020AD100D116A3 /* WelcomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */; };
+		3FAA50F61305CDE300FEA6EE /* DrinkListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */; };
+		3FAA50F71305CDE300FEA6EE /* DrinkListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAA50F51305CDE300FEA6EE /* DrinkListTableViewController.xib */; };
 		3FAD9CD61304103F00FBAF0C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD9CD41304103F00FBAF0C /* HomeViewController.m */; };
 		3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */; };
 		3FC74E671302DC6400BE704C /* LoginFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */; };
@@ -35,7 +37,6 @@
 		3FC750421303183B00BE704C /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750361303183B00BE704C /* FBSession.m */; };
 		3FC750431303183B00BE704C /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750371303183B00BE704C /* FBStreamDialog.m */; };
 		3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750391303183B00BE704C /* FBXMLHandler.m */; };
-		3FC750901303210000BE704C /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7508F1303210000BE704C /* XMLParser.m */; };
 		3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7530513034B8600BE704C /* SignUpFooterViewController.m */; };
 		3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */; };
 		3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */; };
@@ -62,6 +63,9 @@
 		3F234A5313020AD100D116A3 /* WelcomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTableViewController.h; sourceTree = "<group>"; };
 		3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTableViewController.m; sourceTree = "<group>"; };
 		3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTableViewController.xib; sourceTree = "<group>"; };
+		3FAA50F31305CDE300FEA6EE /* DrinkListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkListTableViewController.h; sourceTree = "<group>"; };
+		3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkListTableViewController.m; sourceTree = "<group>"; };
+		3FAA50F51305CDE300FEA6EE /* DrinkListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkListTableViewController.xib; sourceTree = "<group>"; };
 		3FAD9CD31304103F00FBAF0C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3FAD9CD41304103F00FBAF0C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -96,8 +100,6 @@
 		3FC750371303183B00BE704C /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBStreamDialog.m; sourceTree = "<group>"; };
 		3FC750381303183B00BE704C /* FBXMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBXMLHandler.h; sourceTree = "<group>"; };
 		3FC750391303183B00BE704C /* FBXMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBXMLHandler.m; sourceTree = "<group>"; };
-		3FC7508E1303210000BE704C /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
-		3FC7508F1303210000BE704C /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		3FC7530413034B8600BE704C /* SignUpFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpFooterViewController.h; sourceTree = "<group>"; };
 		3FC7530513034B8600BE704C /* SignUpFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpFooterViewController.m; sourceTree = "<group>"; };
 		3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterViewController.xib; sourceTree = "<group>"; };
@@ -321,8 +323,6 @@
 		3FC7508C130320F100BE704C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3FC7508E1303210000BE704C /* XMLParser.h */,
-				3FC7508F1303210000BE704C /* XMLParser.m */,
 				3FD73F65130482EB0098BE6B /* O2Request.h */,
 				3FD73F66130482EB0098BE6B /* O2Request.m */,
 			);
@@ -433,6 +433,9 @@
 		3FD73F6A130483910098BE6B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				3FAA50F31305CDE300FEA6EE /* DrinkListTableViewController.h */,
+				3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */,
+				3FAA50F51305CDE300FEA6EE /* DrinkListTableViewController.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				3FC75008130316D300BE704C /* SignUpTableViewController.xib in Resources */,
 				3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */,
 				3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */,
+				3FAA50F71305CDE300FEA6EE /* DrinkListTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +531,6 @@
 				3FC750421303183B00BE704C /* FBSession.m in Sources */,
 				3FC750431303183B00BE704C /* FBStreamDialog.m in Sources */,
 				3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */,
-				3FC750901303210000BE704C /* XMLParser.m in Sources */,
 				3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */,
 				3FAD9CD61304103F00FBAF0C /* HomeViewController.m in Sources */,
 				3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */,
@@ -537,6 +540,7 @@
 				3FD73F221304746C0098BE6B /* SBJsonParser.m in Sources */,
 				3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */,
 				3FD73F67130482EB0098BE6B /* O2Request.m in Sources */,
+				3FAA50F61305CDE300FEA6EE /* DrinkListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

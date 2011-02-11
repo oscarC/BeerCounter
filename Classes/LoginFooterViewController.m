@@ -62,6 +62,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	request = [O2Request request];
+	username = @"";
+	password = @"";
 }
 
 /*

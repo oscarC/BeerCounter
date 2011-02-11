@@ -8,7 +8,7 @@
 
 #import "O2Request.h"
 #import "AppConfig.h"
-#import "SBJSON.h"
+#import "JSON.h"
 
 
 @implementation O2Request
@@ -43,6 +43,32 @@
 	if (!connection) [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestConnectionError" object:self];
 }
 
+- (void) get:(NSString *)method withData:(NSDictionary *)data {
+	NSString *basicAuth;
+	if (USE_BASIC_AUTH) {
+		basicAuth = [NSString stringWithFormat:@"%@:%@@", APP_USERNAME, APP_PASSWORD];
+	} else {
+		basicAuth = [NSString stringWithFormat:@""];
+	}
+	
+	NSMutableString *paramString = (NSMutableString *)[self paramsToString:data];
+	if ([paramString length] > 0) {
+		[paramString insertString:@"?" atIndex:0];
+	}
+	NSString *strURL = [NSString stringWithFormat:@"%@://%@%@/%@%@", APP_PROTOCOL, basicAuth, APP_HOST, method, paramString];
+	NSLog(@"%@", strURL);
+	
+	[url release];
+	url = [[NSURL alloc] initWithString:strURL];
+	
+	[self createRequest:@"GET" withParms:paramString];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestStart" object:self];
+	
+	[connection release];
+	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	if (!connection) [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestConnectionError" object:self];
+}
+
 - (NSString *) paramsToString:(NSDictionary *)data {
 	NSMutableString *paramStr = [NSMutableString stringWithFormat:@""];
 	BOOL first = YES;
@@ -63,14 +89,14 @@
 	NSString *paramsLength = [NSString stringWithFormat:@"%d", [params length]];
 	[_request setHTTPMethod:type];
 	[_request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-	[_request setValue:paramsLength forHTTPHeaderField:@"Content-Length"];
-	[_request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+	if (type == @"POST") {
+		[_request setValue:paramsLength forHTTPHeaderField:@"Content-Length"];
+		[_request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+	} else if (type == @"GET") {
+		// Do nothing
+	}
 	self.request = _request;
 	[_request release];
-}
-
-- (void) get:(NSString *)method withData:(NSDictionary *)data {
-	
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
@@ -79,7 +105,6 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestFailWithError" object:self];
-	[self freeMemory];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {

@@ -7,7 +7,6 @@
 //
 
 #import "SignUpFooterViewController.h"
-#import "XMLParser.h"
 #import "O2Request.h"
 
 @implementation SignUpFooterViewController
@@ -43,6 +42,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	request = [O2Request request];
+	email = @"";
+	password = @"";
+	nickname = @"";
 }
 
 /*
