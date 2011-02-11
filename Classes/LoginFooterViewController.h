@@ -10,18 +10,17 @@
 
 @class O2Request;
 @class SignUpTableViewController;
-@class HomeViewController;
 
 @interface LoginFooterViewController : UIViewController {
 	O2Request *request;
 	SignUpTableViewController *signUpView;
-	HomeViewController *homeView;
+	UITabBarController *tabBar;
 }
 
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, retain) SignUpTableViewController *signUpView;
-@property (nonatomic, retain) HomeViewController *homeView;
+@property (nonatomic, retain) UITabBarController *tabBar
 
 - (IBAction) login:(id)sender;
 - (void) loginResponse;

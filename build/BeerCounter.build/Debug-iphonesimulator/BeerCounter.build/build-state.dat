@@ -1,47 +1,47 @@
 TBeerCounter
 v7
 r0
-t319144030.642831
+t319143989.435108
 cCheck dependencies
-cProcessInfoPlistFile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/Info.plist BeerCounter-Info.plist
-cCompileXIB /Users/oscar/apps/BeerCounter/MainWindow.xib
-cCompileXIB /Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.xib
-cCompileXIB /Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.xib
-cCompileXIB /Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.xib
-cCompileXIB /Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.xib
-cCompileXIB /Users/oscar/apps/BeerCounter/Classes/HomeViewController.xib
-cProcessPCH /var/folders/Yp/Ypn73tssEESN06nNl9JqD++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dlpiknthfnlmgferkujqsixjkchy/BeerCounter_Prefix.pch.gch BeerCounter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cDataModelVersionCompile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd /Users/oscar/apps/BeerCounter/BeerCounter.xcdatamodeld
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o /Users/oscar/apps/BeerCounter/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o /Users/oscar/apps/BeerCounter/Classes/BeerCounterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o /Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o /Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o /Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/User.o /Users/oscar/apps/BeerCounter/Classes/User.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FacebookAgent.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/FacebookAgent.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBSession.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o /Users/oscar/apps/BeerCounter/Classes/XMLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o /Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o /Users/oscar/apps/BeerCounter/Classes/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o /Users/oscar/apps/BeerCounter/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o /Users/oscar/apps/BeerCounter/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o /Users/oscar/apps/BeerCounter/Classes/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o /Users/oscar/apps/BeerCounter/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o /Users/oscar/apps/BeerCounter/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o /Users/oscar/apps/BeerCounter/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/O2Request.o /Users/oscar/apps/BeerCounter/Classes/O2Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter normal i386
-cGenerateDSYMFile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
-cTouch /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
+cProcessInfoPlistFile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/Info.plist BeerCounter-Info.plist
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.xib
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.xib
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.xib
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.xib
+cCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.xib
+cProcessPCH /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch.gch BeerCounter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd /Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter.xcdatamodeld
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/BeerCounterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/User.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/User.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FacebookAgent.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/FacebookAgent.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBSession.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/O2Request.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/O2Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter normal i386
+cGenerateDSYMFile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
+cTouch /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
 c000000004D2416E60000000000000110
@@ -92,578 +92,6 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3
 c000000004A11E8210000000000002407
 t1242687521
 s9223
-
-N/Users/oscar/apps/BeerCounter/AppConfig.h
-c000000004D5493910000000000000177
-t1297388433
-s375
-
-N/Users/oscar/apps/BeerCounter/BeerCounter.xcdatamodeld
-c000000004D51A5350000000000000088
-t1297196341
-s136
-
-N/Users/oscar/apps/BeerCounter/BeerCounter_Prefix.pch
-c000000004D51A535000000000000016A
-t1297196341
-s362
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/BeerCounterAppDelegate.h
-c000000004D558333000000000000043F
-t1297449779
-s1087
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/BeerCounterAppDelegate.m
-c000000004D5583420000000000001E56
-t1297449794
-s7766
-i"BeerCounterAppDelegate.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/FacebookAgent.h
-c000000004B4C0BE00000000000001C2C
-t1263274976
-s7212
-i<Foundation/Foundation.h>
-i"FBConnect.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/FacebookAgent.m
-c000000004B4C0F2A000000000000350F
-t1263275818
-s13583
-i"FacebookAgent.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBConnect.h
-c000000004B4454210000000000000301
-t1262769185
-s769
-i"FBSession.h"
-i"FBRequest.h"
-i"FBLoginButton.h"
-i"FBLoginDialog.h"
-i"FBPermissionDialog.h"
-i"FBFeedDialog.h"
-i"FBStreamDialog.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBConnectGlobal.h
-c000000004AD3A5240000000000001E6E
-t1255384356
-s7790
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBDialog.h
-c000000004B4454210000000000000EDF
-t1262769185
-s3807
-i"FBConnectGlobal.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBFeedDialog.h
-c000000004B4454210000000000000574
-t1262769185
-s1396
-i"FBDialog.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBLoginButton.h
-c000000004B4454210000000000000597
-t1262769185
-s1431
-i"FBSession.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBLoginDialog.h
-c000000004B44542100000000000002DD
-t1262769185
-s733
-i"FBDialog.h"
-i"FBRequest.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBPermissionDialog.h
-c000000004B4454210000000000000382
-t1262769185
-s898
-i"FBLoginDialog.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBRequest.h
-c000000004B445421000000000000114F
-t1262769185
-s4431
-i"FBConnectGlobal.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBSession.h
-c000000004B445421000000000000151A
-t1262769185
-s5402
-i"FBConnectGlobal.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnect/FBStreamDialog.h
-c000000004B4454210000000000000835
-t1262769185
-s2101
-i"FBDialog.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m
-c000000004B4454210000000000000509
-t1262769185
-s1289
-i"FBConnectGlobal.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBDialog.m
-c000000004B44542100000000000051C7
-t1262769185
-s20935
-i"FBDialog.h"
-i"FBSession.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m
-c000000004B4454210000000000000BD3
-t1262769185
-s3027
-i"FBFeedDialog.h"
-i"FBSession.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m
-c000000004B445421000000000000109E
-t1262769185
-s4254
-i"FBLoginButton.h"
-i"FBLoginDialog.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m
-c000000004B4454210000000000000FF0
-t1262769185
-s4080
-i"FBLoginDialog.h"
-i"FBSession.h"
-i"FBRequest.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m
-c000000004B4454210000000000000C74
-t1262769185
-s3188
-i"FBPermissionDialog.h"
-i"FBSession.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBRequest.m
-c000000004B4454210000000000002F5B
-t1262769185
-s12123
-i"FBRequest.h"
-i"FBSession.h"
-i"FBXMLHandler.h"
-i<CommonCrypto/CommonDigest.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBSession.m
-c000000004B4454210000000000002113
-t1262769185
-s8467
-i"FBSession.h"
-i"FBRequest.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m
-c000000004B445421000000000000099D
-t1262769185
-s2461
-i"FBStreamDialog.h"
-i"FBSession.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.h
-c000000004B44542100000000000003BF
-t1262769185
-s959
-i"FBConnectGlobal.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m
-c000000004AD3A5240000000000001148
-t1255384356
-s4424
-i"FBXMLHandler.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/HomeViewController.h
-c000000004D53D8C300000000000000E7
-t1297340611
-s231
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/HomeViewController.m
-c000000004D53D8BF00000000000005AB
-t1297340607
-s1451
-i"HomeViewController.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/HomeViewController.xib
-c000000004D5586160000000000005FCF
-t1297450518
-s24527
-
-N/Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.h
-c000000004D55884600000000000002F8
-t1297451078
-s760
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.m
-c000000004D5588810000000000000C0B
-t1297451137
-s3083
-i"LoginFooterViewController.h"
-i"SignUpTableViewController.h"
-i"HomeViewController.h"
-i"BeerCounterAppDelegate.h"
-i"O2Request.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.xib
-c000000004D556FC4000000000000609E
-t1297444804
-s24734
-
-N/Users/oscar/apps/BeerCounter/Classes/NSObject+SBJSON.h
-c000000004B93BE5E0000000000000A01
-t1267973726
-s2561
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/NSObject+SBJSON.m
-c000000004B93BE5E000000000000089E
-t1267973726
-s2206
-i"NSObject+SBJSON.h"
-i"SBJsonWriter.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/NSString+SBJSON.h
-c000000004B93BE5E0000000000000916
-t1267973726
-s2326
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/NSString+SBJSON.m
-c000000004B93BE5E000000000000087D
-t1267973726
-s2173
-i"NSString+SBJSON.h"
-i"SBJsonParser.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/O2Request.h
-c000000004D5566360000000000000379
-t1297442358
-s889
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/O2Request.m
-c000000004D5569E90000000000000E96
-t1297443305
-s3734
-i"O2Request.h"
-i"AppConfig.h"
-i"SBJSON.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJSON.h
-c000000004B93BE5E0000000000000AED
-t1267973726
-s2797
-i<Foundation/Foundation.h>
-i"SBJsonParser.h"
-i"SBJsonWriter.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJSON.m
-c000000004B93BE5E0000000000001ABC
-t1267973726
-s6844
-i"SBJSON.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonBase.h
-c000000004B93BE5E0000000000000B82
-t1267973726
-s2946
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonBase.m
-c000000004B93BE5E0000000000000AC1
-t1267973726
-s2753
-i"SBJsonBase.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonParser.h
-c000000004B93BE5E0000000000000C0B
-t1267973726
-s3083
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonParser.m
-c000000004B93C6A300000000000036D0
-t1267975843
-s14032
-i"SBJsonParser.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonWriter.h
-c000000004B93BE5E0000000000001140
-t1267973726
-s4416
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SBJsonWriter.m
-c000000004B93BE5E0000000000001F26
-t1267973726
-s7974
-i"SBJsonWriter.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.h
-c000000004D5550850000000000000211
-t1297436805
-s529
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.m
-c000000004D5565370000000000000854
-t1297442103
-s2132
-i"SignUpFooterViewController.h"
-i"XMLParser.h"
-i"O2Request.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.xib
-c000000004D554FA5000000000000576A
-t1297436581
-s22378
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.h
-c000000004D5418D80000000000000235
-t1297357016
-s565
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.m
-c000000004D5554DD00000000000022B8
-t1297437917
-s8888
-i"SignUpTableViewController.h"
-i"SignUpFooterViewController.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.xib
-c000000004D5416690000000000004B88
-t1297356393
-s19336
-
-N/Users/oscar/apps/BeerCounter/Classes/User.h
-c000000004D52EAE600000000000001FA
-t1297279718
-s506
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/User.m
-c000000004D52EC050000000000000136
-t1297280005
-s310
-i"User.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.h
-c000000004D5572D30000000000000257
-t1297445587
-s599
-i<UIKit/UIKit.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.m
-c000000004D5582280000000000002182
-t1297449512
-s8578
-i"WelcomeTableViewController.h"
-i"LoginFooterViewController.h"
-
-N/Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.xib
-c000000004D5412680000000000004B8C
-t1297355368
-s19340
-
-N/Users/oscar/apps/BeerCounter/Classes/XMLParser.h
-c000000004D52F38C000000000000018B
-t1297281932
-s395
-i<Foundation/Foundation.h>
-
-N/Users/oscar/apps/BeerCounter/Classes/XMLParser.m
-c000000004D52F9E10000000000000C28
-t1297283553
-s3112
-i"XMLParser.h"
-i"User.h"
-
-N/Users/oscar/apps/BeerCounter/MainWindow.xib
-c000000004D5586020000000000007E83
-t1297450498
-s32387
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounter.LinkFileList
-c000000004D5588DE0000000000000DCD
-t1297451230
-s3533
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o
-t1297449794
-s67060
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o
-t1297393284
-s7524
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o
-t1297393284
-s108296
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o
-t1297393284
-s49496
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o
-t1297393284
-s56596
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o
-t1297393284
-s52556
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o
-t1297393284
-s48660
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o
-t1297393285
-s54116
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o
-t1297393285
-s36944
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o
-t1297393285
-s47980
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o
-t1297393285
-s22112
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FacebookAgent.o
-t1297393284
-s98412
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o
-t1297393285
-s38052
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o
-t1297451139
-s62016
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o
-t1297393285
-s8316
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o
-t1297393285
-s8236
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/O2Request.o
-t1297443367
-s26780
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o
-t1297393285
-s20100
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o
-t1297393285
-s13232
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o
-t1297393285
-s35908
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o
-t1297393285
-s25572
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o
-t1297442422
-s47048
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o
-t1297437923
-s56436
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/User.o
-t1297393284
-s11832
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o
-t1297451088
-s57072
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o
-t1297393285
-s15812
-
-N/Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o
-t1297393284
-s6328
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
-t1297451230
-s408
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM
-t1297451230
-s102
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
-t1297451230
-s242880
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd
-t1297393284
-s136
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/HomeViewController.nib
-t1297450520
-s3577
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/Info.plist
-t1297393281
-s607
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/LoginFooterViewController.nib
-t1297444807
-s3091
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/MainWindow.nib
-t1297450520
-s3858
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/PkgInfo
-t1297393281
-s8
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/SignUpFooterViewController.nib
-t1297437229
-s2473
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/SignUpTableViewController.nib
-t1297393282
-s1513
-
-N/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/WelcomeTableViewController.nib
-t1297393281
-s1513
-
-N/Users/oscar/apps/BeerCounter/main.m
-c000000004D51A5350000000000000167
-t1297196341
-s359
-i<UIKit/UIKit.h>
 
 N/Users/oscardemoya/Documents/Cocoa/BeerCounter/AppConfig.h
 c000000004D5493910000000000000177
@@ -1389,10 +817,6 @@ N/var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/Shared
 t1297308583
 s3507144
 
-N/var/folders/Yp/Ypn73tssEESN06nNl9JqD++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dlpiknthfnlmgferkujqsixjkchy/BeerCounter_Prefix.pch.gch
-t1297369897
-s16679120
-
 NBeerCounter-Info.plist
 c000000004D51A535000000000000038D
 t1297196341
@@ -1563,10 +987,7 @@ lSLF07#2@61"Analyze /Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m3190013
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies319144030#319144030#0(0"0(0#1#0"8614910496#0"0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o /Users/oscar/apps/BeerCounter/Classes/BeerCounterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
+lSLF07#2@18"Check dependencies319143989#319143989#0(0"0(0#1#0"8628412224#0"0#
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/BeerCounterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319142594.655016
@@ -1581,9 +1002,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@87"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/BeerCounterAppDelegate.m319142594#319142594#0(0"0(0#0#79"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/BeerCounterAppDelegate.m8613632800#2126"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/BeerCounterAppDelegate.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounterAppDelegate.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.482192
 e319086084.540290
@@ -1596,9 +1014,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@98"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m319086084#319086084#0(0"0(0#0#90"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m8604059040#2130"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBConnectGlobal.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBConnectGlobal.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.540390
@@ -1615,9 +1030,6 @@ o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDial
 o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m:322: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)
 lSLF07#2@91"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m319086084#319086084#0(415"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m: In function '-[FBDialog initWithSession:]':/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m:322: warning: 'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)1(22@187"'setFont:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h:106)319086084#129#286#0(6@83"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m284461985#322#0#322#0#33"'*' is deprecated (declared at *)0(0#0#83"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m8603828256#2116"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBDialog.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBDialog.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.656488
 e319086084.750884
@@ -1630,9 +1042,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@95"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m319086084#319086084#0(0"0(0#0#87"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m8615276800#2124"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBFeedDialog.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBFeedDialog.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.750983
@@ -1647,9 +1056,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@96"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m319086084#319086084#0(0"0(0#0#88"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m8614488320#2126"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginButton.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginButton.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.807256
 e319086084.900872
@@ -1663,9 +1069,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@96"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m319086084#319086084#0(0"0(0#0#88"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m8616889600#2126"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBLoginDialog.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBLoginDialog.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.882879
 e319086084.996759
@@ -1678,9 +1081,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@101"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m319086084#319086084#0(0"0(0#0#93"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m8615555360#2136"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBPermissionDialog.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBPermissionDialog.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.900975
@@ -1697,9 +1097,6 @@ o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequ
 o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m:180: warning: class 'FBXMLHandler' does not implement the 'NSXMLParserDelegate' protocol
 lSLF07#2@92"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m319086084#319086085#0(312"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m: In function '-[FBRequest parseXMLResponse:error:]':/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m:180: warning: class 'FBXMLHandler' does not implement the 'NSXMLParserDelegate' protocol1(22@74"Class 'FBXMLHandler' does not implement the 'NSXMLParserDelegate' protocol319086084#138#174#0(6@84"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m284461985#180#0#180#0#45"class '*' does not implement the '*' protocol0(0#0#84"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m8615262336#2118"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBRequest.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBRequest.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBSession.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBSession.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.996857
 e319086085.128308
@@ -1712,9 +1109,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@92"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBSession.m319086084#319086085#0(0"0(0#0#84"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBSession.m8604381312#2118"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBSession.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBSession.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.067292
@@ -1729,9 +1123,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@97"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m319086085#319086085#0(0"0(0#0#89"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m8603894816#2128"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBStreamDialog.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBStreamDialog.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.128420
 e319086085.263270
@@ -1744,9 +1135,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@95"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m319086085#319086085#0(0"0(0#0#87"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m8616581536#2124"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/src/FBXMLHandler.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FBXMLHandler.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FacebookAgent.o /Users/oscar/apps/BeerCounter/Classes/FacebookAgent/FacebookAgent.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FacebookAgent.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FacebookAgent/FacebookAgent.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.420015
@@ -1764,9 +1152,6 @@ lSLF07#2@92"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Faceb
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/FoursquareParser.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/FoursquareParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o /Users/oscar/apps/BeerCounter/Classes/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.266739
 e319086085.356145
@@ -1779,9 +1164,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@83"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.m319086085#319086085#0(0"0(0#0#75"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.m8615152800#2118"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/HomeViewController.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o /Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319143938.985112
@@ -1796,9 +1178,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@90"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.m319143938#319143939#0(0"0(0#0#82"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.m8629396736#2132"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/LoginFooterViewController.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/LoginFooterViewController.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o /Users/oscar/apps/BeerCounter/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.356253
 e319086085.440410
@@ -1812,9 +1191,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSObject+SBJSON.m319086085#319086085#0(0"0(0#0#72"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSObject+SBJSON.m8616365280#2112"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSObject+SBJSON.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSObject+SBJSON.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o /Users/oscar/apps/BeerCounter/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.360501
 e319086085.431751
@@ -1827,9 +1203,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSString+SBJSON.m319086085#319086085#0(0"0(0#0#72"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSString+SBJSON.m8615396320#2112"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/NSString+SBJSON.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/NSString+SBJSON.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/O2Request.o /Users/oscar/apps/BeerCounter/Classes/O2Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/O2Request.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/O2Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319136167.077165
@@ -1868,9 +1241,6 @@ o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m:15: warning: m
 o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m:15: warning: method definition for '-post:withData:' not found
 lSLF07#2@72"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m319065314#319065314#0(378"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m:15: warning: incomplete implementation of class 'Request'/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m:15: warning: method definition for '-get:withData:' not found/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m:15: warning: method definition for '-post:withData:' not found3(22@44"Incomplete implementation of class 'Request'319065314#0#123#0(6@64"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m319064258#15#0#15#0#38"incomplete implementation of class '*'0(22@48"Method definition for '-get:withData:' not found319065314#123#127#0(6@64"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m319064258#15#0#15#0#35"method definition for '*' not found0(22@49"Method definition for '-post:withData:' not found319065314#250#128#0(6@64"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m319064258#15#0#15#0#35"method definition for '*' not found0(0#0#64"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m8620466368#2096"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Request.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/Request.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o /Users/oscar/apps/BeerCounter/Classes/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.431911
 e319086085.547005
@@ -1883,9 +1253,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJSON.m319086085#319086085#0(0"0(0#0#63"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJSON.m8616543680#2094"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJSON.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJSON.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o /Users/oscar/apps/BeerCounter/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.440508
@@ -1900,9 +1267,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@75"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonBase.m319086085#319086085#0(0"0(0#0#67"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonBase.m8615052544#2102"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonBase.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonBase.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o /Users/oscar/apps/BeerCounter/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.517581
 e319086085.677525
@@ -1915,9 +1279,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonParser.m319086085#319086085#0(0"0(0#0#69"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonParser.m8614703392#2106"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonParser.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonParser.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o /Users/oscar/apps/BeerCounter/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.547109
@@ -1932,9 +1293,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonWriter.m319086085#319086085#0(0"0(0#0#69"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonWriter.m8613622816#2106"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SBJsonWriter.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SBJsonWriter.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o /Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319135222.708847
 e319135222.802689
@@ -1948,9 +1306,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.m319135222#319135222#0(0"0(0#0#83"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.m8613598880#2134"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpFooterViewController.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpFooterViewController.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o /Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319130723.171304
 e319130723.752049
@@ -1963,9 +1318,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@90"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.m319130723#319130723#0(0"0(0#0#82"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.m8616206080#2132"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/SignUpTableViewController.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/SignUpTableViewController.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/User.o /Users/oscar/apps/BeerCounter/Classes/User.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/User.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/User.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.411019
@@ -1993,9 +1345,6 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@72"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Welcome.m318895963#318895963#0(0"0(0#0#64"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Welcome.m8628219392#2096"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/Welcome.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/Welcome.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o /Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319143887.932377
 e319143888.076156
@@ -2008,9 +1357,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.m319143887#319143888#0(0"0(0#0#83"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.m8630120640#2134"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/WelcomeTableViewController.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/WelcomeTableViewController.o0#
-
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o /Users/oscar/apps/BeerCounter/Classes/XMLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
 
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086085.159661
@@ -2027,9 +1373,6 @@ o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m: In function
 o/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m:39: warning: class 'XMLParser' does not implement the 'NSXMLParserDelegate' protocol
 lSLF07#2@74"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m319086085#319086085#0(259"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m: In function '-[XMLParser parseData:]':/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m:39: warning: class 'XMLParser' does not implement the 'NSXMLParserDelegate' protocol1(22@71"Class 'XMLParser' does not implement the 'NSXMLParserDelegate' protocol319086085#107#152#0(6@66"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m318976353#39#0#39#0#45"class '*' does not implement the '*' protocol0(0#0#66"/Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m8618425824#2100"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/XMLParser.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/XMLParser.o0#
 
-CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o /Users/oscar/apps/BeerCounter/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
 CCompileC build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o /Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319086084.034324
 e319086084.151095
@@ -2042,24 +1385,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@61"Compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m319086084#319086084#0(0"0(0#0#53"/Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m8616022848#2082"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -include /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dbqdfhxzfxqdlhfftabygcuwbkom/BeerCounter_Prefix.pch -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/main.m -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/oscar/apps/BeerCounter/Classes/HomeViewController.xib
-r0
-
-CCompileXIB /Users/oscar/apps/BeerCounter/Classes/LoginFooterViewController.xib
-r0
-
-CCompileXIB /Users/oscar/apps/BeerCounter/Classes/SignUpFooterViewController.xib
-r0
-
-CCompileXIB /Users/oscar/apps/BeerCounter/Classes/SignUpTableViewController.xib
-r0
-
-CCompileXIB /Users/oscar/apps/BeerCounter/Classes/WelcomeTableViewController.xib
-r0
-
-CCompileXIB /Users/oscar/apps/BeerCounter/MainWindow.xib
-r0
 
 CCompileXIB /Users/oscardemoya/Documents/Cocoa/BeerCounter/Classes/HomeViewController.xib
 s319143320.019561
@@ -2123,9 +1448,6 @@ o/* com.apple.ibtool.document.warnings */
 o/Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib:26: warning: 'Navigation Controller' has its 'NIB Name' property set to 'WelcomeTableViewController.nib', but this view controller is not intended to have its view set in this manner.
 lSLF07#2@25"CompileXIB MainWindow.xib319143320#319143320#0(287"/* com.apple.ibtool.document.warnings *//Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib:26: warning: 'Navigation Controller' has its 'NIB Name' property set to 'WelcomeTableViewController.nib', but this view controller is not intended to have its view set in this manner.1(22@170"'Navigation Controller' has its 'NIB Name' property set to 'WelcomeTableViewController.nib', but this view controller is not intended to have its view set in this manner.319143320#18446744073709551615#0#0(6@61"/Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib319143298#26#0#26#0#0"0(0#0#61"/Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib8624209600#598"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/MainWindow.nib /Users/oscardemoya/Documents/Cocoa/BeerCounter/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
 
-CDataModelVersionCompile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd /Users/oscar/apps/BeerCounter/BeerCounter.xcdatamodeld
-r0
-
 CDataModelVersionCompile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd /Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter.xcdatamodeld
 s319086084.033233
 e319086084.198134
@@ -2134,15 +1456,6 @@ xDataModelVersionCompile
 x/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd
 x/Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter.xcdatamodeld
 lSLF07#2@109"DataModelVersionCompile build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd BeerCounter.xcdatamodeld319086084#319086084#0(0"0(0#0#71"/Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter.xcdatamodeld8616189856#422"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter.xcdatamodeld /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter.momd0#
-
-CGenerateDSYMFile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
-s319144030.554309
-e319144030.639748
-r1
-xGenerateDSYMFile
-x/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM
-x/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
-lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/BeerCounter.app.dSYM build/Debug-iphonesimulator/BeerCounter.app/BeerCounter319144030#319144030#0(0"0(0#0#85"/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter8619749856#368"    cd /Users/oscar/apps/BeerCounter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter -o /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM0#
 
 CGenerateDSYMFile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
 s319143939.210001
@@ -2153,16 +1466,6 @@ x/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/Beer
 x/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
 lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/BeerCounter.app.dSYM build/Debug-iphonesimulator/BeerCounter.app/BeerCounter319143939#319143939#0(0"0(0#0#102"/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter8630250944#419"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app.dSYM0#
 
-CLd /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter normal i386
-s319144030.487216
-e319144030.554203
-r1
-xLd
-x/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter
-xnormal
-xi386
-lSLF07#2@90"Link /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter319144030#319144030#0(0"0(0#0#0"8603951168#895"    cd /Users/oscar/apps/BeerCounter    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator -F/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator -filelist /Users/oscar/apps/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounter.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter0#
-
 CLd /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter normal i386
 s319143939.154501
 e319143939.209897
@@ -2172,9 +1475,6 @@ x/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/Beer
 xnormal
 xi386
 lSLF07#2@107"Link /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter319143939#319143939#0(0"0(0#0#0"8630403424#980"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -filelist /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/Objects-normal/i386/BeerCounter.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/BeerCounter0#
-
-CProcessInfoPlistFile /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/Info.plist BeerCounter-Info.plist
-r0
 
 CProcessInfoPlistFile /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app/Info.plist BeerCounter-Info.plist
 s319086081.219079
@@ -2210,17 +1510,6 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.analyzer
 lSLF07#2@33"Precompile BeerCounter_Prefix.pch319001381#319001383#0(0"0(0#0#69"/Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter_Prefix.pch8641797248#1953"    cd /Users/oscardemoya/Documents/Cocoa/BeerCounter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-generated-files.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-own-target-headers.hmap -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-all-target-headers.hmap -iquote /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/BeerCounter-project-headers.hmap -F/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/include -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources/i386 -I/Users/oscardemoya/Documents/Cocoa/BeerCounter/build/BeerCounter.build/Debug-iphonesimulator/BeerCounter.build/DerivedSources -c /Users/oscardemoya/Documents/Cocoa/BeerCounter/BeerCounter_Prefix.pch -o /var/folders/IE/IErSvvBrG-yK2KW4-lnbqk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dnjldstrbnayetgbankmzlzydikb/BeerCounter_Prefix.pch.pth0#
-
-CProcessPCH /var/folders/Yp/Ypn73tssEESN06nNl9JqD++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BeerCounter_Prefix-dlpiknthfnlmgferkujqsixjkchy/BeerCounter_Prefix.pch.gch BeerCounter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CTouch /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
-s319144030.639838
-e319144030.642773
-r1
-xTouch
-x/Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
-lSLF07#2@79"Touch /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app319144030#319144030#0(0"0(0#0#0"8615013344#264"    cd /Users/oscar/apps/BeerCounter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/oscar/apps/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app0#
 
 CTouch /Users/oscardemoya/Documents/Cocoa/BeerCounter/build/Debug-iphonesimulator/BeerCounter.app
 s319143939.262075

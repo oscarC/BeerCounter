@@ -290,6 +290,9 @@
 			3FAA506E1305C00500FEA6EE /* PBXTextBookmark */ = 3FAA506E1305C00500FEA6EE /* PBXTextBookmark */;
 			3FAA506F1305C00500FEA6EE /* PBXTextBookmark */ = 3FAA506F1305C00500FEA6EE /* PBXTextBookmark */;
 			3FAA50701305C00500FEA6EE /* PBXTextBookmark */ = 3FAA50701305C00500FEA6EE /* PBXTextBookmark */;
+			3FAA50741305C08D00FEA6EE /* PBXTextBookmark */ = 3FAA50741305C08D00FEA6EE /* PBXTextBookmark */;
+			3FAA50751305C08D00FEA6EE /* PBXTextBookmark */ = 3FAA50751305C08D00FEA6EE /* PBXTextBookmark */;
+			3FAA50761305C08D00FEA6EE /* PBXTextBookmark */ = 3FAA50761305C08D00FEA6EE /* PBXTextBookmark */;
 			3FC7506713031C1C00BE704C = 3FC7506713031C1C00BE704C /* PlistBookmark */;
 			3FC750BB130324C400BE704C = 3FC750BB130324C400BE704C /* PBXTextBookmark */;
 			3FC752F513034B0200BE704C = 3FC752F513034B0200BE704C /* PBXTextBookmark */;
@@ -493,7 +496,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 24";
 		rLen = 30;
-		rLoc = 639;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 0;
@@ -781,7 +784,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 24";
 		rLen = 30;
-		rLoc = 639;
+		rLoc = 607;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 0;
@@ -1706,7 +1709,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 22";
 		rLen = 0;
-		rLoc = 654;
+		rLoc = 622;
 		rType = 0;
 		vrLen = 601;
 		vrLoc = 0;
@@ -1716,7 +1719,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 23";
 		rLen = 0;
-		rLoc = 693;
+		rLoc = 661;
 		rType = 0;
 		vrLen = 625;
 		vrLoc = 0;
@@ -1805,7 +1808,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 16";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 379;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -1875,7 +1878,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 17";
 		rLen = 49;
-		rLoc = 409;
+		rLoc = 380;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -1995,7 +1998,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 17";
 		rLen = 49;
-		rLoc = 409;
+		rLoc = 380;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -2035,7 +2038,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 17";
 		rLen = 49;
-		rLoc = 409;
+		rLoc = 380;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -2085,7 +2088,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 17";
 		rLen = 49;
-		rLoc = 409;
+		rLoc = 380;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -2185,7 +2188,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 17";
 		rLen = 49;
-		rLoc = 409;
+		rLoc = 380;
 		rType = 0;
 		vrLen = 512;
 		vrLoc = 0;
@@ -2245,7 +2248,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 13";
 		rLen = 0;
-		rLoc = 254;
+		rLoc = 227;
 		rType = 0;
 		vrLen = 638;
 		vrLoc = 0;
@@ -2255,7 +2258,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 24";
 		rLen = 0;
-		rLoc = 637;
+		rLoc = 605;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 0;
@@ -2265,7 +2268,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 24";
 		rLen = 0;
-		rLoc = 637;
+		rLoc = 605;
 		rType = 0;
 		vrLen = 749;
 		vrLoc = 0;
@@ -2475,7 +2478,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 24";
 		rLen = 0;
-		rLoc = 637;
+		rLoc = 605;
 		rType = 0;
 		vrLen = 749;
 		vrLoc = 0;
@@ -2495,7 +2498,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 30";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 721;
 		rType = 0;
 		vrLen = 726;
 		vrLoc = 51;
@@ -2582,7 +2585,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 30";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 721;
 		rType = 0;
 		vrLen = 726;
 		vrLoc = 51;
@@ -2662,7 +2665,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 30";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 721;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 94;
@@ -2672,7 +2675,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 29";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 721;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 51;
@@ -2682,7 +2685,7 @@
 		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 29";
 		rLen = 13;
-		rLoc = 739;
+		rLoc = 707;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 51;
@@ -2707,6 +2710,36 @@
 		vrLen = 1297;
 		vrLoc = 757;
 	};
+	3FAA50741305C08D00FEA6EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */;
+		name = "LoginFooterViewController.m: 46";
+		rLen = 26;
+		rLoc = 1666;
+		rType = 0;
+		vrLen = 1368;
+		vrLoc = 757;
+	};
+	3FAA50751305C08D00FEA6EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
+		name = "LoginFooterViewController.h: 29";
+		rLen = 13;
+		rLoc = 707;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 54;
+	};
+	3FAA50761305C08D00FEA6EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
+		name = "LoginFooterViewController.h: 12";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 674;
+		vrLoc = 54;
+	};
 	3FAD9CD31304103F00FBAF0C /* HomeViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {916, 369}}";
@@ -2723,16 +2756,16 @@
 	};
 	3FC74E641302DC6400BE704C /* LoginFooterViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 416}}";
-			sepNavSelRange = "{739, 13}";
-			sepNavVisRange = "{51, 709}";
+			sepNavIntBoundsRect = "{{0, 0}, {916, 403}}";
+			sepNavSelRange = "{227, 0}";
+			sepNavVisRange = "{54, 674}";
 		};
 	};
 	3FC74E651302DC6400BE704C /* LoginFooterViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 1118}}";
-			sepNavSelRange = "{1083, 0}";
-			sepNavVisRange = "{757, 1297}";
+			sepNavSelRange = "{1666, 26}";
+			sepNavVisRange = "{757, 1368}";
 			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
 		};
 	};
