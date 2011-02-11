@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* BeerCounterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BeerCounterAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28193060112F816700ECF9B4 /* BeerCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* BeerCounter.xcdatamodeld */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		3F234A5613020AD100D116A3 /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */; };
+		3F234A5713020AD100D116A3 /* WelcomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */; };
+		3FAD9CD61304103F00FBAF0C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD9CD41304103F00FBAF0C /* HomeViewController.m */; };
+		3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */; };
+		3FC74E671302DC6400BE704C /* LoginFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */; };
+		3FC74E681302DC6400BE704C /* LoginFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC74E661302DC6400BE704C /* LoginFooterViewController.xib */; };
+		3FC75007130316D300BE704C /* SignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC75005130316D300BE704C /* SignUpTableViewController.m */; };
+		3FC75008130316D300BE704C /* SignUpTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC75006130316D300BE704C /* SignUpTableViewController.xib */; };
+		3FC7500E1303178000BE704C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7500D1303178000BE704C /* User.m */; };
+		3FC7503A1303183B00BE704C /* FacebookAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750221303183B00BE704C /* FacebookAgent.m */; };
+		3FC7503B1303183B00BE704C /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7502F1303183B00BE704C /* FBConnectGlobal.m */; };
+		3FC7503C1303183B00BE704C /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750301303183B00BE704C /* FBDialog.m */; };
+		3FC7503D1303183B00BE704C /* FBFeedDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750311303183B00BE704C /* FBFeedDialog.m */; };
+		3FC7503E1303183B00BE704C /* FBLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750321303183B00BE704C /* FBLoginButton.m */; };
+		3FC7503F1303183B00BE704C /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750331303183B00BE704C /* FBLoginDialog.m */; };
+		3FC750401303183B00BE704C /* FBPermissionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750341303183B00BE704C /* FBPermissionDialog.m */; };
+		3FC750411303183B00BE704C /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750351303183B00BE704C /* FBRequest.m */; };
+		3FC750421303183B00BE704C /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750361303183B00BE704C /* FBSession.m */; };
+		3FC750431303183B00BE704C /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750371303183B00BE704C /* FBStreamDialog.m */; };
+		3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750391303183B00BE704C /* FBXMLHandler.m */; };
+		3FC750901303210000BE704C /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7508F1303210000BE704C /* XMLParser.m */; };
+		3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7530513034B8600BE704C /* SignUpFooterViewController.m */; };
+		3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */; };
+		3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */; };
+		3FD73F1F1304746C0098BE6B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F151304746C0098BE6B /* NSString+SBJSON.m */; };
+		3FD73F201304746C0098BE6B /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F171304746C0098BE6B /* SBJSON.m */; };
+		3FD73F211304746C0098BE6B /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F191304746C0098BE6B /* SBJsonBase.m */; };
+		3FD73F221304746C0098BE6B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F1B1304746C0098BE6B /* SBJsonParser.m */; };
+		3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F1D1304746C0098BE6B /* SBJsonWriter.m */; };
+		3FD73F67130482EB0098BE6B /* O2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F66130482EB0098BE6B /* O2Request.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* BeerCounterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCounterAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* BeerCounterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerCounterAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* BeerCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* BeerCounter.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BeerCounter.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* BeerCounter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCounter_Prefix.pch; sourceTree = "<group>"; };
+		3F234A5313020AD100D116A3 /* WelcomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTableViewController.h; sourceTree = "<group>"; };
+		3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTableViewController.m; sourceTree = "<group>"; };
+		3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTableViewController.xib; sourceTree = "<group>"; };
+		3FAD9CD31304103F00FBAF0C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3FAD9CD41304103F00FBAF0C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3FC74E641302DC6400BE704C /* LoginFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFooterViewController.h; sourceTree = "<group>"; };
+		3FC74E651302DC6400BE704C /* LoginFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFooterViewController.m; sourceTree = "<group>"; };
+		3FC74E661302DC6400BE704C /* LoginFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFooterViewController.xib; sourceTree = "<group>"; };
+		3FC75004130316D300BE704C /* SignUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpTableViewController.h; sourceTree = "<group>"; };
+		3FC75005130316D300BE704C /* SignUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpTableViewController.m; sourceTree = "<group>"; };
+		3FC75006130316D300BE704C /* SignUpTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpTableViewController.xib; sourceTree = "<group>"; };
+		3FC7500C1303178000BE704C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3FC7500D1303178000BE704C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3FC750211303183B00BE704C /* FacebookAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAgent.h; sourceTree = "<group>"; };
+		3FC750221303183B00BE704C /* FacebookAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAgent.m; sourceTree = "<group>"; };
+		3FC750251303183B00BE704C /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		3FC750261303183B00BE704C /* FBConnectGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnectGlobal.h; sourceTree = "<group>"; };
+		3FC750271303183B00BE704C /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		3FC750281303183B00BE704C /* FBFeedDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedDialog.h; sourceTree = "<group>"; };
+		3FC750291303183B00BE704C /* FBLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginButton.h; sourceTree = "<group>"; };
+		3FC7502A1303183B00BE704C /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		3FC7502B1303183B00BE704C /* FBPermissionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPermissionDialog.h; sourceTree = "<group>"; };
+		3FC7502C1303183B00BE704C /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		3FC7502D1303183B00BE704C /* FBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSession.h; sourceTree = "<group>"; };
+		3FC7502E1303183B00BE704C /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBStreamDialog.h; sourceTree = "<group>"; };
+		3FC7502F1303183B00BE704C /* FBConnectGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBConnectGlobal.m; sourceTree = "<group>"; };
+		3FC750301303183B00BE704C /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		3FC750311303183B00BE704C /* FBFeedDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedDialog.m; sourceTree = "<group>"; };
+		3FC750321303183B00BE704C /* FBLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginButton.m; sourceTree = "<group>"; };
+		3FC750331303183B00BE704C /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		3FC750341303183B00BE704C /* FBPermissionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPermissionDialog.m; sourceTree = "<group>"; };
+		3FC750351303183B00BE704C /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		3FC750361303183B00BE704C /* FBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSession.m; sourceTree = "<group>"; };
+		3FC750371303183B00BE704C /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBStreamDialog.m; sourceTree = "<group>"; };
+		3FC750381303183B00BE704C /* FBXMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBXMLHandler.h; sourceTree = "<group>"; };
+		3FC750391303183B00BE704C /* FBXMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBXMLHandler.m; sourceTree = "<group>"; };
+		3FC7508E1303210000BE704C /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		3FC7508F1303210000BE704C /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		3FC7530413034B8600BE704C /* SignUpFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpFooterViewController.h; sourceTree = "<group>"; };
+		3FC7530513034B8600BE704C /* SignUpFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpFooterViewController.m; sourceTree = "<group>"; };
+		3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterViewController.xib; sourceTree = "<group>"; };
+		3FD73EFD130453490098BE6B /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		3FD73F111304746C0098BE6B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3FD73F141304746C0098BE6B /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3FD73F151304746C0098BE6B /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3FD73F161304746C0098BE6B /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3FD73F171304746C0098BE6B /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		3FD73F181304746C0098BE6B /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3FD73F191304746C0098BE6B /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		3FD73F1A1304746C0098BE6B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3FD73F1B1304746C0098BE6B /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3FD73F1C1304746C0098BE6B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3FD73F1D1304746C0098BE6B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3FD73F65130482EB0098BE6B /* O2Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Request.h; sourceTree = "<group>"; };
+		3FD73F66130482EB0098BE6B /* O2Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Request.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* BeerCounter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BeerCounter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7508C130320F100BE704C /* Helpers */,
+				3FC7500B1303175A00BE704C /* Models */,
+				3FC750171303182000BE704C /* Vendors */,
+				3FC7500A1303174200BE704C /* ViewControllers */,
+				1D3623240D0F684500981E51 /* BeerCounterAppDelegate.h */,
+				1D3623250D0F684500981E51 /* BeerCounterAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BeerCounter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73EFC130452F90098BE6B /* Config */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* BeerCounter_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2819305F112F816700ECF9B4 /* BeerCounter.xcdatamodeld */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* BeerCounter-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F2349F71301E92000D116A3 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3F234A5313020AD100D116A3 /* WelcomeTableViewController.h */,
+				3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */,
+				3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */,
+				3FC74E641302DC6400BE704C /* LoginFooterViewController.h */,
+				3FC74E651302DC6400BE704C /* LoginFooterViewController.m */,
+				3FC74E661302DC6400BE704C /* LoginFooterViewController.xib */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		3FAD9CD21304101600FBAF0C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD9CD31304103F00FBAF0C /* HomeViewController.h */,
+				3FAD9CD41304103F00FBAF0C /* HomeViewController.m */,
+				3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3FC75003130316A100BE704C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3FC75004130316D300BE704C /* SignUpTableViewController.h */,
+				3FC75005130316D300BE704C /* SignUpTableViewController.m */,
+				3FC75006130316D300BE704C /* SignUpTableViewController.xib */,
+				3FC7530413034B8600BE704C /* SignUpFooterViewController.h */,
+				3FC7530513034B8600BE704C /* SignUpFooterViewController.m */,
+				3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		3FC7500A1303174200BE704C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73F69130483820098BE6B /* Drinks */,
+				3FD73F3413047DDD0098BE6B /* User */,
+				3FD73F2F13047D7E0098BE6B /* Friends */,
+				3F2349F71301E92000D116A3 /* Welcome */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3FC7500B1303175A00BE704C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7500C1303178000BE704C /* User.h */,
+				3FC7500D1303178000BE704C /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3FC750171303182000BE704C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73F10130474450098BE6B /* JSON */,
+				3FC750451303188C00BE704C /* TwitterAgent */,
+				3FC750201303183B00BE704C /* FacebookAgent */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		3FC750201303183B00BE704C /* FacebookAgent */ = {
+			isa = PBXGroup;
+			children = (
+				3FC750211303183B00BE704C /* FacebookAgent.h */,
+				3FC750221303183B00BE704C /* FacebookAgent.m */,
+				3FC750231303183B00BE704C /* src */,
+			);
+			path = FacebookAgent;
+			sourceTree = "<group>";
+		};
+		3FC750231303183B00BE704C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3FC750241303183B00BE704C /* FBConnect */,
+				3FC7502F1303183B00BE704C /* FBConnectGlobal.m */,
+				3FC750301303183B00BE704C /* FBDialog.m */,
+				3FC750311303183B00BE704C /* FBFeedDialog.m */,
+				3FC750321303183B00BE704C /* FBLoginButton.m */,
+				3FC750331303183B00BE704C /* FBLoginDialog.m */,
+				3FC750341303183B00BE704C /* FBPermissionDialog.m */,
+				3FC750351303183B00BE704C /* FBRequest.m */,
+				3FC750361303183B00BE704C /* FBSession.m */,
+				3FC750371303183B00BE704C /* FBStreamDialog.m */,
+				3FC750381303183B00BE704C /* FBXMLHandler.h */,
+				3FC750391303183B00BE704C /* FBXMLHandler.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3FC750241303183B00BE704C /* FBConnect */ = {
+			isa = PBXGroup;
+			children = (
+				3FC750251303183B00BE704C /* FBConnect.h */,
+				3FC750261303183B00BE704C /* FBConnectGlobal.h */,
+				3FC750271303183B00BE704C /* FBDialog.h */,
+				3FC750281303183B00BE704C /* FBFeedDialog.h */,
+				3FC750291303183B00BE704C /* FBLoginButton.h */,
+				3FC7502A1303183B00BE704C /* FBLoginDialog.h */,
+				3FC7502B1303183B00BE704C /* FBPermissionDialog.h */,
+				3FC7502C1303183B00BE704C /* FBRequest.h */,
+				3FC7502D1303183B00BE704C /* FBSession.h */,
+				3FC7502E1303183B00BE704C /* FBStreamDialog.h */,
+			);
+			path = FBConnect;
+			sourceTree = "<group>";
+		};
+		3FC750451303188C00BE704C /* TwitterAgent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TwitterAgent;
+			sourceTree = "<group>";
+		};
+		3FC7508C130320F100BE704C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7508E1303210000BE704C /* XMLParser.h */,
+				3FC7508F1303210000BE704C /* XMLParser.m */,
+				3FD73F65130482EB0098BE6B /* O2Request.h */,
+				3FD73F66130482EB0098BE6B /* O2Request.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3FD73EFC130452F90098BE6B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73EFD130453490098BE6B /* AppConfig.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		3FD73F10130474450098BE6B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73F111304746C0098BE6B /* JSON.h */,
+				3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */,
+				3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */,
+				3FD73F141304746C0098BE6B /* NSString+SBJSON.h */,
+				3FD73F151304746C0098BE6B /* NSString+SBJSON.m */,
+				3FD73F161304746C0098BE6B /* SBJSON.h */,
+				3FD73F171304746C0098BE6B /* SBJSON.m */,
+				3FD73F181304746C0098BE6B /* SBJsonBase.h */,
+				3FD73F191304746C0098BE6B /* SBJsonBase.m */,
+				3FD73F1A1304746C0098BE6B /* SBJsonParser.h */,
+				3FD73F1B1304746C0098BE6B /* SBJsonParser.m */,
+				3FD73F1C1304746C0098BE6B /* SBJsonWriter.h */,
+				3FD73F1D1304746C0098BE6B /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		3FD73F2F13047D7E0098BE6B /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73F3313047DC50098BE6B /* Search */,
+				3FD73F3213047DB50098BE6B /* Show */,
+				3FD73F3113047DAB0098BE6B /* List */,
+				3FD73F3013047D860098BE6B /* Drinks */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		3FD73F3013047D860098BE6B /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Drinks;
+			sourceTree = "<group>";
+		};
+		3FD73F3113047DAB0098BE6B /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		3FD73F3213047DB50098BE6B /* Show */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Show;
+			sourceTree = "<group>";
+		};
+		3FD73F3313047DC50098BE6B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		3FD73F3413047DDD0098BE6B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD9CD21304101600FBAF0C /* Home */,
+				3FC75003130316A100BE704C /* SignUp */,
+				3FD73F3613047DF80098BE6B /* Profile */,
+				3FD73F3513047DE90098BE6B /* Drinks */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		3FD73F3513047DE90098BE6B /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Drinks;
+			sourceTree = "<group>";
+		};
+		3FD73F3613047DF80098BE6B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		3FD73F69130483820098BE6B /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD73F6C130483A40098BE6B /* Show */,
+				3FD73F6A130483910098BE6B /* List */,
+			);
+			name = Drinks;
+			sourceTree = "<group>";
+		};
+		3FD73F6A130483910098BE6B /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		3FD73F6C130483A40098BE6B /* Show */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Show;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BeerCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BeerCounter" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeerCounter;
+			productName = BeerCounter;
+			productReference = 1D6058910D05DD3D006BFB54 /* BeerCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BeerCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BeerCounter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				3F234A5713020AD100D116A3 /* WelcomeTableViewController.xib in Resources */,
+				3FC74E681302DC6400BE704C /* LoginFooterViewController.xib in Resources */,
+				3FC75008130316D300BE704C /* SignUpTableViewController.xib in Resources */,
+				3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */,
+				3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* BeerCounterAppDelegate.m in Sources */,
+				28193060112F816700ECF9B4 /* BeerCounter.xcdatamodeld in Sources */,
+				3F234A5613020AD100D116A3 /* WelcomeTableViewController.m in Sources */,
+				3FC74E671302DC6400BE704C /* LoginFooterViewController.m in Sources */,
+				3FC75007130316D300BE704C /* SignUpTableViewController.m in Sources */,
+				3FC7500E1303178000BE704C /* User.m in Sources */,
+				3FC7503A1303183B00BE704C /* FacebookAgent.m in Sources */,
+				3FC7503B1303183B00BE704C /* FBConnectGlobal.m in Sources */,
+				3FC7503C1303183B00BE704C /* FBDialog.m in Sources */,
+				3FC7503D1303183B00BE704C /* FBFeedDialog.m in Sources */,
+				3FC7503E1303183B00BE704C /* FBLoginButton.m in Sources */,
+				3FC7503F1303183B00BE704C /* FBLoginDialog.m in Sources */,
+				3FC750401303183B00BE704C /* FBPermissionDialog.m in Sources */,
+				3FC750411303183B00BE704C /* FBRequest.m in Sources */,
+				3FC750421303183B00BE704C /* FBSession.m in Sources */,
+				3FC750431303183B00BE704C /* FBStreamDialog.m in Sources */,
+				3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */,
+				3FC750901303210000BE704C /* XMLParser.m in Sources */,
+				3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */,
+				3FAD9CD61304103F00FBAF0C /* HomeViewController.m in Sources */,
+				3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */,
+				3FD73F1F1304746C0098BE6B /* NSString+SBJSON.m in Sources */,
+				3FD73F201304746C0098BE6B /* SBJSON.m in Sources */,
+				3FD73F211304746C0098BE6B /* SBJsonBase.m in Sources */,
+				3FD73F221304746C0098BE6B /* SBJsonParser.m in Sources */,
+				3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */,
+				3FD73F67130482EB0098BE6B /* O2Request.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
+				INFOPLIST_FILE = "BeerCounter-Info.plist";
+				PRODUCT_NAME = BeerCounter;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
+				INFOPLIST_FILE = "BeerCounter-Info.plist";
+				PRODUCT_NAME = BeerCounter;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BeerCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BeerCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2819305F112F816700ECF9B4 /* BeerCounter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28C3AD890F43EF2300507BA6 /* BeerCounter.xcdatamodel */,
+			);
+			currentVersion = 28C3AD890F43EF2300507BA6 /* BeerCounter.xcdatamodel */;
+			path = BeerCounter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
