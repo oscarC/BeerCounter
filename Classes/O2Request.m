@@ -17,6 +17,7 @@
 
 + (O2Request *) request {
 	O2Request *o2request = [[O2Request alloc] init];
+	o2request.receivedData = [[NSMutableData alloc] init];
 	return o2request;
 }
 
@@ -112,16 +113,13 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	NSString *response = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-	NSLog(@"Data received:");
-	NSLog(@"%@", response);
 	[receivedData appendData:data];
-	[response release];
 }
 
 - (void) connectionDidFinishLoading: (NSURLConnection*) connection {
 	NSString *response = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
 	parsedData = [response JSONValue];
+	NSLog(@"%@", parsedData);
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestFinished" object:self];
 	[response release];
 }

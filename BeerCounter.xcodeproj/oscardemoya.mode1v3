@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>3FAA527F1305ED3300FEA6EE</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>O2Request.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>3FAA52801305ED3300FEA6EE</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>O2Request.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>3FAA52911305EE2C00FEA6EE</string>
+						<key>history</key>
+						<array>
+							<string>3FAA52751305ED0900FEA6EE</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1279, 626}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>1 111 1279 667 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -254,7 +295,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>337</real>
+								<real>312</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -270,7 +311,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>3FC7508C130320F100BE704C</string>
 								<string>3FC7500B1303175A00BE704C</string>
-								<string>3FC750171303182000BE704C</string>
 								<string>3FC7500A1303174200BE704C</string>
 								<string>3FD73F69130483820098BE6B</string>
 								<string>3FD73F6A130483910098BE6B</string>
@@ -293,7 +333,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {337, 609}}</string>
+							<string>{{0, 0}, {312, 609}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -305,11 +345,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {354, 627}}</string>
+						<string>{{0, 0}, {329, 627}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>337</real>
+							<real>312</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>1 110 1280 668 0 0 1280 778 </string>
@@ -317,7 +357,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>354pt</string>
+					<string>329pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -328,7 +368,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>O2Request.m</string>
+								<string>O2Request.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,11 +376,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>O2Request.m</string>
+										<string>O2Request.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3FAA51E31305E5FC00FEA6EE</string>
+										<string>3FAA52901305EE2C00FEA6EE</string>
 										<key>history</key>
 										<array>
 											<string>3FC7506713031C1C00BE704C</string>
@@ -349,9 +389,6 @@
 											<string>3FAA4F0313059FE600FEA6EE</string>
 											<string>3FAA4F0413059FE600FEA6EE</string>
 											<string>3FAA4F0513059FE600FEA6EE</string>
-											<string>3FAA4F0613059FE600FEA6EE</string>
-											<string>3FAA4F0713059FE600FEA6EE</string>
-											<string>3FAA4F0813059FE600FEA6EE</string>
 											<string>3FAA4F0913059FE600FEA6EE</string>
 											<string>3FAA4F0A13059FE600FEA6EE</string>
 											<string>3FAA4F0B13059FE600FEA6EE</string>
@@ -361,17 +398,21 @@
 											<string>3FAA51491305DFC500FEA6EE</string>
 											<string>3FAA514A1305DFC500FEA6EE</string>
 											<string>3FAA514B1305DFC500FEA6EE</string>
-											<string>3FAA514C1305DFC500FEA6EE</string>
 											<string>3FAA514D1305DFC500FEA6EE</string>
 											<string>3FAA514E1305DFC500FEA6EE</string>
-											<string>3FAA514F1305DFC500FEA6EE</string>
 											<string>3FAA51501305DFC500FEA6EE</string>
 											<string>3FAA51511305DFC500FEA6EE</string>
 											<string>3FAA515C1305E04C00FEA6EE</string>
-											<string>3FAA51B61305E53200FEA6EE</string>
 											<string>3FAA51B71305E53200FEA6EE</string>
-											<string>3FAA51E11305E5FC00FEA6EE</string>
-											<string>3FAA51E21305E5FC00FEA6EE</string>
+											<string>3FAA52481305EB1200FEA6EE</string>
+											<string>3FAA52491305EB1200FEA6EE</string>
+											<string>3FAA524A1305EB1200FEA6EE</string>
+											<string>3FAA524B1305EB1200FEA6EE</string>
+											<string>3FAA52641305EBDC00FEA6EE</string>
+											<string>3FAA52651305EBDC00FEA6EE</string>
+											<string>3FAA52671305EBDC00FEA6EE</string>
+											<string>3FAA527C1305ED3300FEA6EE</string>
+											<string>3FAA527D1305ED3300FEA6EE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,7 +424,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {921, 394}}</string>
+								<string>{{0, 0}, {946, 394}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1 110 1280 668 0 0 1280 778 </string>
 							</dict>
@@ -403,7 +444,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 399}, {921, 228}}</string>
+								<string>{{0, 399}, {946, 228}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1 110 1280 668 0 0 1280 778 </string>
 							</dict>
@@ -414,7 +455,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>921pt</string>
+					<string>946pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -569,10 +610,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3F234A891302363700D116A3</string>
 		<string>/Users/oscardemoya/Documents/iPhone/BeerCounter/BeerCounter.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>3FAA527F1305ED3300FEA6EE</string>
 	</array>
 	<key>WindowString</key>
 	<string>1 110 1280 668 0 0 1280 778 </string>
@@ -948,7 +990,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
