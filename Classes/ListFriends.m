@@ -1,43 +1,28 @@
 //
-//  DrinkListTableViewController.m
+//  ListFriends.m
 //  BeerCounter
 //
-//  Created by Oscar De Moya on 2/11/11.
-//  Copyright 2011 Koombea Inc. All rights reserved.
+//  Created by Oscar rodriguez on 13/02/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "BeerCounterAppDelegate.h"
-#import "DrinkListTableViewController.h"
-#import "O2Request.h"
+#import "ListFriends.h"
 
 
-@implementation DrinkListTableViewController
-
-- (void) drinkList {
-	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[request get:@"Drink/list" withData:data];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
-    NSLog(@"Entrando...");
-
-}
-
-- (void) drinkListResponse {
-	NSDictionary *data = [request data];
-	NSLog(@" Drinks %@", data);
-}
+@implementation ListFriends
 
 
 #pragma mark -
 #pragma mark View lifecycle
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.navigationItem.title=@"What are you drinking?";
-	request = [O2Request request];
-	[self drinkList];
-	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+     self.navigationItem.title=@"Friends";
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -79,7 +64,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+    return 1;
 }
 
 
@@ -171,7 +156,6 @@
 
 
 - (void)dealloc {
-	[request release];
     [super dealloc];
 }
 

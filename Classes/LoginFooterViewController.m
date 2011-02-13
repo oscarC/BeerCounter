@@ -44,6 +44,7 @@
 - (void) gotoDashboard {
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.tabBar = [beerCounterDelegate tabBar];
+	[beerCounterDelegate.navController setNavigationBarHidden:TRUE];
 	[beerCounterDelegate.navController pushViewController:tabBar animated:YES];
 }
 
