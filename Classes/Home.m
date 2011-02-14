@@ -17,8 +17,10 @@
 - (IBAction) startDrinking:(id)sender {
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    NSLog(@"%@", beerCounterDelegate.user.user_id);
 	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
-	[request post:@"User/strart_drink" withData:data];
+    [data setObject:@"true" forKey:@"drinking"];
+	[request post:@"User/drinking" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startDrinkingResponse) name:@"O2RequestFinished" object:request];
 }
 

@@ -33,6 +33,7 @@
     self.user.email = username;
     self.user.password = password;
     if([data count] > 0) {
+        NSLog(@"%@", [data objectForKey:@"id"]);
         self.user.user_id = [data objectForKey:@"id"];
         self.user.nickname = [data objectForKey:@"nickname"];
         self.user.twitter_id = [data objectForKey:@"twitter_id"];
@@ -56,6 +57,7 @@
 - (void) gotoDashboard {
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.tabBar = beerCounterDelegate.tabBar;
+    beerCounterDelegate.user = self.user;
     [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
 	[beerCounterDelegate.navController pushViewController:tabBar animated:true];
 }
