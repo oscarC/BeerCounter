@@ -1,48 +1,28 @@
 //
-//  DrinkListTableViewController.m
+//  ListFriends.m
 //  BeerCounter
 //
-//  Created by Oscar De Moya on 2/11/11.
-//  Copyright 2011 Koombea Inc. All rights reserved.
+//  Created by Oscar rodriguez on 13/02/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "BeerCounterAppDelegate.h"
-#import "DrinkListTableViewController.h"
-#import "O2Request.h"
+#import "ListFriends.h"
 
 
-@implementation DrinkListTableViewController
+@implementation ListFriends
 
-@synthesize drinksArray;
-
-- (void) drinkList {
-	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[request get:@"Drink/list" withData:data];
-	[[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
-}
-
-- (void) drinkListResponse {
-	self.drinksArray = [[request data] copy];
-	[self.tableView reloadData];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
-}
 
 #pragma mark -
 #pragma mark View lifecycle
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	//BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	//beerCounterDelegate.navItem.title = @"What are you drinking?";
-	//beerCounterDelegate.navController.title = @"What are you drinking?";
-	self.navigationItem.title = @"What are you drinking?";
-
-	request = [O2Request request];
-	[self drinkList];
-	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+     self.navigationItem.title=@"Friends";
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -84,24 +64,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.drinksArray count];
+    return 1;
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"CellDrinks";
+    static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
-	NSDictionary *info = [drinksArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"name"]];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"description"]];
+    
     return cell;
 }
 
@@ -178,8 +156,6 @@
 
 
 - (void)dealloc {
-	[drinksArray release];
-	[request release];
     [super dealloc];
 }
 

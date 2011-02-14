@@ -44,7 +44,7 @@
     request = [O2Request request];
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
     if(beerCounterDelegate.user.drinking == NO) {
-        labelStatus.text = @"You're not currently drinking.";
+        //labelStatus.text = @"You're not currently drinking.";
     } else {
         
     }

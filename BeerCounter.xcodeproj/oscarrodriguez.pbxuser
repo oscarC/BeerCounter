@@ -1,0 +1,216 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* BeerCounter */ = {
+		activeExec = 0;
+		executables = (
+			9CFDBAF013083C3000A12E2A /* BeerCounter */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 9CFDBAF013083C3000A12E2A /* BeerCounter */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* BeerCounter */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* BeerCounter */,
+		);
+		codeSenseManager = 9CFDBB0A13083C3500A12E2A /* Code sense */;
+		executables = (
+			9CFDBAF013083C3000A12E2A /* BeerCounter */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					667,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319306800;
+			PBXWorkspaceStateSaveDate = 319306800;
+		};
+		perUserProjectItems = {
+			9CFDBB5113084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5113084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5213084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5213084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5313084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5313084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5413084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5413084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5513084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5513084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5613084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5613084E3000A12E2A /* PBXTextBookmark */;
+			9CFDBB5713084E3000A12E2A /* PBXTextBookmark */ = 9CFDBB5713084E3000A12E2A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 9CFDBB0913083C3500A12E2A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7247, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7298, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7348, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8578}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1048, 3549}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{7030, 959}";
+		};
+	};
+	3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{4147, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{4198, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{4248, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4969}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {985, 2366}}";
+			sepNavSelRange = "{254, 0}";
+			sepNavVisRange = "{0, 712}";
+		};
+	};
+	3FC74E651302DC6400BE704C /* LoginFooterViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1287}}";
+			sepNavSelRange = "{2125, 0}";
+			sepNavVisRange = "{888, 1335}";
+		};
+	};
+	3FD73F66130482EB0098BE6B /* O2Request.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {887, 1859}}";
+			sepNavSelRange = "{1368, 0}";
+			sepNavVisRange = "{1305, 1135}";
+		};
+	};
+	9CFDBAF013083C3000A12E2A /* BeerCounter */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = BeerCounter;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	9CFDBB0913083C3500A12E2A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	9CFDBB0A13083C3500A12E2A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	9CFDBB201308425400A12E2A /* ListFriends.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 379}}";
+			sepNavSelRange = "{231, 0}";
+			sepNavVisRange = "{0, 231}";
+		};
+	};
+	9CFDBB211308425400A12E2A /* ListFriends.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{3596, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{3647, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{3697, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4398}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 2275}}";
+			sepNavSelRange = "{1495, 0}";
+			sepNavVisRange = "{864, 791}";
+		};
+	};
+	9CFDBB5113084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */;
+		name = "WelcomeTableViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 7030;
+	};
+	9CFDBB5213084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CFDBB201308425400A12E2A /* ListFriends.h */;
+		name = "ListFriends.h: 17";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	9CFDBB5313084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CFDBB211308425400A12E2A /* ListFriends.m */;
+		name = "ListFriends.m: 67";
+		rLen = 0;
+		rLoc = 1495;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 864;
+	};
+	9CFDBB5413084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FD73F66130482EB0098BE6B /* O2Request.m */;
+		name = "O2Request.m: 47";
+		rLen = 0;
+		rLoc = 1368;
+		rType = 0;
+		vrLen = 1135;
+		vrLoc = 1305;
+	};
+	9CFDBB5513084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */;
+		name = "DrinkListTableViewController.m: 13";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 712;
+		vrLoc = 0;
+	};
+	9CFDBB5613084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */;
+		name = "LoginFooterViewController.m: 54";
+		rLen = 0;
+		rLoc = 2125;
+		rType = 0;
+		vrLen = 1338;
+		vrLoc = 1087;
+	};
+	9CFDBB5713084E3000A12E2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */;
+		name = "LoginFooterViewController.m: 54";
+		rLen = 0;
+		rLoc = 2125;
+		rType = 0;
+		vrLen = 1335;
+		vrLoc = 888;
+	};
+}

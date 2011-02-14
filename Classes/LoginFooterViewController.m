@@ -62,6 +62,10 @@
 
 - (void) loginError {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginError" object:self];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	self.tabBar = [beerCounterDelegate tabBar];
+	[beerCounterDelegate.navController setNavigationBarHidden:TRUE];
+	[beerCounterDelegate.navController pushViewController:tabBar animated:YES];
 }
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.

@@ -13,7 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28193060112F816700ECF9B4 /* BeerCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* BeerCounter.xcdatamodeld */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		3F234A5613020AD100D116A3 /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */; };
 		3F234A5713020AD100D116A3 /* WelcomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F234A5513020AD100D116A3 /* WelcomeTableViewController.xib */; };
@@ -39,8 +38,6 @@
 		3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750391303183B00BE704C /* FBXMLHandler.m */; };
 		3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7530513034B8600BE704C /* SignUpFooterViewController.m */; };
 		3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */; };
-		3FCCC2331308BE68000E0DE4 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCC2311308BE68000E0DE4 /* CounterViewController.m */; };
-		3FCCC2341308BE68000E0DE4 /* CounterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */; };
 		3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */; };
 		3FD73F1F1304746C0098BE6B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F151304746C0098BE6B /* NSString+SBJSON.m */; };
 		3FD73F201304746C0098BE6B /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F171304746C0098BE6B /* SBJSON.m */; };
@@ -48,6 +45,7 @@
 		3FD73F221304746C0098BE6B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F1B1304746C0098BE6B /* SBJsonParser.m */; };
 		3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F1D1304746C0098BE6B /* SBJsonWriter.m */; };
 		3FD73F67130482EB0098BE6B /* O2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F66130482EB0098BE6B /* O2Request.m */; };
+		3FFC970D130987E9008912E4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC970C130987E9008912E4 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +55,6 @@
 		1D6058910D05DD3D006BFB54 /* BeerCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C3AD890F43EF2300507BA6 /* BeerCounter.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BeerCounter.xcdatamodel; sourceTree = "<group>"; };
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,9 +102,6 @@
 		3FC7530413034B8600BE704C /* SignUpFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpFooterViewController.h; sourceTree = "<group>"; };
 		3FC7530513034B8600BE704C /* SignUpFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpFooterViewController.m; sourceTree = "<group>"; };
 		3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterViewController.xib; sourceTree = "<group>"; };
-		3FCCC2301308BE68000E0DE4 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
-		3FCCC2311308BE68000E0DE4 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
-		3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CounterViewController.xib; sourceTree = "<group>"; };
 		3FD73EFD130453490098BE6B /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		3FD73F111304746C0098BE6B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -124,6 +118,7 @@
 		3FD73F1D1304746C0098BE6B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		3FD73F65130482EB0098BE6B /* O2Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Request.h; sourceTree = "<group>"; };
 		3FD73F66130482EB0098BE6B /* O2Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Request.m; sourceTree = "<group>"; };
+		3FFC970C130987E9008912E4 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BeerCounter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BeerCounter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,8 +183,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3FFC970C130987E9008912E4 /* MainWindow.xib */,
 				2819305F112F816700ECF9B4 /* BeerCounter.xcdatamodeld */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* BeerCounter-Info.plist */,
 			);
 			name = Resources;
@@ -225,9 +220,6 @@
 				3FAD9CD31304103F00FBAF0C /* HomeViewController.h */,
 				3FAD9CD41304103F00FBAF0C /* HomeViewController.m */,
 				3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */,
-				3FCCC2301308BE68000E0DE4 /* CounterViewController.h */,
-				3FCCC2311308BE68000E0DE4 /* CounterViewController.m */,
-				3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -504,14 +496,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				3F234A5713020AD100D116A3 /* WelcomeTableViewController.xib in Resources */,
 				3FC74E681302DC6400BE704C /* LoginFooterViewController.xib in Resources */,
 				3FC75008130316D300BE704C /* SignUpTableViewController.xib in Resources */,
 				3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */,
 				3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */,
 				3FAA50F71305CDE300FEA6EE /* DrinkListTableViewController.xib in Resources */,
-				3FCCC2341308BE68000E0DE4 /* CounterViewController.xib in Resources */,
+				3FFC970D130987E9008912E4 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +541,6 @@
 				3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */,
 				3FD73F67130482EB0098BE6B /* O2Request.m in Sources */,
 				3FAA50F61305CDE300FEA6EE /* DrinkListTableViewController.m in Sources */,
-				3FCCC2331308BE68000E0DE4 /* CounterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +558,6 @@
 				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
 				INFOPLIST_FILE = "BeerCounter-Info.plist";
 				PRODUCT_NAME = BeerCounter;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -581,7 +570,6 @@
 				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
 				INFOPLIST_FILE = "BeerCounter-Info.plist";
 				PRODUCT_NAME = BeerCounter;
-				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
