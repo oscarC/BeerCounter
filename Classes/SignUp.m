@@ -1,45 +1,31 @@
 //
-//  WelcomeTableViewController.m
+//  SignUpTableViewController.m
 //  BeerCounter
 //
-//  Created by Oscar De Moya on 2/8/11.
+//  Created by Oscar De Moya on 2/9/11.
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "Welcome.h"
-#import "WelcomeFooter.h"
+#import "SignUp.h"
+#import "SignUpFooter.h"
 
-#define kLoginUsernameTag  1
-#define kLoginPasswordTag  2
-#define kIndicatorLoginTag 3
+#define kSignUpEmailTag	   1
+#define kSignUpPasswordTag 2
+#define kSignUpNicknameTag 3
 
-@implementation Welcome
+@implementation SignUp
+
 
 #pragma mark -
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.title = @"Login";
-    self.tableView.allowsSelection = NO;
-	
-	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:welcomeFooter];
-	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:welcomeFooter];
+	self.title = @"Sign Up";
+	self.tableView.allowsSelection = NO;
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-- (void) showLoadingIndicator {
-	UIActivityIndicatorView  *av = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
-	av.frame = CGRectMake(145, 160, 25, 25);
-	av.tag   = kIndicatorLoginTag;
-	[self.view addSubview:av];		
-	[av startAnimating];
-}
-
-- (void) hideLoadingIndicator {
-	UIActivityIndicatorView *av = (UIActivityIndicatorView *)[self.view viewWithTag:kIndicatorLoginTag];
-	[av stopAnimating];
-	[av removeFromSuperview];
-}	
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -81,13 +67,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+    return 3;
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-    static NSString *CellIdentifier = @"CellWelcome";
+    static NSString *CellIdentifier = @"CellSignUp";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
@@ -97,48 +83,65 @@
 		//cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		
 		if ([indexPath section] == 0) {
-
+			
 			if ([indexPath section] == 0) { // Email & Password Section
-                UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
 				if ([indexPath row] == 0) { // Username row
-					[self setStyles:textField withTag:kLoginUsernameTag];
-					textField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
-					textField.keyboardType = UIKeyboardTypeEmailAddress;
-					textField.returnKeyType = UIReturnKeyNext;
-					[textField addTarget:self
-										action:@selector(dismissKeyboard:)
-										forControlEvents:UIControlEventEditingDidEndOnExit];
-					[textField addTarget:self
+					emailTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+					[self setStyles:emailTextField withTag:kSignUpEmailTag];
+					emailTextField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
+					emailTextField.keyboardType = UIKeyboardTypeEmailAddress;
+					emailTextField.returnKeyType = UIReturnKeyNext;
+					[emailTextField addTarget:self
+										  action:@selector(dismissKeyboard:)
+								forControlEvents:UIControlEventEditingDidEndOnExit];
+					[emailTextField addTarget:self
 										  action:@selector(passValues:)
 								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:textField];
-
-				} else { // Password row
-					[self setStyles:textField withTag:kLoginPasswordTag];
-					textField.placeholder = [NSString stringWithFormat:@"Required"];
-					textField.keyboardType = UIKeyboardTypeDefault;
-					textField.returnKeyType = UIReturnKeyDone;
-					textField.secureTextEntry = YES;
-					[textField addTarget:self
+					[cell addSubview:emailTextField];
+					[emailTextField release];
+				} else if ([indexPath row] == 1) { // Password row
+					passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+					[self setStyles:passwordTextField withTag:kSignUpPasswordTag];
+					passwordTextField.placeholder = [NSString stringWithFormat:@"Required"];
+					passwordTextField.keyboardType = UIKeyboardTypeDefault;
+					passwordTextField.returnKeyType = UIReturnKeyNext;
+					passwordTextField.secureTextEntry = YES;
+					[passwordTextField addTarget:self
 										  action:@selector(dismissKeyboard:)
-										  forControlEvents:UIControlEventEditingDidEndOnExit];
-					[textField addTarget:self
+								forControlEvents:UIControlEventEditingDidEndOnExit];
+					[passwordTextField addTarget:self
 										  action:@selector(passValues:)
-										  forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:textField];
+								forControlEvents:UIControlEventEditingChanged];
+					[cell addSubview:passwordTextField];
+					[passwordTextField release];
+				} else if ([indexPath row] == 2) { // Password row
+					nicknameTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+					[self setStyles:nicknameTextField withTag:kSignUpNicknameTag];
+					nicknameTextField.placeholder = [NSString stringWithFormat:@"Required"];
+					nicknameTextField.keyboardType = UIKeyboardTypeDefault;
+					nicknameTextField.returnKeyType = UIReturnKeyDone;
+					[nicknameTextField addTarget:self
+										  action:@selector(dismissKeyboard:)
+								forControlEvents:UIControlEventEditingDidEndOnExit];
+					[nicknameTextField addTarget:self
+										  action:@selector(passValues:)
+								forControlEvents:UIControlEventEditingChanged];
+					[cell addSubview:nicknameTextField];
+					[nicknameTextField release];
 				}
-                [textField release];
 			}
 		}
 	}
-	if ([indexPath section] == 0) { // Email & Password Section
+	if ([indexPath section] == 0) { // Sign Up Section
 		if ([indexPath row] == 0) { // Email
 			cell.textLabel.text = @"Email";
-		} else {
+		} else if ([indexPath row] == 1) { // Password
 			cell.textLabel.text = @"Password";
+		} else if ([indexPath row] == 2) { // Nickname
+			cell.textLabel.text = @"Nickname";
 		}
 	}
-	return cell;    
+	return cell;
 }
 
 - (void)setStyles:(UITextField *)textField withTag:(int)tag {
@@ -155,10 +158,12 @@
 }
 
 - (void)passValues:(UITextField *)textField {
-	if (textField.tag == kLoginUsernameTag) {
-		welcomeFooter.username = [textField.text copy];
-	} else if (textField.tag == kLoginPasswordTag) {
-		welcomeFooter.password = [textField.text copy];
+	if (textField.tag == kSignUpEmailTag) {
+		signUpFooter.email = [textField.text copy];
+	} else if (textField.tag == kSignUpPasswordTag) {
+		signUpFooter.password = [textField.text copy];
+	} else if (textField.tag == kSignUpNicknameTag) {
+		signUpFooter.nickname = [textField.text copy];
 	}
 }
 
@@ -167,19 +172,12 @@
 }
 
 /*
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-	//do stuff
-}
-*/
-
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 */
-
 
 /*
 // Override to support editing the table view.
@@ -195,13 +193,11 @@
 }
 */
 
-
 /*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 }
 */
-
 
 /*
 // Override to support conditional rearranging of the table view.
@@ -228,8 +224,8 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection: (NSInteger)section {
 	if (section == 0) {
-		welcomeFooter = [[WelcomeFooter alloc] init];
-		return welcomeFooter.view;
+		signUpFooter = [[SignUpFooter alloc] init];
+		return signUpFooter.view;
 	} else {
 		return nil;
 	}
@@ -239,7 +235,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
-			return 102.0;
+			return 56.0;
 		default:
 			return 0.0;
 	}
@@ -260,10 +256,8 @@
     // For example: self.myOutlet = nil;
 }
 
-- (void)dealloc {
+- (void)dealloc {	
     [super dealloc];
 }
 
-
 @end
-
