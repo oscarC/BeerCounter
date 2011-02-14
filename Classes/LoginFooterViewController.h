@@ -10,13 +10,16 @@
 
 @class O2Request;
 @class SignUpTableViewController;
+@class User;
 
 @interface LoginFooterViewController : UIViewController {
 	O2Request *request;
 	SignUpTableViewController *signUpView;
 	UITabBarController *tabBar;
+    User *user;
 }
 
+@property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, retain) SignUpTableViewController *signUpView;
@@ -26,5 +29,6 @@
 - (void) loginResponse;
 - (IBAction) gotoSignUp:(id)sender;
 - (void) gotoDashboard;
+- (void) loginError;
 
 @end

@@ -10,7 +10,7 @@
 
 
 @interface O2Request : NSObject {
-	NSMutableDictionary *parsedData;
+	id parsedData;
 @private
 	NSURL *url;
 	NSURLRequest *request;
@@ -28,6 +28,6 @@
 - (void) get:(NSString *)method withData:(NSDictionary *)data;
 - (NSString *) paramsToString:(NSDictionary *)data;
 - (void) createRequest:(NSString *)type withParms:(NSString *)params;
-- (NSDictionary *) data;
+- (id) data;
 
 @end

@@ -39,6 +39,8 @@
 		3FC750441303183B00BE704C /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC750391303183B00BE704C /* FBXMLHandler.m */; };
 		3FC7530713034B8600BE704C /* SignUpFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7530513034B8600BE704C /* SignUpFooterViewController.m */; };
 		3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */; };
+		3FCCC2331308BE68000E0DE4 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCC2311308BE68000E0DE4 /* CounterViewController.m */; };
+		3FCCC2341308BE68000E0DE4 /* CounterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */; };
 		3FD73F1E1304746C0098BE6B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */; };
 		3FD73F1F1304746C0098BE6B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F151304746C0098BE6B /* NSString+SBJSON.m */; };
 		3FD73F201304746C0098BE6B /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD73F171304746C0098BE6B /* SBJSON.m */; };
@@ -103,6 +105,9 @@
 		3FC7530413034B8600BE704C /* SignUpFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpFooterViewController.h; sourceTree = "<group>"; };
 		3FC7530513034B8600BE704C /* SignUpFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpFooterViewController.m; sourceTree = "<group>"; };
 		3FC7530613034B8600BE704C /* SignUpFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterViewController.xib; sourceTree = "<group>"; };
+		3FCCC2301308BE68000E0DE4 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		3FCCC2311308BE68000E0DE4 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CounterViewController.xib; sourceTree = "<group>"; };
 		3FD73EFD130453490098BE6B /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		3FD73F111304746C0098BE6B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -220,6 +225,9 @@
 				3FAD9CD31304103F00FBAF0C /* HomeViewController.h */,
 				3FAD9CD41304103F00FBAF0C /* HomeViewController.m */,
 				3FAD9CD51304103F00FBAF0C /* HomeViewController.xib */,
+				3FCCC2301308BE68000E0DE4 /* CounterViewController.h */,
+				3FCCC2311308BE68000E0DE4 /* CounterViewController.m */,
+				3FCCC2321308BE68000E0DE4 /* CounterViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -503,6 +511,7 @@
 				3FC7530813034B8600BE704C /* SignUpFooterViewController.xib in Resources */,
 				3FAD9CD71304103F00FBAF0C /* HomeViewController.xib in Resources */,
 				3FAA50F71305CDE300FEA6EE /* DrinkListTableViewController.xib in Resources */,
+				3FCCC2341308BE68000E0DE4 /* CounterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +550,7 @@
 				3FD73F231304746C0098BE6B /* SBJsonWriter.m in Sources */,
 				3FD73F67130482EB0098BE6B /* O2Request.m in Sources */,
 				3FAA50F61305CDE300FEA6EE /* DrinkListTableViewController.m in Sources */,
+				3FCCC2331308BE68000E0DE4 /* CounterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +568,7 @@
 				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
 				INFOPLIST_FILE = "BeerCounter-Info.plist";
 				PRODUCT_NAME = BeerCounter;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -570,6 +581,7 @@
 				GCC_PREFIX_HEADER = BeerCounter_Prefix.pch;
 				INFOPLIST_FILE = "BeerCounter-Info.plist";
 				PRODUCT_NAME = BeerCounter;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

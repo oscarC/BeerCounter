@@ -23,9 +23,6 @@
 	self.title = @"Login";
     self.tableView.allowsSelection = NO;
 	
-	usernameTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
-	passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
-	
 	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:loginFooter];
 	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:loginFooter];
 }
@@ -102,33 +99,35 @@
 		if ([indexPath section] == 0) {
 
 			if ([indexPath section] == 0) { // Email & Password Section
+                UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
 				if ([indexPath row] == 0) { // Username row
-					[self setStyles:usernameTextField withTag:kLoginUsernameTag];
-					usernameTextField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
-					usernameTextField.keyboardType = UIKeyboardTypeEmailAddress;
-					usernameTextField.returnKeyType = UIReturnKeyNext;
-					[usernameTextField addTarget:self
+					[self setStyles:textField withTag:kLoginUsernameTag];
+					textField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
+					textField.keyboardType = UIKeyboardTypeEmailAddress;
+					textField.returnKeyType = UIReturnKeyNext;
+					[textField addTarget:self
 										action:@selector(dismissKeyboard:)
 										forControlEvents:UIControlEventEditingDidEndOnExit];
-					[usernameTextField addTarget:self
+					[textField addTarget:self
 										  action:@selector(passValues:)
 								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:usernameTextField];
+					[cell addSubview:textField];
 
 				} else { // Password row
-					[self setStyles:passwordTextField withTag:kLoginPasswordTag];
-					passwordTextField.placeholder = [NSString stringWithFormat:@"Required"];
-					passwordTextField.keyboardType = UIKeyboardTypeDefault;
-					passwordTextField.returnKeyType = UIReturnKeyDone;
-					passwordTextField.secureTextEntry = YES;
-					[passwordTextField addTarget:self
+					[self setStyles:textField withTag:kLoginPasswordTag];
+					textField.placeholder = [NSString stringWithFormat:@"Required"];
+					textField.keyboardType = UIKeyboardTypeDefault;
+					textField.returnKeyType = UIReturnKeyDone;
+					textField.secureTextEntry = YES;
+					[textField addTarget:self
 										  action:@selector(dismissKeyboard:)
 										  forControlEvents:UIControlEventEditingDidEndOnExit];
-					[passwordTextField addTarget:self
+					[textField addTarget:self
 										  action:@selector(passValues:)
 										  forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:passwordTextField];
+					[cell addSubview:textField];
 				}
+                [textField release];
 			}
 		}
 	}
@@ -262,8 +261,6 @@
 }
 
 - (void)dealloc {
-	[usernameTextField release];
-	[passwordTextField release];
     [super dealloc];
 }
 

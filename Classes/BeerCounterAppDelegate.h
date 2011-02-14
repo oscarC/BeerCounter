@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "User.h"
 
 @interface BeerCounterAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	UINavigationController *navController;
+	IBOutlet UINavigationController *navController;
 	IBOutlet UITabBarController *tabBar;
+    User *user;
 @private
     NSManagedObjectContext *managedObjectContext_;
     NSManagedObjectModel *managedObjectModel_;
@@ -22,6 +24,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navController;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBar;
+@property (nonatomic, retain) User *user;
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;

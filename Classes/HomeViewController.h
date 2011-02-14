@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class O2Request;
 
 @interface HomeViewController : UIViewController {
-
+    O2Request *request;
+    IBOutlet UILabel *labelStatus;
 }
+
+@property (nonatomic, retain) UILabel *labelStatus;
+
+- (IBAction) startDrinking:(id)sender;
+- (void) startDrinkingResponse;
 
 @end

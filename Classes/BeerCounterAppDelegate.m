@@ -13,6 +13,7 @@
 
 @synthesize window;
 @synthesize navController, tabBar;
+@synthesize user;
 
 
 #pragma mark -
@@ -23,6 +24,7 @@
     // Override point for customization after application launch.
     [self.window addSubview:navController.view];
     [self.window makeKeyAndVisible];
+    user = [[User alloc] init];
     
     return YES;
 }
@@ -190,6 +192,7 @@
 
 
 - (void)dealloc {
+    [user release];
     [navController release];
     [managedObjectContext_ release];
     [managedObjectModel_ release];

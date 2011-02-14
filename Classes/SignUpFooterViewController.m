@@ -18,7 +18,7 @@
 	[data setObject:self.email forKey:@"email"];
 	[data setObject:self.password forKey:@"password"];
 	[data setObject:self.nickname forKey:@"nickname"];
-	[request post:@"Signup" withData:data];
+	[request post:@"User/signup" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registerUserResponse) name:@"O2RequestFinished" object:request];
 }
 

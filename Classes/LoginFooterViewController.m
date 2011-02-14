@@ -11,10 +11,11 @@
 #import "HomeViewController.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
+#import "User.h"
 
 @implementation LoginFooterViewController
 
-@synthesize username, password;
+@synthesize user, username, password;
 @synthesize signUpView, tabBar;
 
 - (IBAction) login:(id)sender {
@@ -22,15 +23,26 @@
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	[data setObject:self.username forKey:@"email"];
 	[data setObject:self.password forKey:@"password"];
-	[request post:@"Authenticate" withData:data];
+	[request post:@"User/authenticate" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginResponse) name:@"O2RequestFinished" object:request];
 }
 
 - (void) loginResponse {
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
-	NSLog(@"%@", data);
-	[self gotoDashboard];
+    self.user.email = username;
+    self.user.password = password;
+    if([data count] > 0) {
+        self.user.user_id = [data objectForKey:@"id"];
+        self.user.nickname = [data objectForKey:@"nickname"];
+        self.user.twitter_id = [data objectForKey:@"twitter_id"];
+        self.user.facebook_id = [data objectForKey:@"facebook_id"];
+        self.user.drinking = (bool)[data objectForKey:@"drinking"];
+        self.user.logged = YES;
+        [self gotoDashboard];
+    } else {
+        self.user.logged = NO;
+    }
 }
 
 - (IBAction) gotoSignUp:(id)sender {
@@ -43,8 +55,13 @@
 
 - (void) gotoDashboard {
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.tabBar = [beerCounterDelegate tabBar];
-	[beerCounterDelegate.navController pushViewController:tabBar animated:YES];
+	self.tabBar = beerCounterDelegate.tabBar;
+    [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
+	[beerCounterDelegate.navController pushViewController:tabBar animated:true];
+}
+
+- (void) loginError {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginError" object:self];
 }
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -62,6 +79,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	request = [O2Request request];
+    self.user = [[User alloc] init];
 	username = @"";
 	password = @"";
 }
@@ -89,6 +107,7 @@
 
 
 - (void)dealloc {
+    [user release];
 	[request release];
 	[super dealloc];
 }

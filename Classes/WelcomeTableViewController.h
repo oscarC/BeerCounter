@@ -11,8 +11,6 @@
 @class LoginFooterViewController;
 
 @interface WelcomeTableViewController : UITableViewController {
-	UITextField *usernameTextField;
-	UITextField *passwordTextField;
 	LoginFooterViewController *loginFooter;
 }
 

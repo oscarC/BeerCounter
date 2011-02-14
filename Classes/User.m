@@ -11,11 +11,7 @@
 
 @implementation User
 
-@synthesize user_id;
-@synthesize nickname;
-@synthesize email;
-@synthesize password;
-@synthesize twitter_id;
-@synthesize facebook_id;
+@synthesize user_id, nickname, email, password, twitter_id, facebook_id, drinking;
+@synthesize logged;
 
 @end

@@ -10,7 +10,6 @@
 
 
 @interface User : NSObject {
-
 }
 
 @property (nonatomic, retain) NSString *user_id;
@@ -19,5 +18,7 @@
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, retain) NSString *twitter_id;
 @property (nonatomic, retain) NSString *facebook_id;
+@property (nonatomic) bool drinking;
+@property (nonatomic) bool logged;
 
 @end

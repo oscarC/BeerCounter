@@ -12,7 +12,10 @@
 
 @interface DrinkListTableViewController : UITableViewController {
 	O2Request *request;
+	NSArray *drinksArray;
 }
+
+@property (nonatomic, retain) NSArray *drinksArray;
 
 - (void) drinkList;
 - (void) drinkListResponse;

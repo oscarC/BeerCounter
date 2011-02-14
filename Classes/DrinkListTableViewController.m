@@ -13,6 +13,8 @@
 
 @implementation DrinkListTableViewController
 
+@synthesize drinksArray;
+
 - (void) drinkList {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	[request get:@"Drink/list" withData:data];
@@ -20,8 +22,8 @@
 }
 
 - (void) drinkListResponse {
-	NSDictionary *data = [request data];
-	NSLog(@"%@", data);
+	self.drinksArray = [[request data] copy];
+	[self.tableView reloadData];
 }
 
 
@@ -31,8 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	beerCounterDelegate.navController.navigationItem.title = @"What are you drinking?";
+	//BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	//beerCounterDelegate.navItem.title = @"What are you drinking?";
+	//beerCounterDelegate.navController.title = @"What are you drinking?";
+	self.navigationItem.title = @"What are you drinking?";
 
 	request = [O2Request request];
 	[self drinkList];
@@ -81,22 +85,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 2;
+    return [self.drinksArray count];
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"CellDrinks";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
-    
+	NSDictionary *info = [drinksArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"name"]];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"description"]];
     return cell;
 }
 
@@ -173,6 +179,7 @@
 
 
 - (void)dealloc {
+	[drinksArray release];
 	[request release];
     [super dealloc];
 }
