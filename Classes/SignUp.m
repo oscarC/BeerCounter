@@ -23,6 +23,7 @@
     [super viewDidLoad];
 	self.title = @"Sign Up";
 	self.tableView.allowsSelection = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginEnd" object:signUpFooter];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }

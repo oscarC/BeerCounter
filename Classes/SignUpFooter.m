@@ -8,10 +8,12 @@
 
 #import "SignUpFooter.h"
 #import "O2Request.h"
+#import "BeerCounterAppDelegate.h"
+#import "User.h"
 
 @implementation SignUpFooter
 
-@synthesize email, password, nickname;
+@synthesize email, password, nickname,tabBar,user;
 
 - (IBAction) registerUser:(id)sender {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
@@ -23,9 +25,30 @@
 }
 
 - (void) registerUserResponse {
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
 	NSLog(@"%@", data);
+    int error_code = [[data objectForKey:@"error_code"] intValue];
+     if(error_code==0){
+            BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+            self.tabBar = beerCounterDelegate.tabBar;
+            [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
+            [beerCounterDelegate.navController pushViewController:tabBar animated:true];   
+             NSDictionary *userinfo= [data  objectForKey:@"user"];  
+            self.user.nickname = [userinfo  objectForKey:@"nickname"];
+            self.user.twitter_id = [userinfo objectForKey:@"twitter_id"];
+            self.user.facebook_id = [userinfo objectForKey:@"facebook_id"];
+            self.user.drinking = (bool)[userinfo objectForKey:@"drinking"];
+      }
+   
+    
+    
 }
+
+
+
+
+
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*

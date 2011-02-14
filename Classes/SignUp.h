@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @class SignUpFooter;
-
 @interface SignUp : UITableViewController {
 	UITextField *emailTextField;
 	UITextField *passwordTextField;
