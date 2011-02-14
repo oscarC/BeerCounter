@@ -10,7 +10,7 @@
 
 @class O2Request;
 
-@interface DrinkListTableViewController : UITableViewController {
+@interface DrinkList : UITableViewController {
 	O2Request *request;
 	NSArray *drinksArray;
 }

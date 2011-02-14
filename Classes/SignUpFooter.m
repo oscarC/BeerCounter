@@ -6,10 +6,10 @@
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "SignUpFooterViewController.h"
+#import "SignUpFooter.h"
 #import "O2Request.h"
 
-@implementation SignUpFooterViewController
+@implementation SignUpFooter
 
 @synthesize email, password, nickname;
 

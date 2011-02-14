@@ -7,11 +7,11 @@
 //
 
 #import "BeerCounterAppDelegate.h"
-#import "DrinkListTableViewController.h"
+#import "DrinkList.h"
 #import "O2Request.h"
 
 
-@implementation DrinkListTableViewController
+@implementation DrinkList
 
 @synthesize drinksArray;
 

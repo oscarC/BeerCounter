@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class O2Request;
-@class SignUpTableViewController;
+@class SignUp;
 @class User;
 
-@interface LoginFooterViewController : UIViewController {
+@interface WelcomeFooter : UIViewController {
 	O2Request *request;
-	SignUpTableViewController *signUpView;
+	SignUp *signUpView;
 	UITabBarController *tabBar;
     User *user;
 }
@@ -22,7 +22,7 @@
 @property (nonatomic, retain) User *user;
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *password;
-@property (nonatomic, retain) SignUpTableViewController *signUpView;
+@property (nonatomic, retain) SignUp *signUpView;
 @property (nonatomic, retain) UITabBarController *tabBar;
 
 - (IBAction) login:(id)sender;

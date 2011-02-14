@@ -10,7 +10,7 @@
 
 @class O2Request;
 
-@interface SignUpFooterViewController : UIViewController {
+@interface SignUpFooter : UIViewController {
 	O2Request *request;
 }
 

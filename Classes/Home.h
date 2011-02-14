@@ -10,7 +10,7 @@
 
 @class O2Request;
 
-@interface HomeViewController : UIViewController {
+@interface Home : UIViewController {
     O2Request *request;
     IBOutlet UILabel *labelStatus;
 }

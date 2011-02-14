@@ -6,11 +6,11 @@
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "Home.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
 
-@implementation HomeViewController
+@implementation Home
 
 @synthesize labelStatus;
 

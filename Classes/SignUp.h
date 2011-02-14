@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class SignUpFooterViewController;
+@class SignUpFooter;
 
-@interface SignUpTableViewController : UITableViewController {
+@interface SignUp : UITableViewController {
 	UITextField *emailTextField;
 	UITextField *passwordTextField;
 	UITextField *nicknameTextField;
-	SignUpFooterViewController *signUpFooter;
+	SignUpFooter *signUpFooter;
 }
 
 - (void)setStyles:(UITextField *)textField withTag:(int)tag;

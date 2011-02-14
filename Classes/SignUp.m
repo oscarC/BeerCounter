@@ -6,14 +6,14 @@
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "SignUpTableViewController.h"
-#import "SignUpFooterViewController.h"
+#import "SignUp.h"
+#import "SignUpFooter.h"
 
 #define kSignUpEmailTag	   1
 #define kSignUpPasswordTag 2
 #define kSignUpNicknameTag 3
 
-@implementation SignUpTableViewController
+@implementation SignUp
 
 
 #pragma mark -
@@ -224,7 +224,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection: (NSInteger)section {
 	if (section == 0) {
-		signUpFooter = [[SignUpFooterViewController alloc] init];
+		signUpFooter = [[SignUpFooter alloc] init];
 		return signUpFooter.view;
 	} else {
 		return nil;

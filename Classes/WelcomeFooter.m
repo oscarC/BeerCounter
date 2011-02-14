@@ -6,14 +6,14 @@
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "LoginFooterViewController.h"
-#import "SignUpTableViewController.h"
+#import "WelcomeFooter.h"
+#import "SignUp.h"
 #import "HomeViewController.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
 #import "User.h"
 
-@implementation LoginFooterViewController
+@implementation WelcomeFooter
 
 @synthesize user, username, password;
 @synthesize signUpView, tabBar;
@@ -46,7 +46,7 @@
 }
 
 - (IBAction) gotoSignUp:(id)sender {
-	SignUpTableViewController *_signUpView = [[SignUpTableViewController alloc] initWithNibName:@"SignUpTableViewController" bundle:nil];
+	SignUp *_signUpView = [[SignUp alloc] initWithNibName:@"SignUp" bundle:nil];
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.signUpView = _signUpView;
 	[_signUpView release];
