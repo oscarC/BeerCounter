@@ -8,7 +8,7 @@
 
 #import "WelcomeFooter.h"
 #import "SignUp.h"
-#import "HomeViewController.h"
+#import "Home.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
 #import "User.h"
