@@ -18,7 +18,7 @@
 - (void) drinkList {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	[request get:@"Drink/list" withData:data];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
+	[[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
 }
 
 - (void) drinkListResponse {
