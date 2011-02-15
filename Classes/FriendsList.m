@@ -10,10 +10,29 @@
 #import "BeerCounterAppDelegate.h"
 #import "DrinkList.h"
 #import "O2Request.h"
+#define CONST_textLabelFontSize     15
+#define CONST_detailLabelFontSize   11
 
 @implementation FriendsList
 
 @synthesize usersArray;
+
+static UIFont *subFont;
+static UIFont *titleFont;
+
+
+
+
+
+- (UIFont*) TitleFont {
+	if (!titleFont) titleFont = [UIFont boldSystemFontOfSize:CONST_textLabelFontSize];
+	return titleFont;
+}
+
+- (UIFont*) SubFont {
+	if (!subFont) subFont = [UIFont systemFontOfSize:CONST_detailLabelFontSize];
+	return subFont;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -123,12 +142,22 @@
     
     // Configure the cell...
 	NSDictionary *info = [usersArray objectAtIndex:indexPath.row];
+    cell.textLabel.numberOfLines = 0;
+	cell.textLabel.font = [self TitleFont];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
     NSString *count= [NSString stringWithFormat:@" - Beer count %@", [info objectForKey:@"count"]];
-	NSString *drink_name = [NSString stringWithFormat:@"%@", [info objectForKey:@"drink_name"]];
-	NSString *description = [drink_name stringByAppendingString:count];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",description];
+    NSString *drink_name = [NSString stringWithFormat:@"%@", [info objectForKey:@"drink_name"]];
+    NSString *description = [drink_name stringByAppendingString:count];
+    NSString *location =[info objectForKey:@"location"];
+	
+    cell.detailTextLabel.numberOfLines = 0;
+	cell.detailTextLabel.font = [self SubFont];
+ 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", description, location];
 	return cell;
+    
+  
+	
+    
 }
 
 /*

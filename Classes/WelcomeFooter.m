@@ -13,7 +13,10 @@
 #import "O2Request.h"
 #import "User.h"
 
+
 @implementation WelcomeFooter
+
+
 
 @synthesize user, username, password;
 @synthesize signUpView, tabBar;
@@ -21,11 +24,12 @@
 - (IBAction) login:(id)sender {
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[data setObject:self.username forKey:@"email"];
+	[data setObject:self.username forKey:@"username"];
 	[data setObject:self.password forKey:@"password"];
 	[request post:@"User/authenticate" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginResponse) name:@"O2RequestFinished" object:request];
 }
+
 
 - (void) loginResponse {
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
