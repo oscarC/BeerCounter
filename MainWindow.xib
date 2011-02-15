@@ -53,7 +53,6 @@
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -113,9 +112,9 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="289187135">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="761725474">
-						<string key="IBUITitle">My Drinks</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="322174802">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="34780793">
+						<string key="IBUITitle">Settings</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<reference key="IBUIParentViewController" ref="263743826"/>
@@ -126,7 +125,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="24729213">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="991079532">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -137,13 +136,12 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="547125466">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="393897308">
+						<object class="IBUIViewController" id="28903648">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="831463875">
 								<string key="IBUITitle">Root View Controller</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="289187135"/>
-							<string key="IBUINibName">DrinkList</string>
+							<reference key="IBUIParentViewController" ref="322174802"/>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -207,10 +205,9 @@
 							</object>
 						</object>
 					</object>
-					<reference ref="289187135"/>
-					<object class="IBUINavigationController" id="322174802">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="34780793">
-							<string key="IBUITitle">Settings</string>
+					<object class="IBUINavigationController" id="289187135">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="761725474">
+							<string key="IBUITitle">My Drinks</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="263743826"/>
@@ -221,7 +218,7 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="991079532">
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="24729213">
 							<nil key="NSNextResponder"/>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrameSize">{0, 0}</string>
@@ -232,12 +229,13 @@
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="28903648">
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="831463875">
+							<object class="IBUIViewController" id="547125466">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="393897308">
 									<string key="IBUITitle">Root View Controller</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIParentViewController" ref="322174802"/>
+								<reference key="IBUIParentViewController" ref="289187135"/>
+								<string key="IBUINibName">DrinkList</string>
 								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 									<int key="IBUIInterfaceOrientation">1</int>
 									<int key="interfaceOrientation">1</int>
@@ -247,13 +245,13 @@
 							</object>
 						</object>
 					</object>
+					<reference ref="322174802"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="492725181">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSNextKeyView"/>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MCAwAA</bytes>

@@ -48,6 +48,7 @@
 		3FFC970D130987E9008912E4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC970C130987E9008912E4 /* MainWindow.xib */; };
 		3FFC971113098C44008912E4 /* FriendsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC970F13098C44008912E4 /* FriendsList.m */; };
 		3FFC971213098C44008912E4 /* FriendsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC971013098C44008912E4 /* FriendsList.xib */; };
+		55EF2069130AE080005F584E /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 55EF2068130AE080005F584E /* user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		3FFC970E13098C44008912E4 /* FriendsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsList.h; sourceTree = "<group>"; };
 		3FFC970F13098C44008912E4 /* FriendsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsList.m; sourceTree = "<group>"; };
 		3FFC971013098C44008912E4 /* FriendsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsList.xib; sourceTree = "<group>"; };
+		55EF2068130AE080005F584E /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BeerCounter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BeerCounter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				55EF2063130ADAB5005F584E /* image */,
 				3FC7508C130320F100BE704C /* Helpers */,
 				3FC7500B1303175A00BE704C /* Models */,
 				3FC750171303182000BE704C /* Vendors */,
@@ -455,6 +458,14 @@
 			name = Show;
 			sourceTree = "<group>";
 		};
+		55EF2063130ADAB5005F584E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				55EF2068130AE080005F584E /* user.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +523,7 @@
 				3FAA50F71305CDE300FEA6EE /* DrinkList.xib in Resources */,
 				3FFC970D130987E9008912E4 /* MainWindow.xib in Resources */,
 				3FFC971213098C44008912E4 /* FriendsList.xib in Resources */,
+				55EF2069130AE080005F584E /* user.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

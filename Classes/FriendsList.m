@@ -10,8 +10,8 @@
 #import "BeerCounterAppDelegate.h"
 #import "DrinkList.h"
 #import "O2Request.h"
-#define CONST_textLabelFontSize     15
-#define CONST_detailLabelFontSize   11
+#define CONST_textLabelFontSize     18
+#define CONST_detailLabelFontSize   13
 
 @implementation FriendsList
 
@@ -142,6 +142,10 @@ static UIFont *titleFont;
     
     // Configure the cell...
 	NSDictionary *info = [usersArray objectAtIndex:indexPath.row];
+    // Configure the cell.
+    
+    UIImage *cellImage = [UIImage imageNamed:@"user.png"];
+	cell.imageView.image = cellImage;
     cell.textLabel.numberOfLines = 0;
 	cell.textLabel.font = [self TitleFont];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
@@ -158,6 +162,12 @@ static UIFont *titleFont;
   
 	
     
+}
+
+
+
+- (CGFloat)tableView:(UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *)indexPath    {
+   return 65;
 }
 
 /*
