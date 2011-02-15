@@ -7,9 +7,32 @@
 //
 
 #import "FriendsList.h"
-
+#import "BeerCounterAppDelegate.h"
+#import "DrinkList.h"
+#import "O2Request.h"
+#define CONST_textLabelFontSize     18
+#define CONST_detailLabelFontSize   13
 
 @implementation FriendsList
+
+@synthesize usersArray;
+
+static UIFont *subFont;
+static UIFont *titleFont;
+
+
+
+
+
+- (UIFont*) TitleFont {
+	if (!titleFont) titleFont = [UIFont boldSystemFontOfSize:CONST_textLabelFontSize];
+	return titleFont;
+}
+
+- (UIFont*) SubFont {
+	if (!subFont) subFont = [UIFont systemFontOfSize:CONST_detailLabelFontSize];
+	return subFont;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,15 +58,29 @@
 
 #pragma mark - View lifecycle
 
+
+- (void) userList {
+	NSMutableDictionary *data = [NSMutableDictionary dictionary];
+	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
+	[request get:@"Friends/feeds" withData:data];
+    [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(userListResponse)name:@"O2RequestFinished" object:request];
+}
+
+- (void) userListResponse {
+	self.usersArray = [[request data] copy];
+	[self.tableView reloadData];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userListResponse) name:@"O2RequestFinished" object:request];
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.navigationItem.title=@"Friends";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.title=@"Friends - Feeds";
+    request = [O2Request request];
+    [self userList];
 }
 
 - (void)viewDidUnload
@@ -90,21 +127,47 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [self.usersArray count];;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"CellDrinks";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
+	NSDictionary *info = [usersArray objectAtIndex:indexPath.row];
+    // Configure the cell.
     
-    return cell;
+    UIImage *cellImage = [UIImage imageNamed:@"user.png"];
+	cell.imageView.image = cellImage;
+    cell.textLabel.numberOfLines = 0;
+	cell.textLabel.font = [self TitleFont];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
+    NSString *count=[NSString stringWithFormat:@"%@", [info objectForKey:@"count"]];
+    NSString *drink_name = [NSString stringWithFormat:@" %@", [info objectForKey:@"drink_name"]];
+    NSString *description = [count stringByAppendingString:drink_name];
+    NSString *location =[info objectForKey:@"location"];
+	
+    cell.detailTextLabel.numberOfLines = 0;
+	cell.detailTextLabel.font = [self SubFont];
+ 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", description, location];
+	return cell;
+    
+  
+	
+    
+}
+
+
+
+- (CGFloat)tableView:(UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *)indexPath    {
+   return 65;
 }
 
 /*

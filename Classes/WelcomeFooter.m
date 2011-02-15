@@ -15,9 +15,16 @@
 #import "O2Request.h"
 #import "User.h"
 
+
 @implementation WelcomeFooter
 
+<<<<<<< HEAD
 @synthesize user, username, password, request, facebook;
+=======
+
+
+@synthesize user, username, password;
+>>>>>>> fc2bdcda14e3bc0d1ab40fee0ed3cee1a60dc6a7
 @synthesize signUpView, tabBar;
 
 
@@ -89,17 +96,23 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bcLoginResponse) name:@"O2RequestFinished" object:request];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[data setObject:self.username forKey:@"email"];
+	[data setObject:self.username forKey:@"username"];
 	[data setObject:self.password forKey:@"password"];
 	[request post:@"User/authenticate" withData:data];
 }
 
+<<<<<<< HEAD
 - (void) bcLoginResponse {
+=======
+
+- (void) loginResponse {
+>>>>>>> fc2bdcda14e3bc0d1ab40fee0ed3cee1a60dc6a7
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
     self.user.email = username;
     self.user.password = password;
+<<<<<<< HEAD
     NSLog(@"%d", [data count]);
     int error_code = [[data objectForKey:@"error_code"] intValue];
     if([data count]>0 && error_code==0) {
@@ -112,6 +125,18 @@
         self.user.drinking = (bool)[_user objectForKey:@"drinking"];
         self.user.logged = YES;
         [self gotoDashboard];
+=======
+    int error_code = [[data objectForKey:@"error_code"] intValue];
+	if(error_code==0){
+    	NSDictionary *userinfo= [data  objectForKey:@"user"];
+		self.user.user_id = [userinfo  objectForKey:@"id"];
+		self.user.nickname = [userinfo  objectForKey:@"nickname"];
+		self.user.twitter_id = [userinfo objectForKey:@"twitter_id"];
+		self.user.facebook_id = [userinfo objectForKey:@"facebook_id"];
+		self.user.drinking = (bool)[userinfo objectForKey:@"drinking"];
+		self.user.logged = YES;
+	    [self gotoDashboard];
+>>>>>>> fc2bdcda14e3bc0d1ab40fee0ed3cee1a60dc6a7
     } else {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginError" object:self];
         self.user.logged = NO;

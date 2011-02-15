@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class O2Request;
 
 @interface FriendsList : UITableViewController {
+    O2Request *request;
+	NSArray *usersArray;
 @private
     
 }
+
+@property (nonatomic, retain) NSArray *usersArray;
+
+- (void) userList;
+- (void) userListResponse;
 
 @end

@@ -1,0 +1,4 @@
+./build
+/build/*
+./BeerCounter.xcodeproj
+BeerCounter.xcodeproj
