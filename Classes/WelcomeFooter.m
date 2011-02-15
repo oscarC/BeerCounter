@@ -7,41 +7,113 @@
 //
 
 #import "WelcomeFooter.h"
+#import "AppConfig.h"
 #import "SignUp.h"
 #import "Home.h"
+#import "Counter.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
 #import "User.h"
 
 @implementation WelcomeFooter
 
-@synthesize user, username, password;
+@synthesize user, username, password, request, facebook;
 @synthesize signUpView, tabBar;
 
-- (IBAction) login:(id)sender {
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	request = [O2Request request];
+    self.user = [[User alloc] init];
+	username = @"";
+	password = @"";
+    facebook = [[Facebook alloc] initWithAppId:FB_API_ID];
+}
+
+- (IBAction) fbLogin:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
+    NSArray *permissions = [[NSArray arrayWithObjects:@"read_stream", @"offline_access", nil] retain];
+    [facebook authorize:permissions delegate:self];
+    [permissions release];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bcLoginResponse) name:@"O2RequestFinished" object:self.request];
+}
+
+- (IBAction) fbLogout:(id)sender {
+    [facebook logout:self];
+}
+
+// Facebook methods <FBSessionDelegate>
+
+- (void)fbDidLogin {
+    NSLog(@"login");
+    [facebook requestWithGraphPath:@"me" andDelegate:self];
+    NSLog(@"%@", facebook.accessToken);
+}
+- (void)fbDidNotLogin:(BOOL)cancelled {
+    NSLog(@"not login");
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotLogin" object:self];
+}
+- (void)fbDidLogout {
+    NSLog(@"logout");
+}
+
+// Facebook methods <FBRequestDelegate>
+
+- (void)requestLoading:(FBRequest *)request {
+    
+}
+- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response {
+    
+}
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error {
+    
+}
+- (void)request:(FBRequest *)request didLoad:(id)result {
+    NSLog(@"%@", result);
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bcLoginResponse) name:@"O2RequestFinished" object:self.request];
+    NSString *facebook_id = [result objectForKey:@"id"];
+    NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    [data setObject:facebook_id forKey:@"facebook_id"];
+    [self.request post:@"User/authenticate" withData:data];
+}
+- (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data {
+    NSLog(@"load raw response");
+    NSLog(@"%@", data);
+}
+
+// BeerCounterServer methods
+
+- (IBAction) bcLogin:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginStart" object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bcLoginResponse) name:@"O2RequestFinished" object:request];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	[data setObject:self.username forKey:@"email"];
 	[data setObject:self.password forKey:@"password"];
 	[request post:@"User/authenticate" withData:data];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginResponse) name:@"O2RequestFinished" object:request];
 }
 
-- (void) loginResponse {
+- (void) bcLoginResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
     self.user.email = username;
     self.user.password = password;
-    if([data count] > 0) {
-        NSLog(@"%@", [data objectForKey:@"id"]);
-        self.user.user_id = [data objectForKey:@"id"];
-        self.user.nickname = [data objectForKey:@"nickname"];
-        self.user.twitter_id = [data objectForKey:@"twitter_id"];
-        self.user.facebook_id = [data objectForKey:@"facebook_id"];
-        self.user.drinking = (bool)[data objectForKey:@"drinking"];
+    NSLog(@"%d", [data count]);
+    int error_code = [[data objectForKey:@"error_code"] intValue];
+    if([data count]>0 && error_code==0) {
+        NSDictionary *_user = [data objectForKey:@"user"];
+        NSLog(@"%@", _user);
+        self.user.user_id = [_user objectForKey:@"id"];
+        self.user.nickname = [_user objectForKey:@"nickname"];
+        self.user.twitter_id = [_user objectForKey:@"twitter_id"];
+        self.user.facebook_id = [_user objectForKey:@"facebook_id"];
+        self.user.drinking = (bool)[_user objectForKey:@"drinking"];
         self.user.logged = YES;
         [self gotoDashboard];
     } else {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginError" object:self];
         self.user.logged = NO;
     }
 }
@@ -51,23 +123,26 @@
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.signUpView = _signUpView;
 	[_signUpView release];
-	[beerCounterDelegate.navController pushViewController:_signUpView animated:YES];
+	[beerCounterDelegate.navController pushViewController:_signUpView animated:true];
 }
 
 - (void) gotoDashboard {
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.tabBar = beerCounterDelegate.tabBar;
     beerCounterDelegate.user = self.user;
-    [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
+    if(beerCounterDelegate.user.drinking) {
+        Counter *counter = [[Counter alloc] init];
+        NSMutableArray *viewControllers = (NSMutableArray *)beerCounterDelegate.tabBar.viewControllers;
+        [viewControllers replaceObjectAtIndex:1 withObject:counter];
+        [beerCounterDelegate.tabBar setViewControllers:viewControllers];
+        [counter release];
+    }
+    self.tabBar = beerCounterDelegate.tabBar;
+    [beerCounterDelegate.navController setNavigationBarHidden:true];
 	[beerCounterDelegate.navController pushViewController:tabBar animated:true];
 }
 
 - (void) loginError {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginError" object:self];
-    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.tabBar = [beerCounterDelegate tabBar];
-	[beerCounterDelegate.navController setNavigationBarHidden:TRUE];
-	[beerCounterDelegate.navController pushViewController:tabBar animated:YES];
 }
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -80,15 +155,6 @@
     return self;
 }
 */
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	request = [O2Request request];
-    self.user = [[User alloc] init];
-	username = @"";
-	password = @"";
-}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

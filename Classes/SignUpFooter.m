@@ -23,6 +23,7 @@
 }
 
 - (void) registerUserResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	NSDictionary *data = [request data];
 	NSLog(@"%@", data);
 }

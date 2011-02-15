@@ -1,5 +1,5 @@
 /*
- * Copyright 2009 Facebook
+ * Copyright 2010 Facebook
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,18 @@
  * limitations under the License.
 */
 
-#import "FBConnectGlobal.h"
-
-@interface FBXMLHandler : NSObject {
-  NSMutableArray* _stack;
-  NSMutableArray* _nameStack;
-  id _rootObject;
-  NSString* _rootName;
-  NSMutableString* _chars;
-  NSError* _parseError;
+/**
+ * Standard button which lets the user log in or out of the session.
+ *
+ * The button will automatically change to reflect the state of the session, showing
+ * "login" if the session is not connected, and "logout" if the session is connected.
+ */
+@interface FBLoginButton : UIButton {
+  BOOL  _isLoggedIn;
 }
 
-@property(nonatomic,readonly) id rootObject;
-@property(nonatomic,readonly) NSString* rootName;
-@property(nonatomic,readonly) NSError* parseError;
+@property(nonatomic) BOOL isLoggedIn; 
+
+- (void) updateImage;
 
 @end

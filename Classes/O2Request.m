@@ -118,7 +118,6 @@
 
 - (void) connectionDidFinishLoading: (NSURLConnection*) connection {
 	NSString *response = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", response);
 	parsedData = [response JSONValue];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestFinished" object:self];
 	[response release];

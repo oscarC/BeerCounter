@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class WelcomeFooter;
+#import "WelcomeFooter.h"
 
 @interface Welcome : UITableViewController {
-	WelcomeFooter *welcomeFooter;
+    WelcomeFooter *welcomeFooter;
 }
 
+@property (nonatomic, retain) WelcomeFooter *welcomeFooter;
+
+- (void) showAlert;
 - (void) showLoadingIndicator;
 - (void) hideLoadingIndicator;
 - (void) setStyles:(UITextField *)textField withTag:(int)tag;

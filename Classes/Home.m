@@ -17,7 +17,6 @@
 - (IBAction) startDrinking:(id)sender {
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-    NSLog(@"%@", beerCounterDelegate.user.user_id);
 	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
     [data setObject:@"true" forKey:@"drinking"];
 	[request post:@"User/drinking" withData:data];
@@ -25,6 +24,7 @@
 }
 
 - (void) startDrinkingResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	NSDictionary *data = [request data];
 	NSLog(@"%@", data);
 }
@@ -43,6 +43,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"My Drinks";
     request = [O2Request request];
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
     if(beerCounterDelegate.user.drinking == NO) {

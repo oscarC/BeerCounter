@@ -12,9 +12,13 @@
 @implementation BeerCounterAppDelegate
 
 @synthesize window;
-@synthesize navController, tabBar;
+@synthesize navController, tabBar, welcome;
 @synthesize user;
 
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [welcome.welcomeFooter.facebook handleOpenURL:url];
+}
 
 #pragma mark -
 #pragma mark Application lifecycle

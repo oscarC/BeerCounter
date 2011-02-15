@@ -7,13 +7,14 @@
 //
 
 #import "Welcome.h"
-#import "WelcomeFooter.h"
 
 #define kLoginUsernameTag  1
 #define kLoginPasswordTag  2
 #define kIndicatorLoginTag 3
 
 @implementation Welcome
+
+@synthesize welcomeFooter;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -23,8 +24,15 @@
 	self.title = @"Login";
     self.tableView.allowsSelection = NO;
 	
-	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:welcomeFooter];
-	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:welcomeFooter];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:welcomeFooter];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:welcomeFooter];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAlert) name:@"LoginError" object:welcomeFooter];
+}
+
+- (void) showAlert {
+	UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You have entered a wrong email or password." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
 }
 
 - (void) showLoadingIndicator {
@@ -239,7 +247,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
-			return 102.0;
+			return 148.0;
 		default:
 			return 0.0;
 	}
