@@ -15,7 +15,17 @@
 
 @synthesize email, password, nickname,tabBar,user;
 
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	request = [O2Request request];
+	email = @"";
+	password = @"";
+	nickname = @"";
+}
+
 - (IBAction) registerUser:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RegistrationStart" object:self];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	[data setObject:self.email forKey:@"email"];
 	[data setObject:self.password forKey:@"password"];
@@ -25,33 +35,22 @@
 }
 
 - (void) registerUserResponse {
-<<<<<<< HEAD
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
-=======
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
->>>>>>> fc2bdcda14e3bc0d1ab40fee0ed3cee1a60dc6a7
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RegistrationEnd" object:self];
 	NSDictionary *data = [request data];
     int error_code = [[data objectForKey:@"error_code"] intValue];
-     if(error_code==0){
-            BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-            self.tabBar = beerCounterDelegate.tabBar;
-            [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
-            [beerCounterDelegate.navController pushViewController:tabBar animated:true];   
-             NSDictionary *userinfo= [data  objectForKey:@"user"];  
-            self.user.nickname = [userinfo  objectForKey:@"nickname"];
-            self.user.twitter_id = [userinfo objectForKey:@"twitter_id"];
-            self.user.facebook_id = [userinfo objectForKey:@"facebook_id"];
-            self.user.drinking = (bool)[userinfo objectForKey:@"drinking"];
-      }
-   
-    
-    
+    if(error_code==0){
+        BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+        self.tabBar = beerCounterDelegate.tabBar;
+        [beerCounterDelegate.navController setNavigationBarHidden:TRUE];
+        [beerCounterDelegate.navController pushViewController:tabBar animated:true];   
+        NSDictionary *userinfo= [data  objectForKey:@"user"];  
+        self.user.nickname = [userinfo  objectForKey:@"nickname"];
+        self.user.twitter_id = [userinfo objectForKey:@"twitter_id"];
+        self.user.facebook_id = [userinfo objectForKey:@"facebook_id"];
+        self.user.drinking = (bool)[userinfo objectForKey:@"drinking"];
+    }
 }
-
-
-
-
-
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -63,15 +62,6 @@
     return self;
 }
 */
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	request = [O2Request request];
-	email = @"";
-	password = @"";
-	nickname = @"";
-}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
