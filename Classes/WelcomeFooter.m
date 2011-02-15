@@ -32,6 +32,7 @@
 
 
 - (void) loginResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
     self.user.email = username;

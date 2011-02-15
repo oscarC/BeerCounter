@@ -149,9 +149,9 @@ static UIFont *titleFont;
     cell.textLabel.numberOfLines = 0;
 	cell.textLabel.font = [self TitleFont];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
-    NSString *count= [NSString stringWithFormat:@" - Beer count %@", [info objectForKey:@"count"]];
-    NSString *drink_name = [NSString stringWithFormat:@"%@", [info objectForKey:@"drink_name"]];
-    NSString *description = [drink_name stringByAppendingString:count];
+    NSString *count=[NSString stringWithFormat:@"%@", [info objectForKey:@"count"]];
+    NSString *drink_name = [NSString stringWithFormat:@" %@", [info objectForKey:@"drink_name"]];
+    NSString *description = [count stringByAppendingString:drink_name];
     NSString *location =[info objectForKey:@"location"];
 	
     cell.detailTextLabel.numberOfLines = 0;
