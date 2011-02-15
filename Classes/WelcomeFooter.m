@@ -32,15 +32,16 @@
 	NSDictionary *data = [request data];
     self.user.email = username;
     self.user.password = password;
-    if([data count] > 0) {
-        NSLog(@"%@", [data objectForKey:@"id"]);
-        self.user.user_id = [data objectForKey:@"id"];
-        self.user.nickname = [data objectForKey:@"nickname"];
-        self.user.twitter_id = [data objectForKey:@"twitter_id"];
-        self.user.facebook_id = [data objectForKey:@"facebook_id"];
-        self.user.drinking = (bool)[data objectForKey:@"drinking"];
-        self.user.logged = YES;
-        [self gotoDashboard];
+    int error_code = [[data objectForKey:@"error_code"] intValue];
+	if(error_code==0){
+    	NSDictionary *userinfo= [data  objectForKey:@"user"];
+		self.user.user_id = [userinfo  objectForKey:@"id"];
+		self.user.nickname = [userinfo  objectForKey:@"nickname"];
+		self.user.twitter_id = [userinfo objectForKey:@"twitter_id"];
+		self.user.facebook_id = [userinfo objectForKey:@"facebook_id"];
+		self.user.drinking = (bool)[userinfo objectForKey:@"drinking"];
+		self.user.logged = YES;
+	    [self gotoDashboard];
     } else {
         self.user.logged = NO;
     }

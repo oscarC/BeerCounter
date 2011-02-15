@@ -27,7 +27,6 @@
 - (void) registerUserResponse {
     //[[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 	NSDictionary *data = [request data];
-	NSLog(@"%@", data);
     int error_code = [[data objectForKey:@"error_code"] intValue];
      if(error_code==0){
             BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];

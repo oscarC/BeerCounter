@@ -42,8 +42,9 @@
 
 - (void) userList {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-    [data setObject:@"1" forKey:@"user_id"];
-	[request get:@"User/list" withData:data];
+	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
+	[request get:@"Friends/feeds" withData:data];
     [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(userListResponse)name:@"O2RequestFinished" object:request];
 }
 
@@ -58,7 +59,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.navigationItem.title=@"Friends";
+     self.navigationItem.title=@"Friends - Feeds";
     request = [O2Request request];
     [self userList];
 }
@@ -122,9 +123,12 @@
     
     // Configure the cell...
 	NSDictionary *info = [usersArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"nickname"]];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"email"]];
-    return cell;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
+    NSString *count= [NSString stringWithFormat:@" - Beer count %@", [info objectForKey:@"count"]];
+	NSString *drink_name = [NSString stringWithFormat:@"%@", [info objectForKey:@"drink_name"]];
+	NSString *description = [drink_name stringByAppendingString:count];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",description];
+	return cell;
 }
 
 /*
