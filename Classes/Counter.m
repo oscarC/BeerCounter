@@ -12,10 +12,17 @@
 
 @implementation Counter
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.title = @"My Drinks";
+    request = [O2Request request];
+}
+
 - (IBAction) stopDrinking:(id)sender {
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
+	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
     [data setObject:@"false" forKey:@"drinking"];
 	[request post:@"User/drinking" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopDrinkingResponse) name:@"O2RequestFinished" object:request];
@@ -51,14 +58,6 @@
 }
 
 #pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.title = @"My Drinks";
-    request = [O2Request request];
-    // Do any additional setup after loading the view from its nib.
-}
 
 - (void)viewDidUnload
 {

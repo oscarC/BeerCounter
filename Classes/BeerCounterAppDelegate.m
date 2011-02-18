@@ -8,16 +8,13 @@
 
 #import "BeerCounterAppDelegate.h"
 
-
 @implementation BeerCounterAppDelegate
 
 @synthesize window;
-@synthesize navController, tabBar, welcome;
-@synthesize user;
-
+@synthesize navController, tabBar, auth, welcome;
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [welcome.welcomeFooter.facebook handleOpenURL:url];
+    return [auth.facebook handleOpenURL:url];
 }
 
 #pragma mark -
@@ -28,7 +25,8 @@
     // Override point for customization after application launch.
     [self.window addSubview:navController.view];
     [self.window makeKeyAndVisible];
-    user = [[User alloc] init];
+    auth = [O2Authentication authentication];
+    [auth.twitter cachedUsername];
     
     return YES;
 }
@@ -196,12 +194,11 @@
 
 
 - (void)dealloc {
-    [user release];
+    [auth release];
     [navController release];
     [managedObjectContext_ release];
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
-    
     [window release];
     [super dealloc];
 }

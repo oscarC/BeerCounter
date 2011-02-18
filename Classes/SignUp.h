@@ -9,15 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class SignUpFooter;
+
 @interface SignUp : UITableViewController {
-	UITextField *emailTextField;
-	UITextField *passwordTextField;
-	UITextField *nicknameTextField;
 	SignUpFooter *signUpFooter;
 }
 
-- (void)setStyles:(UITextField *)textField withTag:(int)tag;
-- (void)passValues:(UITextField *)textField;
-- (void)dismissKeyboard:(id)sender;
+@property (nonatomic, retain) SignUpFooter *signUpFooter;
+
+- (void) showAlert:(NSNotification *)note;
+- (void) passValues:(UITextField *)textField;
 
 @end

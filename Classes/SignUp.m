@@ -7,14 +7,19 @@
 //
 
 #import "SignUp.h"
+#import "BeerCounterAppDelegate.h"
 #import "SignUpFooter.h"
-
-#define kSignUpEmailTag	   1
-#define kSignUpPasswordTag 2
-#define kSignUpNicknameTag 3
+#import "O2FormHelper.h"
 
 @implementation SignUp
 
+@synthesize signUpFooter;
+
+- (void) showAlert:(NSNotification *)note {
+	UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:[[note userInfo] valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+}
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -23,9 +28,6 @@
     [super viewDidLoad];
 	self.title = @"Sign Up";
 	self.tableView.allowsSelection = NO;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginEnd" object:signUpFooter];
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 /*
@@ -85,51 +87,25 @@
 		
 		if ([indexPath section] == 0) {
 			
-			if ([indexPath section] == 0) { // Email & Password Section
-				if ([indexPath row] == 0) { // Username row
-					emailTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
-					[self setStyles:emailTextField withTag:kSignUpEmailTag];
-					emailTextField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
-					emailTextField.keyboardType = UIKeyboardTypeEmailAddress;
-					emailTextField.returnKeyType = UIReturnKeyNext;
-					[emailTextField addTarget:self
-										  action:@selector(dismissKeyboard:)
-								forControlEvents:UIControlEventEditingDidEndOnExit];
-					[emailTextField addTarget:self
-										  action:@selector(passValues:)
-								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:emailTextField];
-					[emailTextField release];
-				} else if ([indexPath row] == 1) { // Password row
-					passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
-					[self setStyles:passwordTextField withTag:kSignUpPasswordTag];
-					passwordTextField.placeholder = [NSString stringWithFormat:@"Required"];
-					passwordTextField.keyboardType = UIKeyboardTypeDefault;
-					passwordTextField.returnKeyType = UIReturnKeyNext;
-					passwordTextField.secureTextEntry = YES;
-					[passwordTextField addTarget:self
-										  action:@selector(dismissKeyboard:)
-								forControlEvents:UIControlEventEditingDidEndOnExit];
-					[passwordTextField addTarget:self
-										  action:@selector(passValues:)
-								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:passwordTextField];
-					[passwordTextField release];
-				} else if ([indexPath row] == 2) { // Password row
-					nicknameTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
-					[self setStyles:nicknameTextField withTag:kSignUpNicknameTag];
-					nicknameTextField.placeholder = [NSString stringWithFormat:@"Required"];
-					nicknameTextField.keyboardType = UIKeyboardTypeDefault;
-					nicknameTextField.returnKeyType = UIReturnKeyDone;
-					[nicknameTextField addTarget:self
-										  action:@selector(dismissKeyboard:)
-								forControlEvents:UIControlEventEditingDidEndOnExit];
-					[nicknameTextField addTarget:self
-										  action:@selector(passValues:)
-								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:nicknameTextField];
-					[nicknameTextField release];
+			if ([indexPath section] == 0) {
+                UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+				if ([indexPath row] == 0) { // Email row
+					[O2FormHelper setStyles:textField withTag:TAG_TF_SIGN_UP_EMAIL];
+					textField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
+					textField.keyboardType = UIKeyboardTypeEmailAddress;
+				} else if ([indexPath row] == 1) {  // Password row
+					[O2FormHelper setStyles:textField withTag:TAG_TF_SIGN_UP_PASSWORD];
+					textField.placeholder = [NSString stringWithFormat:@"Required"];
+					textField.keyboardType = UIKeyboardTypeDefault;
+					textField.secureTextEntry = YES;
+				} else if ([indexPath row] == 2) { // Username row
+					[O2FormHelper setStyles:textField withTag:TAG_TF_SIGN_UP_USERNAME];
+					textField.placeholder = [NSString stringWithFormat:@"Required"];
+					textField.keyboardType = UIKeyboardTypeDefault;
 				}
+                [textField addTarget:self action:@selector(passValues:) forControlEvents:UIControlEventEditingChanged];
+                [cell addSubview:textField];
+                [textField release];
 			}
 		}
 	}
@@ -138,38 +114,23 @@
 			cell.textLabel.text = @"Email";
 		} else if ([indexPath row] == 1) { // Password
 			cell.textLabel.text = @"Password";
-		} else if ([indexPath row] == 2) { // Nickname
-			cell.textLabel.text = @"Nickname";
+		} else if ([indexPath row] == 2) { // Username
+			cell.textLabel.text = @"Username";
 		}
 	}
 	return cell;
 }
 
-- (void)setStyles:(UITextField *)textField withTag:(int)tag {
-	textField.adjustsFontSizeToFitWidth = YES;
-	textField.textColor = [UIColor blackColor];
-	textField.backgroundColor = [UIColor whiteColor];
-	textField.autocorrectionType = UITextAutocorrectionTypeNo; // no auto correction support
-	textField.autocapitalizationType = UITextAutocapitalizationTypeNone; // no auto capitalization support
-	textField.textAlignment = UITextAlignmentLeft;
-	textField.tag = tag;
-	textField.clearButtonMode = UITextFieldViewModeNever; // no clear 'x' button to the right
-	textField.enabled = YES;
-	//textField.delegate = self;
-}
-
 - (void)passValues:(UITextField *)textField {
-	if (textField.tag == kSignUpEmailTag) {
-		signUpFooter.email = [textField.text copy];
-	} else if (textField.tag == kSignUpPasswordTag) {
-		signUpFooter.password = [textField.text copy];
-	} else if (textField.tag == kSignUpNicknameTag) {
-		signUpFooter.nickname = [textField.text copy];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    User *user = beerCounterDelegate.auth.user;
+	if (textField.tag == TAG_TF_SIGN_UP_EMAIL) {
+		user.email = [textField.text copy];
+	} else if (textField.tag == TAG_TF_SIGN_UP_PASSWORD) {
+		user.password = [textField.text copy];
+	} else if (textField.tag == TAG_TF_SIGN_UP_USERNAME) {
+		user.username = [textField.text copy];
 	}
-}
-
-- (void)dismissKeyboard:(id)sender {
-	[sender resignFirstResponder];
 }
 
 /*

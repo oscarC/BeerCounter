@@ -1,28 +1,33 @@
 //
-//  FriendsList.m
+//  FriendsFeed.m
 //  BeerCounter
 //
 //  Created by Oscar De Moya on 2/14/11.
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "FriendsList.h"
+#import "FriendFeeds.h"
 #import "BeerCounterAppDelegate.h"
 #import "DrinkList.h"
 #import "O2Request.h"
+
 #define CONST_textLabelFontSize     18
 #define CONST_detailLabelFontSize   13
 
-@implementation FriendsList
+@implementation FriendFeeds
 
 @synthesize usersArray;
 
 static UIFont *subFont;
 static UIFont *titleFont;
 
-
-
-
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.navigationItem.title = @"Friend Feeds";
+    request = [O2Request request];
+    [self userList];
+}
 
 - (UIFont*) TitleFont {
 	if (!titleFont) titleFont = [UIFont boldSystemFontOfSize:CONST_textLabelFontSize];
@@ -62,25 +67,15 @@ static UIFont *titleFont;
 - (void) userList {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
 	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
+	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
 	[request get:@"Friends/feeds" withData:data];
     [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(userListResponse)name:@"O2RequestFinished" object:request];
 }
 
 - (void) userListResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];    
 	self.usersArray = [[request data] copy];
 	[self.tableView reloadData];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userListResponse) name:@"O2RequestFinished" object:request];
-}
-
-
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-     self.navigationItem.title=@"Friends - Feeds";
-    request = [O2Request request];
-    [self userList];
 }
 
 - (void)viewDidUnload
@@ -127,7 +122,7 @@ static UIFont *titleFont;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.usersArray count];;
+    return [self.usersArray count];
 }
 
 // Customize the appearance of table view cells.
@@ -158,10 +153,6 @@ static UIFont *titleFont;
 	cell.detailTextLabel.font = [self SubFont];
  	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", description, location];
 	return cell;
-    
-  
-	
-    
 }
 
 

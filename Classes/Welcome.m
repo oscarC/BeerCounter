@@ -7,10 +7,8 @@
 //
 
 #import "Welcome.h"
-
-#define kLoginUsernameTag  1
-#define kLoginPasswordTag  2
-#define kIndicatorLoginTag 3
+#import "BeerCounterAppDelegate.h"
+#import "O2FormHelper.h"
 
 @implementation Welcome
 
@@ -21,30 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.title = @"Login";
+	self.title = @"Beer Counter";
     self.tableView.allowsSelection = NO;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:welcomeFooter];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:welcomeFooter];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAlert) name:@"LoginError" object:welcomeFooter];
-}
-
-- (void) showAlert {
-	UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You have entered a wrong email or password." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[alertView show];
-	[alertView release];
 }
 
 - (void) showLoadingIndicator {
 	UIActivityIndicatorView  *av = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
 	av.frame = CGRectMake(145, 160, 25, 25);
-	av.tag   = kIndicatorLoginTag;
+	av.tag   = TAG_INDICATOR_LOGIN;
 	[self.view addSubview:av];		
 	[av startAnimating];
 }
 
 - (void) hideLoadingIndicator {
-	UIActivityIndicatorView *av = (UIActivityIndicatorView *)[self.view viewWithTag:kIndicatorLoginTag];
+	UIActivityIndicatorView *av = (UIActivityIndicatorView *)[self.view viewWithTag:TAG_INDICATOR_LOGIN];
 	[av stopAnimating];
 	[av removeFromSuperview];
 }	
@@ -109,37 +100,22 @@
 			if ([indexPath section] == 0) { // Email & Password Section
                 UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
 				if ([indexPath row] == 0) { // Username row
-					[self setStyles:textField withTag:kLoginUsernameTag];
+					[O2FormHelper setStyles:textField withTag:TAG_TF_LOGIN_USERNAME];
 					textField.placeholder = [NSString stringWithFormat:@"example@gmail.com"];
 					textField.keyboardType = UIKeyboardTypeEmailAddress;
-					textField.returnKeyType = UIReturnKeyNext;
-					[textField addTarget:self
-										action:@selector(dismissKeyboard:)
-										forControlEvents:UIControlEventEditingDidEndOnExit];
-					[textField addTarget:self
-										  action:@selector(passValues:)
-								forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:textField];
-
 				} else { // Password row
-					[self setStyles:textField withTag:kLoginPasswordTag];
+					[O2FormHelper setStyles:textField withTag:TAG_TF_LOGIN_PASSWORD];
 					textField.placeholder = [NSString stringWithFormat:@"Required"];
 					textField.keyboardType = UIKeyboardTypeDefault;
-					textField.returnKeyType = UIReturnKeyDone;
 					textField.secureTextEntry = YES;
-					[textField addTarget:self
-										  action:@selector(dismissKeyboard:)
-										  forControlEvents:UIControlEventEditingDidEndOnExit];
-					[textField addTarget:self
-										  action:@selector(passValues:)
-										  forControlEvents:UIControlEventEditingChanged];
-					[cell addSubview:textField];
 				}
+                [textField addTarget:self action:@selector(passValues:) forControlEvents:UIControlEventEditingChanged];
+                [cell addSubview:textField];
                 [textField release];
 			}
 		}
 	}
-	if ([indexPath section] == 0) { // Email & Password Section
+	if ([indexPath section] == 0) {
 		if ([indexPath row] == 0) { // Email
 			cell.textLabel.text = @"Email";
 		} else {
@@ -149,29 +125,24 @@
 	return cell;    
 }
 
-- (void)setStyles:(UITextField *)textField withTag:(int)tag {
-	textField.adjustsFontSizeToFitWidth = YES;
-	textField.textColor = [UIColor blackColor];
-	textField.backgroundColor = [UIColor whiteColor];
-	textField.autocorrectionType = UITextAutocorrectionTypeNo; // no auto correction support
-	textField.autocapitalizationType = UITextAutocapitalizationTypeNone; // no auto capitalization support
-	textField.textAlignment = UITextAlignmentLeft;
-	textField.tag = tag;
-	textField.clearButtonMode = UITextFieldViewModeNever; // no clear 'x' button to the right
-	textField.enabled = YES;
-	//textField.delegate = self;
-}
-
 - (void)passValues:(UITextField *)textField {
-	if (textField.tag == kLoginUsernameTag) {
-		welcomeFooter.username = [textField.text copy];
-	} else if (textField.tag == kLoginPasswordTag) {
-		welcomeFooter.password = [textField.text copy];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    User *user = beerCounterDelegate.auth.user;
+	if (textField.tag == TAG_TF_LOGIN_USERNAME) {
+		user.username = [textField.text copy];
+	} else if (textField.tag == TAG_TF_LOGIN_PASSWORD) {
+		user.password = [textField.text copy];
 	}
 }
 
-- (void)dismissKeyboard:(id)sender {
-	[sender resignFirstResponder];
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	if(section == 0) {
+		return @"Login";
+	} else {
+		return @"";
+	}
+	
 }
 
 /*
@@ -247,7 +218,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
-			return 148.0;
+			return 200.0;
 		default:
 			return 0.0;
 	}

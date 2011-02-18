@@ -16,11 +16,8 @@
 
 @property (nonatomic, retain) WelcomeFooter *welcomeFooter;
 
-- (void) showAlert;
 - (void) showLoadingIndicator;
 - (void) hideLoadingIndicator;
-- (void) setStyles:(UITextField *)textField withTag:(int)tag;
 - (void) passValues:(UITextField *)textField;
-- (void) dismissKeyboard:(id)sender;
 
 @end

@@ -17,7 +17,7 @@
 - (IBAction) startDrinking:(id)sender {
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[data setObject:beerCounterDelegate.user.user_id forKey:@"user_id"];
+	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
     [data setObject:@"true" forKey:@"drinking"];
 	[request post:@"User/drinking" withData:data];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startDrinkingResponse) name:@"O2RequestFinished" object:request];
@@ -46,7 +46,7 @@
     self.title = @"My Drinks";
     request = [O2Request request];
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    if(beerCounterDelegate.user.drinking == NO) {
+    if(beerCounterDelegate.auth.user.drinking == NO) {
         labelStatus.text = @"You're not currently drinking.";
     } else {
         

@@ -1,5 +1,5 @@
 //
-//  FriendsList.h
+//  FriendsFeed.h
 //  BeerCounter
 //
 //  Created by Oscar De Moya on 2/14/11.
@@ -10,11 +10,9 @@
 
 @class O2Request;
 
-@interface FriendsList : UITableViewController {
+@interface FriendFeeds : UITableViewController {
     O2Request *request;
 	NSArray *usersArray;
-@private
-    
 }
 
 @property (nonatomic, retain) NSArray *usersArray;

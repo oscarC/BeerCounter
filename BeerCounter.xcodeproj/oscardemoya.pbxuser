@@ -1,29 +1,14 @@
 // !$*UTF8*$!
 {
-	1D3623240D0F684500981E51 /* BeerCounterAppDelegate.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 538}}";
-			sepNavSelRange = "{758, 0}";
-			sepNavVisRange = "{0, 1096}";
-		};
-	};
-	1D3623250D0F684500981E51 /* BeerCounterAppDelegate.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 2769}}";
-			sepNavSelRange = "{281, 0}";
-			sepNavVisRange = "{697, 1798}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
 	1D6058900D05DD3D006BFB54 /* BeerCounter */ = {
 		activeExec = 0;
 		executables = (
-			3F2349EE1301DCB500D116A3 /* BeerCounter */,
+			3FADE380130B18030067B564 /* BeerCounter */,
 		);
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 3F2349EE1301DCB500D116A3 /* BeerCounter */;
+		activeExecutable = 3FADE380130B18030067B564 /* BeerCounter */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* BeerCounter */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* BeerCounter */,
@@ -32,7 +17,7 @@
 		);
 		codeSenseManager = 3F2349F51301DCD400D116A3 /* Code sense */;
 		executables = (
-			3F2349EE1301DCB500D116A3 /* BeerCounter */,
+			3FADE380130B18030067B564 /* BeerCounter */,
 		);
 		perUserDictionary = {
 			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
@@ -81,10 +66,33 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319146380;
-			PBXWorkspaceStateSaveDate = 319146380;
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					687,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319580798;
+			PBXWorkspaceStateSaveDate = 319580798;
 		};
 		perUserProjectItems = {
+			3FA8C06F130C6B0900D0387E /* PBXTextBookmark */ = 3FA8C06F130C6B0900D0387E /* PBXTextBookmark */;
 			3FAA4F0313059FE600FEA6EE /* PBXTextBookmark */ = 3FAA4F0313059FE600FEA6EE /* PBXTextBookmark */;
 			3FAA4F0413059FE600FEA6EE /* PBXTextBookmark */ = 3FAA4F0413059FE600FEA6EE /* PBXTextBookmark */;
 			3FAA4F0513059FE600FEA6EE /* PBXTextBookmark */ = 3FAA4F0513059FE600FEA6EE /* PBXTextBookmark */;
@@ -112,77 +120,16 @@
 			3FAA541C130620E400FEA6EE /* PBXTextBookmark */ = 3FAA541C130620E400FEA6EE /* PBXTextBookmark */;
 			3FAA542C13062CFA00FEA6EE /* PBXTextBookmark */ = 3FAA542C13062CFA00FEA6EE /* PBXTextBookmark */;
 			3FAA542D13062CFA00FEA6EE /* PBXTextBookmark */ = 3FAA542D13062CFA00FEA6EE /* PBXTextBookmark */;
-			3FAA54331306C96D00FEA6EE /* PBXTextBookmark */ = 3FAA54331306C96D00FEA6EE /* PBXTextBookmark */;
+			3FADE385130B181B0067B564 /* PBXTextBookmark */ = 3FADE385130B181B0067B564 /* PBXTextBookmark */;
+			3FADE3A7130B19190067B564 /* PlistBookmark */ = 3FADE3A7130B19190067B564 /* PlistBookmark */;
+			3FADE3A8130B19190067B564 /* PBXTextBookmark */ = 3FADE3A8130B19190067B564 /* PBXTextBookmark */;
+			3FADE3B8130B19320067B564 /* PBXTextBookmark */ = 3FADE3B8130B19320067B564 /* PBXTextBookmark */;
 			3FC7506713031C1C00BE704C /* PlistBookmark */ = 3FC7506713031C1C00BE704C /* PlistBookmark */;
 			3FC750BB130324C400BE704C /* PBXTextBookmark */ = 3FC750BB130324C400BE704C /* PBXTextBookmark */;
 			3FD73F3D13047E200098BE6B /* PBXTextBookmark */ = 3FD73F3D13047E200098BE6B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3F2349F41301DCD400D116A3 /* Source Control */;
 		userBuildSettings = {
-		};
-	};
-	29B97316FDCFA39411CA2CEA /* main.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 234}}";
-			sepNavSelRange = "{260, 0}";
-			sepNavVisRange = "{0, 357}";
-		};
-	};
-	3F2349EE1301DCB500D116A3 /* BeerCounter */ = {
-		isa = PBXExecutable;
-		activeArgIndices = (
-		);
-		argumentStrings = (
-		);
-		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
-		configStateDict = {
-		};
-		customDataFormattersEnabled = 1;
-		dataTipCustomDataFormattersEnabled = 1;
-		dataTipShowTypeColumn = 1;
-		dataTipSortType = 0;
-		debuggerPlugin = GDBDebugging;
-		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
-		enableDebugStr = 1;
-		environmentEntries = (
-		);
-		executableSystemSymbolLevel = 0;
-		executableUserSymbolLevel = 0;
-		libgmallocEnabled = 0;
-		name = BeerCounter;
-		savedGlobals = {
-		};
-		showTypeColumn = 0;
-		sourceDirectories = (
-		);
-		variableFormatDictionary = {
-			$cs = 1;
-			$ds = 1;
-			$eax = 1;
-			$ebp = 1;
-			$ebx = 1;
-			$ecx = 1;
-			$edi = 1;
-			$edx = 1;
-			$eflags = 1;
-			$eip = 1;
-			$es = 1;
-			$esi = 1;
-			$esp = 1;
-			$fctrl = 1;
-			$fioff = 1;
-			$fiseg = 1;
-			$fooff = 1;
-			$fop = 1;
-			$foseg = 1;
-			$fs = 1;
-			$fstat = 1;
-			$ftag = 1;
-			$gs = 1;
-			$mxcsr = 1;
-			$ss = 1;
 		};
 	};
 	3F2349F41301DCD400D116A3 /* Source Control */ = {
@@ -199,26 +146,18 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	3F234A5313020AD100D116A3 /* WelcomeTableViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 538}}";
-			sepNavSelRange = "{378, 0}";
-			sepNavVisRange = "{0, 599}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */ = {
-		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7247, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7298, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7348, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8578}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1041, 3471}}";
-			sepNavSelRange = "{1464, 0}";
-			sepNavVisRange = "{2233, 1764}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
+	3FA8C06F130C6B0900D0387E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB2DD61130B03E100D76AD5 /* Home.m */;
+		name = "Home.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1401;
+		vrLoc = 0;
 	};
 	3FAA4F0313059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F111304746C0098BE6B /* JSON.h */;
 		name = "JSON.h: 47";
 		rLen = 18;
 		rLoc = 2221;
@@ -228,7 +167,6 @@
 	};
 	3FAA4F0413059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */;
 		name = "NSObject+SBJSON.h: 24";
 		rLen = 0;
 		rLoc = 1231;
@@ -238,7 +176,6 @@
 	};
 	3FAA4F0513059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */;
 		name = "NSObject+SBJSON.m: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -248,7 +185,6 @@
 	};
 	3FAA4F0913059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F181304746C0098BE6B /* SBJsonBase.h */;
 		name = "SBJsonBase.h: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -258,7 +194,6 @@
 	};
 	3FAA4F0A13059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F1A1304746C0098BE6B /* SBJsonParser.h */;
 		name = "SBJsonParser.h: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -268,7 +203,6 @@
 	};
 	3FAA4F0B13059FE600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F1B1304746C0098BE6B /* SBJsonParser.m */;
 		name = "SBJsonParser.m: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -276,26 +210,8 @@
 		vrLen = 735;
 		vrLoc = 12142;
 	};
-	3FAA50F31305CDE300FEA6EE /* DrinkListTableViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 538}}";
-			sepNavSelRange = "{351, 11}";
-			sepNavVisRange = "{0, 419}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */ = {
-		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{4700, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{4751, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{4801, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 5546}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {985, 2535}}";
-			sepNavSelRange = "{666, 0}";
-			sepNavVisRange = "{327, 417}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
 	3FAA514B1305DFC500FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC75004130316D300BE704C /* SignUpTableViewController.h */;
 		name = "SignUpTableViewController.h: 16";
 		rLen = 0;
 		rLoc = 360;
@@ -305,7 +221,6 @@
 	};
 	3FAA514E1305DFC500FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73EFD130453490098BE6B /* AppConfig.h */;
 		name = "AppConfig.h: 14";
 		rLen = 0;
 		rLoc = 284;
@@ -315,7 +230,6 @@
 	};
 	3FAA51511305DFC500FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC7530413034B8600BE704C /* SignUpFooterViewController.h */;
 		name = "SignUpFooterViewController.h: 14";
 		rLen = 0;
 		rLoc = 275;
@@ -325,7 +239,6 @@
 	};
 	3FAA52481305EB1200FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F171304746C0098BE6B /* SBJSON.m */;
 		name = "SBJSON.m: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -335,7 +248,6 @@
 	};
 	3FAA52491305EB1200FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F161304746C0098BE6B /* SBJSON.h */;
 		name = "SBJSON.h: 1";
 		rLen = 0;
 		rLoc = 0;
@@ -345,7 +257,6 @@
 	};
 	3FAA524A1305EB1200FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F141304746C0098BE6B /* NSString+SBJSON.h */;
 		name = "NSString+SBJSON.h: 35";
 		rLen = 0;
 		rLoc = 1681;
@@ -355,7 +266,6 @@
 	};
 	3FAA524B1305EB1200FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F151304746C0098BE6B /* NSString+SBJSON.m */;
 		name = "NSString+SBJSON.m: 46";
 		rLen = 0;
 		rLoc = 1923;
@@ -365,7 +275,6 @@
 	};
 	3FAA52641305EBDC00FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FAD9CD41304103F00FBAF0C /* HomeViewController.m */;
 		name = "HomeViewController.m: 13";
 		rLen = 0;
 		rLoc = 213;
@@ -375,7 +284,6 @@
 	};
 	3FAA52A91305F92600FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F66130482EB0098BE6B /* O2Request.m */;
 		name = "O2Request.m: 127";
 		rLen = 0;
 		rLoc = 4407;
@@ -385,7 +293,6 @@
 	};
 	3FAA52E81306027400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FD73F65130482EB0098BE6B /* O2Request.h */;
 		name = "O2Request.h: 13";
 		rLen = 0;
 		rLoc = 210;
@@ -395,7 +302,6 @@
 	};
 	3FAA536A130607E800FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3F234A5413020AD100D116A3 /* WelcomeTableViewController.m */;
 		name = "WelcomeTableViewController.m: 45";
 		rLen = 0;
 		rLoc = 1464;
@@ -405,7 +311,6 @@
 	};
 	3FAA536B130607E800FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC75005130316D300BE704C /* SignUpTableViewController.m */;
 		name = "SignUpTableViewController.m: 97";
 		rLen = 0;
 		rLoc = 2921;
@@ -415,7 +320,6 @@
 	};
 	3FAA538A13060DB200FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FAD9CD31304103F00FBAF0C /* HomeViewController.h */;
 		name = "HomeViewController.h: 13";
 		rLen = 0;
 		rLoc = 222;
@@ -425,7 +329,6 @@
 	};
 	3FAA53DC1306176900FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FAA50F41305CDE300FEA6EE /* DrinkListTableViewController.m */;
 		name = "DrinkListTableViewController.m: 51";
 		rLen = 0;
 		rLoc = 1426;
@@ -435,7 +338,6 @@
 	};
 	3FAA5418130620E400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FAA50F31305CDE300FEA6EE /* DrinkListTableViewController.h */;
 		name = "DrinkListTableViewController.h: 18";
 		rLen = 11;
 		rLoc = 351;
@@ -445,7 +347,6 @@
 	};
 	3FAA5419130620E400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3F234A5313020AD100D116A3 /* WelcomeTableViewController.h */;
 		name = "WelcomeTableViewController.h: 16";
 		rLen = 0;
 		rLoc = 378;
@@ -455,7 +356,6 @@
 	};
 	3FAA541A130620E400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC74E641302DC6400BE704C /* LoginFooterViewController.h */;
 		name = "LoginFooterViewController.h: 29";
 		rLen = 0;
 		rLoc = 723;
@@ -465,7 +365,6 @@
 	};
 	3FAA541B130620E400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC74E651302DC6400BE704C /* LoginFooterViewController.m */;
 		name = "LoginFooterViewController.m: 36";
 		rLen = 0;
 		rLoc = 1123;
@@ -475,7 +374,6 @@
 	};
 	3FAA541C130620E400FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* BeerCounterAppDelegate.h */;
 		name = "BeerCounterAppDelegate.h: 25";
 		rLen = 0;
 		rLoc = 758;
@@ -485,7 +383,6 @@
 	};
 	3FAA542C13062CFA00FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* BeerCounterAppDelegate.m */;
 		name = "BeerCounterAppDelegate.m: 17";
 		rLen = 0;
 		rLoc = 281;
@@ -495,7 +392,6 @@
 	};
 	3FAA542D13062CFA00FEA6EE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC7530513034B8600BE704C /* SignUpFooterViewController.m */;
 		name = "SignUpFooterViewController.m: 44";
 		rLen = 30;
 		rLoc = 1368;
@@ -503,90 +399,97 @@
 		vrLen = 1458;
 		vrLoc = 214;
 	};
-	3FAA54331306C96D00FEA6EE /* PBXTextBookmark */ = {
+	3FADE380130B18030067B564 /* BeerCounter */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = BeerCounter;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	3FADE385130B181B0067B564 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* BeerCounterAppDelegate.h */;
-		name = "BeerCounterAppDelegate.h: 25";
+		fRef = 3FB2DD74130B045B00D76AD5 /* main.m */;
+		name = "main.m: 1";
 		rLen = 0;
-		rLoc = 758;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 1096;
+		vrLen = 359;
 		vrLoc = 0;
 	};
-	3FAD9CD31304103F00FBAF0C /* HomeViewController.h */ = {
+	3FADE3A7130B19190067B564 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3FB2DD76130B046700D76AD5 /* BeerCounter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/oscardemoya/Documents/iPhone/BeerCounter/BeerCounter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	3FADE3A8130B19190067B564 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB2DD60130B03E100D76AD5 /* Home.h */;
+		name = "Home.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 418;
+		vrLoc = 0;
+	};
+	3FADE3B8130B19320067B564 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB2DD61130B03E100D76AD5 /* Home.m */;
+		name = "Home.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1402;
+		vrLoc = 0;
+	};
+	3FB2DD60130B03E100D76AD5 /* Home.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1220, 595}}";
-			sepNavSelRange = "{226, 5}";
-			sepNavVisRange = "{0, 231}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
+			sepNavIntBoundsRect = "{{0, 0}, {905, 536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 418}";
 		};
 	};
-	3FAD9CD41304103F00FBAF0C /* HomeViewController.m */ = {
+	3FB2DD61130B03E100D76AD5 /* Home.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 767}}";
-			sepNavSelRange = "{213, 0}";
-			sepNavVisRange = "{0, 731}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1053}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1401}";
 		};
 	};
-	3FC74E641302DC6400BE704C /* LoginFooterViewController.h */ = {
+	3FB2DD74130B045B00D76AD5 /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 538}}";
-			sepNavSelRange = "{723, 0}";
-			sepNavVisRange = "{0, 729}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC74E651302DC6400BE704C /* LoginFooterViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1196}}";
-			sepNavSelRange = "{1123, 0}";
-			sepNavVisRange = "{544, 1814}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC75004130316D300BE704C /* SignUpTableViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 362}}";
-			sepNavSelRange = "{360, 0}";
-			sepNavVisRange = "{0, 565}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC75005130316D300BE704C /* SignUpTableViewController.m */ = {
-		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7616, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7667, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7717, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8888}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {908, 3393}}";
-			sepNavSelRange = "{2921, 0}";
-			sepNavVisRange = "{1611, 2081}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC7500C1303178000BE704C /* User.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 332}}";
-			sepNavSelRange = "{199, 300}";
-			sepNavVisRange = "{0, 506}";
-		};
-	};
-	3FC7500D1303178000BE704C /* User.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 383}}";
-			sepNavSelRange = "{171, 0}";
-			sepNavVisRange = "{0, 310}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC750221303183B00BE704C /* FacebookAgent.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {957, 6851}}";
-			sepNavSelRange = "{5415, 0}";
-			sepNavVisRange = "{5208, 442}";
+			sepNavIntBoundsRect = "{{0, 0}, {905, 536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 359}";
 		};
 	};
 	3FC7506713031C1C00BE704C /* PlistBookmark */ = {
 		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* BeerCounter-Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
@@ -597,7 +500,6 @@
 	};
 	3FC750BB130324C400BE704C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC7500C1303178000BE704C /* User.h */;
 		name = "User.h: 16";
 		rLen = 300;
 		rLoc = 199;
@@ -605,128 +507,13 @@
 		vrLen = 506;
 		vrLoc = 0;
 	};
-	3FC7530413034B8600BE704C /* SignUpFooterViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 339}}";
-			sepNavSelRange = "{275, 0}";
-			sepNavVisRange = "{0, 529}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FC7530513034B8600BE704C /* SignUpFooterViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 936}}";
-			sepNavSelRange = "{1368, 30}";
-			sepNavVisRange = "{214, 1458}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FD73EFD130453490098BE6B /* AppConfig.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 339}}";
-			sepNavSelRange = "{284, 0}";
-			sepNavVisRange = "{0, 395}";
-		};
-	};
-	3FD73F111304746C0098BE6B /* JSON.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 663}}";
-			sepNavSelRange = "{2221, 18}";
-			sepNavVisRange = "{1282, 1015}";
-		};
-	};
-	3FD73F121304746C0098BE6B /* NSObject+SBJSON.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 897}}";
-			sepNavSelRange = "{1231, 0}";
-			sepNavVisRange = "{1893, 668}";
-		};
-	};
-	3FD73F131304746C0098BE6B /* NSObject+SBJSON.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 702}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1510, 696}";
-		};
-	};
-	3FD73F141304746C0098BE6B /* NSString+SBJSON.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 767}}";
-			sepNavSelRange = "{1681, 0}";
-			sepNavVisRange = "{1549, 777}";
-		};
-	};
-	3FD73F151304746C0098BE6B /* NSString+SBJSON.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 728}}";
-			sepNavSelRange = "{1923, 0}";
-			sepNavVisRange = "{1519, 654}";
-		};
-	};
-	3FD73F161304746C0098BE6B /* SBJSON.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 962}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1554, 762}";
-		};
-	};
-	3FD73F171304746C0098BE6B /* SBJSON.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 2613}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2547, 1116}";
-		};
-	};
-	3FD73F181304746C0098BE6B /* SBJsonBase.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 949}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1510}";
-		};
-	};
-	3FD73F1A1304746C0098BE6B /* SBJsonParser.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 1144}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2281, 802}";
-		};
-	};
-	3FD73F1B1304746C0098BE6B /* SBJsonParser.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {929, 6162}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{12142, 735}";
-		};
-	};
 	3FD73F3D13047E200098BE6B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3FC7500D1303178000BE704C /* User.m */;
 		name = "User.m: 14";
 		rLen = 0;
 		rLoc = 171;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 0;
-	};
-	3FD73F65130482EB0098BE6B /* O2Request.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 538}}";
-			sepNavSelRange = "{210, 0}";
-			sepNavVisRange = "{0, 838}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	3FD73F66130482EB0098BE6B /* O2Request.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1220, 1742}}";
-			sepNavSelRange = "{4282, 0}";
-			sepNavVisRange = "{3224, 1369}";
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
-	};
-	8D1107310486CEB800E47090 /* BeerCounter-Info.plist */ = {
-		uiCtxt = {
-			sepNavWindowFrame = "{{1, 55}, {1279, 723}}";
-		};
 	};
 }

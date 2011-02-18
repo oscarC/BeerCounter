@@ -13,12 +13,15 @@
 }
 
 @property (nonatomic, retain) NSString *user_id;
-@property (nonatomic, retain) NSString *nickname;
+@property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *email;
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, retain) NSString *twitter_id;
 @property (nonatomic, retain) NSString *facebook_id;
-@property (nonatomic) bool drinking;
-@property (nonatomic) bool logged;
+@property (nonatomic) BOOL drinking;
+@property (nonatomic) BOOL logged;
+
+- (void) copy:(User *) user;
+- (void) fill:(NSDictionary *) userinfo;
 
 @end

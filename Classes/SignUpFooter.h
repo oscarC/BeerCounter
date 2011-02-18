@@ -8,21 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class O2Request;
-@class User;
+@class O2Authentication;
+
 @interface SignUpFooter : UIViewController {
-	O2Request *request;
+	O2Authentication *auth;
     UITabBarController *tabBar;
-    User *user;
 }
 
-@property (nonatomic, retain) IBOutlet NSString *email;
-@property (nonatomic, retain) IBOutlet NSString *password;
-@property (nonatomic, retain) IBOutlet NSString *nickname;
+@property (nonatomic, retain) O2Authentication *auth;
 @property (nonatomic, retain) UITabBarController *tabBar;
-@property (nonatomic, retain) User *user;
 
 - (IBAction) registerUser:(id)sender;
-- (void) registerUserResponse;
 
 @end

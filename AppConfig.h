@@ -17,9 +17,12 @@
 #define TIMEOUT_INTERVAL 60
 
 /*
-#define FB_API_ID @"167590113286949"
+#define FB_APP_ID @"167590113286949"
 #define FB_API_KEY @"d744ae91dbb13bde96224d145ffa7bf8"
 */
-#define FB_API_ID @"185988248099055"
+#define FB_APP_ID @"185988248099055"
 #define FB_API_KEY @"548491af019e03cef87d51f19bb774eb"
 #define FB_API_SECRET @"31ceaf15baca714f794740cd0f581bcd"
+
+#define TW_OAUTH_KEY @"yQsIqN5P1ckzdxvK3uRWJQ"
+#define TW_OAUTH_SECRET @"5sKOYexruNyzAwqksCnxYPl3hzZpvf04QBoi4gof00I"

@@ -127,6 +127,24 @@
 	return parsedData;
 }
 
+- (NSString *) extractValueFromParamString:(NSString *)strParams withKey:(NSString *)strKey {
+	if (!strParams) return nil;
+	
+	NSArray	*tuples = [strParams componentsSeparatedByString: @"&"];
+	if (tuples.count < 1) return nil;
+	
+	for (NSString *tuple in tuples) {
+		NSArray *keyValueArray = [tuple componentsSeparatedByString: @"="];
+		
+		if (keyValueArray.count == 2) {
+			NSString *key = [keyValueArray objectAtIndex: 0];
+			NSString *value = [keyValueArray objectAtIndex: 1];
+			if ([key isEqualToString:strKey]) return value;
+		}
+	}
+	return nil;
+}
+
 - (void)dealloc {
 	[parsedData release];
 	[receivedData release];

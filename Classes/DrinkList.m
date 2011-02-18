@@ -22,9 +22,9 @@
 }
 
 - (void) drinkListResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
 	self.drinksArray = [[request data] copy];
 	[self.tableView reloadData];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drinkListResponse) name:@"O2RequestFinished" object:request];
 }
 
 #pragma mark -

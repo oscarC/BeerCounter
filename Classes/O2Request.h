@@ -29,5 +29,7 @@
 - (NSString *) paramsToString:(NSDictionary *)data;
 - (void) createRequest:(NSString *)type withParms:(NSString *)params;
 - (id) data;
+- (NSString *) extractValueFromParamString:(NSString *)strParams withKey:(NSString *)strKey;
+- (void) dealloc;
 
 @end
