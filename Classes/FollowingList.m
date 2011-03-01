@@ -24,6 +24,7 @@
     request = [O2Request request];
 	[self friendList];
     
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void) showAlert:(NSString *)errorMsg withTitle:(NSString *)title {
