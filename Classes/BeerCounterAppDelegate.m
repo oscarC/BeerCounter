@@ -7,11 +7,16 @@
 //
 
 #import "BeerCounterAppDelegate.h"
+#import "O2Navigation.h"
 
 @implementation BeerCounterAppDelegate
 
 @synthesize window;
-@synthesize navController, tabBar, auth, welcome;
+@synthesize navController, tabBar, auth;
+
+- (IBAction) gotoFriendList:(id)sender {
+    [auth.navigation gotoFollowingList];
+}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return [auth.facebook handleOpenURL:url];

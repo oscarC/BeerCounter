@@ -8,11 +8,14 @@
 
 #import "Welcome.h"
 #import "BeerCounterAppDelegate.h"
+#import "WelcomeFooter.h"
 #import "O2FormHelper.h"
 
 @implementation Welcome
 
 @synthesize welcomeFooter;
+
+#define IMG_WELCOME_BACKGROUND @"bc_background"
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -24,6 +27,11 @@
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLoadingIndicator) name:@"LoginStart" object:welcomeFooter];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideLoadingIndicator) name:@"LoginEnd" object:welcomeFooter];
+    
+    //create new uiview with a background image
+    UIImage *backgroundImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:IMG_WELCOME_BACKGROUND ofType:@"png"]];
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+    self.tableView.backgroundView = backgroundView;
 }
 
 - (void) showLoadingIndicator {
@@ -38,7 +46,7 @@
 	UIActivityIndicatorView *av = (UIActivityIndicatorView *)[self.view viewWithTag:TAG_INDICATOR_LOGIN];
 	[av stopAnimating];
 	[av removeFromSuperview];
-}	
+}
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -135,14 +143,32 @@
 	}
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-	if(section == 0) {
-		return @"Login";
-	} else {
-		return @"";
-	}
+	// create the parent view that will hold header Label
+	UIView* customView = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
 	
+	// create the button object
+	UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+	headerLabel.backgroundColor = [UIColor clearColor];
+	headerLabel.opaque = NO;
+	headerLabel.textColor = [UIColor whiteColor];
+	headerLabel.highlightedTextColor = [UIColor blackColor];
+	headerLabel.font = [UIFont boldSystemFontOfSize:20];
+	headerLabel.frame = CGRectMake(10.0, 0.0, 300.0, 44.0);
+    
+	// If you want to align the header text as centered
+	// headerLabel.frame = CGRectMake(150.0, 0.0, 300.0, 44.0);
+    
+	headerLabel.text = @"Login";
+	[customView addSubview:headerLabel];
+    
+	return customView;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+	return 44.0;
 }
 
 /*
@@ -150,46 +176,6 @@
 	//do stuff
 }
 */
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 #pragma mark -
 #pragma mark Table view delegate
@@ -218,7 +204,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
-			return 200.0;
+			return 280.0;
 		default:
 			return 0.0;
 	}

@@ -10,11 +10,20 @@
 
 @class O2Request;
 
-@interface Counter : UIViewController {
+@interface Counter : UIViewController<UIScrollViewDelegate> {
     O2Request *request;
+    UIScrollView *scrollView;
+	UIPageControl *pageControl;
+    NSMutableArray *viewControllers;
+    BOOL pageControlUsed;
 }
 
-- (IBAction) stopDrinking:(id)sender;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
+
+- (IBAction) changePage:(id)sender;
+- (void) loadScrollViewWithPage:(int)page;
+- (void) stopDrinking;
 - (void) stopDrinkingResponse;
 
 @end

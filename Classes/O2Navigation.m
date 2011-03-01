@@ -7,67 +7,116 @@
 //
 
 #import "O2Navigation.h"
+#import "BeerCounterAppDelegate.h"
 #import "AppConfig.h"
 #import "AppGlobal.h"
+#import "TwitterConnect.h"
+
+#import "Welcome.h"
 #import "SignUp.h"
 #import "SocialSignUp.h"
-#import "TwitterConnect.h"
 #import "Home.h"
 #import "Counter.h"
+#import "FollowingList.h"
+#import "StartDrinking.h"
+#import "DrinkList.h"
+#import "PlaceList.h"
 
 
 @implementation O2Navigation
 
-@synthesize tabBar, signUpView, facebookConnectView, twitterConnectView;
+@synthesize navController, tabBar, user, welcome, startDrinking;
 
-+ (O2Navigation *) navigation {
-    return [[O2Navigation alloc] init];
++ (O2Navigation *) navigation:(User *)user {
+    O2Navigation *navigation = [[O2Navigation alloc] init];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    navigation.navController = beerCounterDelegate.navController;
+    navigation.tabBar = beerCounterDelegate.tabBar;
+    navigation.user = user;
+    
+    navigation.welcome = (Welcome *)beerCounterDelegate.navController.topViewController;
+    navigation.startDrinking = [[StartDrinking alloc] initWithNibName:@"StartDrinking" bundle:nil];
+    return navigation;
 }
 
 - (void) gotoSignUp {
     gSignUpMode = BEER_COUNTER_SIGNUP;
-	SignUp *_signUpView = [[SignUp alloc] initWithNibName:@"SignUp" bundle:nil];
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.signUpView = _signUpView;
-	[_signUpView release];
-	[beerCounterDelegate.navController pushViewController:self.signUpView animated:true];
+    SignUp *viewCtrl = [[SignUp alloc] initWithNibName:@"SignUp" bundle:nil];
+	[navController pushViewController:viewCtrl animated:true];
+    [viewCtrl release];
 }
 
 - (void) gotoSocialSignUp {
-	SocialSignUp *_signUpView = [[SocialSignUp alloc] initWithNibName:@"SocialSignUp" bundle:nil];
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.facebookConnectView = _signUpView;
-	[_signUpView release];
-	[beerCounterDelegate.navController pushViewController:self.facebookConnectView animated:true];
-}
-
-- (void) gotoTwitterConnect {
-    gSignUpMode = TWITTER_CONNECT;
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [beerCounterDelegate.auth.twitter connect];
+	SocialSignUp *viewCtrl = [[SocialSignUp alloc] initWithNibName:@"SocialSignUp" bundle:nil];
+	[navController pushViewController:viewCtrl animated:true];
+    [viewCtrl release];
 }
 
 - (void) gotoDashboard {
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    User *user = beerCounterDelegate.auth.user;
+    [self updateDashboard];
+	[navController pushViewController:tabBar animated:true];
+    [navController setNavigationBarHidden:true];
+}
+
+- (void) gotoFollowingList {
+    NSArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    UINavigationController *_navController = [viewControllers objectAtIndex:0];
+    FollowingList *viewCtrl = [[FollowingList alloc] initWithNibName:@"FollowingList" bundle:nil];
+	[_navController pushViewController:viewCtrl animated:true];
+    [viewCtrl release];
+}
+
+- (void) gotoStartDrinking {
+    NSArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    UINavigationController *_navController = [viewControllers objectAtIndex:1];
+	[_navController pushViewController:startDrinking animated:true];
+}
+
+- (void) gotoDrinkList {
+    NSArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    UINavigationController *_navController = [viewControllers objectAtIndex:1];
+    DrinkList *viewCtrl = [[DrinkList alloc] initWithNibName:@"DrinkList" bundle:nil];
+    [_navController pushViewController:viewCtrl animated:YES];
+    [viewCtrl release];
+}
+
+- (void) gotoPlaceList {
+    NSArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    UINavigationController *_navController = [viewControllers objectAtIndex:1];
+    PlaceList *viewCtrl = [[PlaceList alloc] initWithNibName:@"PlaceList" bundle:nil];
+    [_navController pushViewController:viewCtrl animated:YES];
+    [viewCtrl release];
+}
+ 
+- (void) updateDashboard {
+    NSLog(@"Testing 123");
+    UIViewController *viewCtrl;
     if(user.drinking) {
-        Counter *counter = [[Counter alloc] init];
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:counter];
-        counter.title = @"My Drinks";
-        NSMutableArray *viewControllers = (NSMutableArray *)beerCounterDelegate.tabBar.viewControllers;
-        [viewControllers replaceObjectAtIndex:1 withObject:navController];
-        [beerCounterDelegate.tabBar setViewControllers:viewControllers];
-        [navController release];
-        [counter release];
+        viewCtrl = [[Counter alloc] initWithNibName:@"Counter" bundle:nil];
+    } else {
+        viewCtrl = [[Home alloc] initWithNibName:@"Home" bundle:nil];
     }
-    self.tabBar = beerCounterDelegate.tabBar;
-    [beerCounterDelegate.navController setNavigationBarHidden:true];
-	[beerCounterDelegate.navController pushViewController:tabBar animated:true];
+    NSLog(@"Testing 123");
+    UINavigationController *_navController = [[UINavigationController alloc] initWithRootViewController:viewCtrl];
+    _navController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    viewCtrl.title = @"My Drinks";
+    NSLog(@"Testing 123");
+    NSMutableArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    [viewControllers replaceObjectAtIndex:1 withObject:_navController];
+    [tabBar setViewControllers:viewControllers];
+    [_navController release];
+    [viewCtrl release];    
 }
 
 - (void) backWelcome {
-    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [beerCounterDelegate.navController popToViewController:beerCounterDelegate.welcome animated:TRUE];
+    [navController setNavigationBarHidden:false];
+    [navController popToViewController:welcome animated:true];
+}
+
+- (void) backStartDrinking {
+    NSArray *viewControllers = (NSMutableArray *)tabBar.viewControllers;
+    UINavigationController *_navController = [viewControllers objectAtIndex:1];    
+    [_navController popToViewController:startDrinking animated:true];
 }
 
 - (void)dealloc {

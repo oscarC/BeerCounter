@@ -7,17 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBConnect.h"
 
 @class O2Request;
 
-@interface Home : UIViewController {
+@interface Home : UIViewController<FBDialogDelegate> {
     O2Request *request;
     IBOutlet UILabel *labelStatus;
 }
 
 @property (nonatomic, retain) UILabel *labelStatus;
 
-- (IBAction) startDrinking:(id)sender;
-- (void) startDrinkingResponse;
+- (void) gotoStartDrinking;
+- (IBAction) updateStatus:(id)sender;
 
 @end

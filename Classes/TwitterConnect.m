@@ -86,15 +86,8 @@
 }
 
 //=============================================================================================================================
-- (void)connect {
-    UIViewController *controller = [SA_OAuthTwitterController controllerToEnterCredentialsWithTwitterEngine:_engine delegate:self];
-    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    O2Authentication *auth = beerCounterDelegate.auth;
-	if (controller) {
-        [beerCounterDelegate.navController pushViewController:controller animated:true];
-	} else {
-        [auth bcTwLogin];
-	}
+- (UIViewController *)controller {
+    return [SA_OAuthTwitterController controllerToEnterCredentialsWithTwitterEngine:_engine delegate:self];
 }
 
 - (void)logout {

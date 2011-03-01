@@ -14,14 +14,13 @@
  * limitations under the License.
 */
 
-#import "FBLoginButton.h"
-#import "Facebook.h"
+#import "TWLoginButton.h"
 
 #import <dlfcn.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-@implementation FBLoginButton
+@implementation TWLoginButton
 
 @synthesize isLoggedIn = _isLoggedIn;
 
@@ -33,11 +32,9 @@
  */
 - (UIImage*)buttonImage {
   if (_isLoggedIn) {
-    //return [UIImage imageNamed:@"FBConnect.bundle/images/LogoutNormal.png"];
-    return [UIImage imageNamed:@"fb_logout_normal.png"];
+    return [UIImage imageNamed:@"tw_logout_normal.png"];
   } else {
-    //return [UIImage imageNamed:@"FBConnect.bundle/images/LoginNormal.png"];
-    return [UIImage imageNamed:@"fb_login_normal.png"];
+    return [UIImage imageNamed:@"tw_login_normal.png"];
   }
 }
 
@@ -46,11 +43,9 @@
  */
 - (UIImage*)buttonHighlightedImage {
   if (_isLoggedIn) {
-    //return [UIImage imageNamed:@"FBConnect.bundle/images/LogoutPressed.png"];
-    return [UIImage imageNamed:@"fb_logout_pressed.png"];
+    return [UIImage imageNamed:@"tw_logout_pressed.png"];
   } else {
-    //return [UIImage imageNamed:@"FBConnect.bundle/images/LoginPressed.png"];
-    return [UIImage imageNamed:@"fb_login_pressed.png"];
+    return [UIImage imageNamed:@"tw_login_pressed.png"];
   }
 }
 

@@ -11,8 +11,8 @@
 
 @implementation User
 
-@synthesize user_id, username, email, password, twitter_id, facebook_id, drinking;
-@synthesize logged;
+@synthesize user_id, username, email, password, twitter_id, facebook_id, logged;
+@synthesize drinking, beerId, beerName, placeId, placeName, placeAddress;
 
 - (void) copy:(User *) user {
     self.user_id = user.user_id;
@@ -25,16 +25,16 @@
     self.logged = user.logged;
 }
 
-- (void) fill:(NSDictionary *) userinfo {
-    self.user_id = [userinfo  objectForKey:@"id"];
-    self.email = [userinfo  objectForKey:@"email"];
-    self.password = [userinfo  objectForKey:@"password"];
-    self.username = [userinfo  objectForKey:@"username"];
-    self.twitter_id = [userinfo objectForKey:@"twitter_id"];
-    self.facebook_id = [userinfo objectForKey:@"facebook_id"];
+- (void) fill:(NSDictionary *) info {
+    self.user_id = [info  objectForKey:@"id"];
+    self.email = [info  objectForKey:@"email"];
+    self.password = [info  objectForKey:@"password"];
+    self.username = [info  objectForKey:@"username"];
+    self.twitter_id = [info objectForKey:@"twitter_id"];
+    self.facebook_id = [info objectForKey:@"facebook_id"];
     BOOL _drinking = FALSE;
-    if((NSNull *)[userinfo objectForKey:@"drinking"] != [NSNull null]) {
-        NSObject *obj = [userinfo objectForKey:@"drinking"];
+    if((NSNull *)[info objectForKey:@"drinking"] != [NSNull null]) {
+        NSObject *obj = [info objectForKey:@"drinking"];
         if([obj isKindOfClass:[NSString class]]) {
             if([(NSString *)obj isEqualToString:@"true"]) {
                 _drinking = TRUE;
@@ -44,6 +44,18 @@
         }
     }
     self.drinking = _drinking;
+    if(self.drinking) NSLog(@"is drinking");
 }
 
+- (void) setBeer:(NSDictionary *) info {
+    self.beerId = [info objectForKey:@"id"];
+    self.beerName = [info objectForKey:@"name"];
+}
+
+- (void) setPlace:(NSDictionary *) info {
+    self.placeId = [info objectForKey:@"id"];
+    self.placeName = [info objectForKey:@"name"];
+    self.placeAddress = [info objectForKey:@"address"];
+}
+    
 @end

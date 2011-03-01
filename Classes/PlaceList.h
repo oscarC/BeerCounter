@@ -1,8 +1,8 @@
 //
-//  DrinkListTableViewController.h
+//  PlaceList.h
 //  BeerCounter
 //
-//  Created by Oscar De Moya on 2/11/11.
+//  Created by Oscar De Moya on 2/21/11.
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
@@ -10,14 +10,11 @@
 
 @class O2Request;
 
-@interface DrinkList : UITableViewController {
+@interface PlaceList : UITableViewController {
 	O2Request *request;
 	NSArray *dataArray;
 }
 
 @property (nonatomic, retain) NSArray *dataArray;
-
-- (void) drinkList;
-- (void) drinkListResponse;
 
 @end

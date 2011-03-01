@@ -26,6 +26,8 @@
 + (O2Request *) request;
 - (void) post:(NSString *)method withData:(NSDictionary *)data;
 - (void) get:(NSString *)method withData:(NSDictionary *)data;
+- (void) _post:(NSString *)toURL withData:(NSDictionary *)data;
+- (void) _get:(NSString *)toURL withData:(NSDictionary *)data;
 - (NSString *) paramsToString:(NSDictionary *)data;
 - (void) createRequest:(NSString *)type withParms:(NSString *)params;
 - (id) data;

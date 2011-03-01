@@ -12,12 +12,13 @@
 
 @interface FriendFeeds : UITableViewController {
     O2Request *request;
-	NSArray *usersArray;
+	NSArray *arrayFeeds;
 }
 
-@property (nonatomic, retain) NSArray *usersArray;
+@property (nonatomic, retain) O2Request *request;
+@property (nonatomic, retain) NSArray *arrayFeeds;
 
-- (void) userList;
-- (void) userListResponse;
+- (void) friendFeeds;
+- (void) friendFeedsResponse;
 
 @end

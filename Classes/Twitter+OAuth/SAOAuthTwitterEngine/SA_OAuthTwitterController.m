@@ -90,7 +90,7 @@ static NSString* const kGGTwitterLoadingBackgroundImage = @"twitter_load.png";
 
 
 - (id) initWithEngine: (SA_OAuthTwitterEngine *) engine andOrientation:(UIInterfaceOrientation)theOrientation {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		self.engine = engine;
 		if (!engine.OAuthSetup) [_engine requestRequestToken];
 		self.orientation = theOrientation;
@@ -151,7 +151,7 @@ static NSString* const kGGTwitterLoadingBackgroundImage = @"twitter_load.png";
         
 	} else {
 		self.view = [[[UIView alloc] initWithFrame: CGRectMake(0, 0, 320, 416)] autorelease];	
-		_backgroundView.frame =  CGRectMake(0, 0, 320, 460);
+		_backgroundView.frame =  CGRectMake(0, 0, 320, 480);
         //_backgroundView.frame =  CGRectMake(0, 44, 320, 416);
 		//_navBar = [[[UINavigationBar alloc] initWithFrame: CGRectMake(0, 0, 320, 44)] autorelease];
 	}

@@ -21,7 +21,7 @@
     O2Authentication *auth = [[O2Authentication alloc] init];
     auth.user = [[User alloc] init];
     auth.request = [O2Request request];
-    auth.navigation = [O2Navigation navigation];
+    auth.navigation = [O2Navigation navigation:auth.user];
     auth.twitter = [TwitterConnect twitterConnect];
     auth.facebook = [[Facebook alloc] initWithAppId:FB_APP_ID];
     return auth;
@@ -93,7 +93,7 @@
 
 - (void) fbLogin {
     gSignUpMode = FACEBOOK_CONNECT;
-    NSArray *permissions = [[NSArray arrayWithObjects:@"read_stream", @"email", @"offline_access", nil] retain];
+    NSArray *permissions = [[NSArray arrayWithObjects:@"read_stream", @"publish_stream", @"email", @"offline_access", nil] retain];
     [facebook authorize:permissions delegate:self];
     [permissions release];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bcLoginResponse) name:@"O2RequestFinished" object:self.request];
@@ -103,31 +103,49 @@
     [facebook logout:self];
 }
 
+- (void) twLogin {
+    gSignUpMode = TWITTER_CONNECT;
+    UIViewController *controller = [twitter controller];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	if (controller) {
+        [beerCounterDelegate.navController pushViewController:controller animated:TRUE];
+	} else {
+        [self bcTwLogin];
+	}
+}
+
 - (void) twLogout {
     [twitter logout];
+}
+
+- (void) twSignUp:(UIViewController *)controller {
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [beerCounterDelegate.navController pushViewController:controller animated:true];
 }
 
 // Facebook delegate methods <FBSessionDelegate>
 
 - (void)fbDidLogin {
-    NSLog(@"Facebook login");
     [facebook requestWithGraphPath:@"me" andDelegate:self];
 }
 - (void)fbDidNotLogin:(BOOL)cancelled {
-    NSLog(@"Facebook not login");
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginEnd" object:self];
 }
 - (void)fbDidLogout {
-    NSLog(@"Facebook logout");
 }
 
 // Facebook delegate methods <FBRequestDelegate>
 
-- (void)requestLoading:(FBRequest *)request { }
-- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response { }
-- (void)request:(FBRequest *)request didFailWithError:(NSError *)error { }
+- (void)requestLoading:(FBRequest *)request {
+}
+- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response {
+}
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error { 
+}
 - (void)request:(FBRequest *)request didLoad:(id)result {
+    //NSLog(@"%@", result);
+    NSLog(@"Access Token: %@", [facebook accessToken]);
     [self bcFbLogin:result];
 }
 
@@ -158,7 +176,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"RegistrationEnd" object:self];
 	NSDictionary *data = [request data];
-    NSLog(@"%@", data);
     int error_code = [[data objectForKey:@"error_code"] intValue];
     NSDictionary *reasons = [data objectForKey:@"reasons"];
     if(error_code == 0) {

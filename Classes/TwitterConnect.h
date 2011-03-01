@@ -19,7 +19,7 @@
 - (void) initEngine;
 - (NSString *) cachedUsername;
 - (BOOL) isAuthorized;
-- (void) connect;
+- (UIViewController *) controller;
 - (void) logout;
 
 @end

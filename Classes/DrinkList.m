@@ -9,11 +9,12 @@
 #import "BeerCounterAppDelegate.h"
 #import "DrinkList.h"
 #import "O2Request.h"
+#import "O2Navigation.h"
 
 
 @implementation DrinkList
 
-@synthesize drinksArray;
+@synthesize dataArray;
 
 - (void) drinkList {
 	NSMutableDictionary *data = [NSMutableDictionary dictionary];
@@ -23,7 +24,7 @@
 
 - (void) drinkListResponse {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
-	self.drinksArray = [[request data] copy];
+	self.dataArray = [[request data] copy];
 	[self.tableView reloadData];
 }
 
@@ -32,16 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	//BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	//beerCounterDelegate.navItem.title = @"What are you drinking?";
-	//beerCounterDelegate.navController.title = @"What are you drinking?";
-	self.navigationItem.title = @"What are you drinking?";
-
 	request = [O2Request request];
 	[self drinkList];
-	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 /*
@@ -84,7 +77,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.drinksArray count];
+    return [self.dataArray count];
 }
 
 
@@ -99,7 +92,7 @@
     }
     
     // Configure the cell...
-	NSDictionary *info = [drinksArray objectAtIndex:indexPath.row];
+	NSDictionary *info = [dataArray objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"name"]];
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"description"]];
     return cell;
@@ -150,14 +143,11 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-    */
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    O2Navigation *nav = beerCounterDelegate.auth.navigation;
+    NSDictionary *info = [dataArray objectAtIndex:indexPath.row];
+    [beerCounterDelegate.auth.user setBeer:info];
+    [nav backStartDrinking];
 }
 
 
@@ -176,10 +166,8 @@
     // For example: self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
-	[drinksArray release];
-	[request release];
+	[dataArray release];
     [super dealloc];
 }
 

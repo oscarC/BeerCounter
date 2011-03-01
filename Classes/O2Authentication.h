@@ -11,6 +11,7 @@
 #import "FBConnect.h"
 #import "TwitterConnect.h"
 
+@class BeerCounterAppDelegate;
 @class O2Request;
 @class O2Navigation;
 
@@ -37,8 +38,9 @@
 - (void) bcLoginResponse;
 - (void) fbLogin;
 - (void) fbLogout;
-//- (void) twLogin;
+- (void) twLogin;
 - (void) twLogout;
+- (void) twSignUp:(UIViewController *)controller;
 - (void) registerUser;
 - (void) registerUserResponse;
 - (void) dealloc;

@@ -70,6 +70,40 @@
 	if (!connection) [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestConnectionError" object:self];
 }
 
+- (void) _post:(NSString *)toURL withData:(NSDictionary *)data {
+	NSLog(@"%@", toURL);
+	
+	[url release];
+	url = [[NSURL alloc] initWithString:toURL];
+	NSString *postString = [self paramsToString:data];
+	
+	[self createRequest:@"POST" withParms:postString];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestStart" object:self];
+	
+	[connection release];
+	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	if (!connection) [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestConnectionError" object:self];
+}
+
+- (void) _get:(NSString *)toURL withData:(NSDictionary *)data {	
+	NSMutableString *paramString = (NSMutableString *)[self paramsToString:data];
+	if ([paramString length] > 0) {
+		[paramString insertString:@"?" atIndex:0];
+	}
+	NSString *strURL = [NSString stringWithFormat:@"%@%@", toURL, paramString];
+	NSLog(@"%@", strURL);
+	
+	[url release];
+	url = [[NSURL alloc] initWithString:strURL];
+	
+	[self createRequest:@"GET" withParms:paramString];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestStart" object:self];
+	
+	[connection release];
+	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	if (!connection) [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestConnectionError" object:self];
+}
+
 - (NSString *) paramsToString:(NSDictionary *)data {
 	NSMutableString *paramStr = [NSMutableString stringWithFormat:@""];
 	BOOL first = YES;
@@ -118,9 +152,15 @@
 
 - (void) connectionDidFinishLoading: (NSURLConnection*) connection {
 	NSString *response = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-	parsedData = [response JSONValue];
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestFinished" object:self];
-	[response release];
+    NSLog(@"%@", response);
+	@try {
+        parsedData = [response JSONValue];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Error Parsing JSON Response:\n%@", response);
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"O2RequestFinished" object:self];
+    [response release];
 }
 
 - (id) data {

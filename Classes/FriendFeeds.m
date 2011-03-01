@@ -10,33 +10,35 @@
 #import "BeerCounterAppDelegate.h"
 #import "DrinkList.h"
 #import "O2Request.h"
-
-#define CONST_textLabelFontSize     18
-#define CONST_detailLabelFontSize   13
+#import "O2Navigation.h"
 
 @implementation FriendFeeds
 
-@synthesize usersArray;
-
-static UIFont *subFont;
-static UIFont *titleFont;
+@synthesize request, arrayFeeds;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"Friend Feeds";
+    self.navigationItem.title = @"Feeds";
     request = [O2Request request];
-    [self userList];
+    
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editFriends)];
 }
 
-- (UIFont*) TitleFont {
-	if (!titleFont) titleFont = [UIFont boldSystemFontOfSize:CONST_textLabelFontSize];
-	return titleFont;
+- (void) friendFeeds {
+	NSMutableDictionary *data = [NSMutableDictionary dictionary];
+	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
+	[request get:@"Friends/feeds" withData:data];
+    [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(friendFeedsResponse)name:@"O2RequestFinished" object:request];
 }
 
-- (UIFont*) SubFont {
-	if (!subFont) subFont = [UIFont systemFontOfSize:CONST_detailLabelFontSize];
-	return subFont;
+- (void) friendFeedsResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
+    
+	self.arrayFeeds = [[request data] copy];
+    NSLog(@"%@", [request data]);
+	[self.tableView reloadData];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -63,21 +65,6 @@ static UIFont *titleFont;
 
 #pragma mark - View lifecycle
 
-
-- (void) userList {
-	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
-	[request get:@"Friends/feeds" withData:data];
-    [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(userListResponse)name:@"O2RequestFinished" object:request];
-}
-
-- (void) userListResponse {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];    
-	self.usersArray = [[request data] copy];
-	[self.tableView reloadData];
-}
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -88,6 +75,7 @@ static UIFont *titleFont;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self friendFeeds];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -122,7 +110,7 @@ static UIFont *titleFont;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.usersArray count];
+    return [self.arrayFeeds count];
 }
 
 // Customize the appearance of table view cells.
@@ -136,13 +124,12 @@ static UIFont *titleFont;
     }
     
     // Configure the cell...
-	NSDictionary *info = [usersArray objectAtIndex:indexPath.row];
-    // Configure the cell.
+	NSDictionary *info = [arrayFeeds objectAtIndex:indexPath.row];
     
     UIImage *cellImage = [UIImage imageNamed:@"user.png"];
 	cell.imageView.image = cellImage;
     cell.textLabel.numberOfLines = 0;
-	cell.textLabel.font = [self TitleFont];
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:18];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [info objectForKey:@"username"]];
     NSString *count=[NSString stringWithFormat:@"%@", [info objectForKey:@"count"]];
     NSString *drink_name = [NSString stringWithFormat:@" %@", [info objectForKey:@"drink_name"]];
@@ -150,55 +137,14 @@ static UIFont *titleFont;
     NSString *location =[info objectForKey:@"location"];
 	
     cell.detailTextLabel.numberOfLines = 0;
-	cell.detailTextLabel.font = [self SubFont];
+	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
  	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", description, location];
 	return cell;
 }
 
-
-
 - (CGFloat)tableView:(UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *)indexPath    {
    return 65;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBLoginButton.h"
+#import "TWLoginButton.h"
 
 @class O2Authentication;
 
 @interface WelcomeFooter : UIViewController {
     O2Authentication *auth;
+    IBOutlet FBLoginButton* fbButton;
+    IBOutlet TWLoginButton* twButton;
 }
 
 @property (nonatomic, retain) O2Authentication *auth;

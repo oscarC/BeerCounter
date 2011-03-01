@@ -22,6 +22,10 @@
     [super viewDidLoad];
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.auth = beerCounterDelegate.auth;
+    fbButton.isLoggedIn = NO;
+    twButton.isLoggedIn = NO;
+    [fbButton updateImage];
+    [twButton updateImage];
 }
 
 - (IBAction) fbLogin:(id)sender {
@@ -45,7 +49,7 @@
 }
 
 - (IBAction) gotoTwitterConnect:(id)sender {
-    [auth.navigation gotoTwitterConnect];
+    [auth twLogin];
 }
 
 

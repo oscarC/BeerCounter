@@ -8,32 +8,36 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "BeerCounterAppDelegate.h"
 
-@class SignUp;
-@class SocialSignUp;
-@class TwitterConnect;
-@class Home;
-@class Counter;
+@class User;
+@class Welcome;
+@class StartDrinking;
 
 @interface O2Navigation : NSObject {
+    UINavigationController *navController;
     UITabBarController *tabBar;
-	SignUp *signUpView;
-    SocialSignUp *facebookConnectView;
-    TwitterConnect *twitterConnectView;
+    User *user;
+    Welcome *welcome;
+    StartDrinking *startDrinking;
 }
 
+@property (nonatomic, retain) UINavigationController *navController;
 @property (nonatomic, retain) UITabBarController *tabBar;
-@property (nonatomic, retain) SignUp *signUpView;
-@property (nonatomic, retain) SocialSignUp *facebookConnectView;
-@property (nonatomic, retain) TwitterConnect *twitterConnectView;
+@property (nonatomic, retain) User *user;
+@property (nonatomic, retain) Welcome *welcome;
+@property (nonatomic, retain) StartDrinking *startDrinking;
 
-+ (O2Navigation *) navigation;
++ (O2Navigation *) navigation:(User *)user;
 - (void) gotoSignUp;
 - (void) gotoSocialSignUp;
-- (void) gotoTwitterConnect;
 - (void) gotoDashboard;
+- (void) gotoFollowingList;
+- (void) gotoStartDrinking;
+- (void) gotoDrinkList;
+- (void) gotoPlaceList;
+- (void) updateDashboard;
 - (void) backWelcome;
+- (void) backStartDrinking;
 - (void) dealloc;
 
 @end

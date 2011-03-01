@@ -1,34 +1,43 @@
 //
-//  Settings.m
+//  StartDrinking.m
 //  BeerCounter
 //
-//  Created by Oscar De Moya on 2/18/11.
+//  Created by Oscar De Moya on 2/21/11.
 //  Copyright 2011 Koombea Inc. All rights reserved.
 //
 
-#import "Settings.h"
+#import "StartDrinking.h"
 #import "BeerCounterAppDelegate.h"
+#import "O2Request.h"
+#import "O2Navigation.h"
 #import "O2FormHelper.h"
+#import "PlaceList.h"
+#import "DrinkList.h"
+#import "User.h"
 
-@implementation Settings
 
-@synthesize auth;
+@implementation StartDrinking
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.title = @"Settings";
-    self.tableView.allowsSelection = NO;
-    
-    UIBarButtonItem *btnLogout = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(bcLogout)];
-    self.navigationItem.rightBarButtonItem = btnLogout;
+- (void) startDrinking {
     BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.auth = beerCounterDelegate.auth;
+	NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    User *user = beerCounterDelegate.auth.user;
+	[data setObject:user.user_id forKey:@"user_id"];
+    [data setObject:user.beerId forKey:@"drink_id"];
+    [data setObject:user.placeId forKey:@"location_id"];
+    [data setObject:user.placeName forKey:@"location"];
+    [data setObject:user.placeAddress forKey:@"address"];
+	[request post:@"Drink/start" withData:data];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startDrinkingResponse) name:@"O2RequestFinished" object:request];
 }
 
-- (void)bcLogout
-{
-    [auth bcLogout];
+- (void) startDrinkingResponse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
+	NSDictionary *data = [request data];
+	NSLog(@"%@", data);
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    beerCounterDelegate.auth.user.drinking = YES;
+    [beerCounterDelegate.auth.navigation updateDashboard];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -38,6 +47,11 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,14 +64,23 @@
 
 #pragma mark - View lifecycle
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(startDrinking)];
+    request = [O2Request request];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+	self.title = @"Start Drinking";
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -95,68 +118,37 @@
     return 2;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"CellSettings";
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+    static NSString *CellIdentifier = @"CellStartDrinking";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-		cell.accessoryType = UITableViewCellAccessoryNone;
-		//cell.selectionStyle = UITableViewCellSelectionStyleNone;
-		
-		if ([indexPath section] == 0) {
-            
-			if ([indexPath section] == 0) {
-                UISwitch *uiSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(208, 9, 185, 30)];
-				if ([indexPath row] == 0) { // Twitter Connect
-                    if((NSNull *)auth.user.twitter_id != [NSNull null]) uiSwitch.on = YES;
-					uiSwitch.tag = TAG_SWITCH_TWITTER_CONNECT;
-				} else { // Facebook Connect
-                    if((NSNull *)auth.user.facebook_id != [NSNull null]) uiSwitch.on = YES;
-					uiSwitch.tag = TAG_SWITCH_FACEBOOK_CONNECT;
-				}
-                [uiSwitch addTarget:self action:@selector(passValues:) forControlEvents:UIControlEventValueChanged];
-                [cell addSubview:uiSwitch];
-                [uiSwitch release];
-			}
-		}
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    User *user = beerCounterDelegate.auth.user;
 	if ([indexPath section] == 0) {
 		if ([indexPath row] == 0) {
-			cell.textLabel.text = @"Twitter";
+			cell.textLabel.text = @"What?";
+            if(user.beerId == 0) {
+                cell.detailTextLabel.text = @"(required)";
+            } else {
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", user.beerName];
+            }
 		} else {
-			cell.textLabel.text = @"Facebook";
+			cell.textLabel.text = @"Where?";
+            if(user.placeId == 0) {
+                cell.detailTextLabel.text = @"(optional)";
+            } else {
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", user.placeName];
+            }
 		}
 	}
-	return cell;   
-}
-
-- (void)passValues:(UISwitch *)uiSwitch {
-	if(uiSwitch.tag == TAG_SWITCH_TWITTER_CONNECT) {
-        if(uiSwitch.on) {
-            //[auth twLogin];
-        } else {
-            //[auth twLogout];
-        }
-	} else if(uiSwitch.tag == TAG_SWITCH_FACEBOOK_CONNECT) {
-        if(uiSwitch.on) {
-            //[auth fbLogin];
-        } else {
-            //[auth fbLogout];
-        }
-	}
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-	if(section == 0) {
-		return @"Social Connections";
-	} else {
-		return @"";
-	}
-	
+	return cell;
 }
 
 /*
@@ -202,20 +194,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
-}
-
-- (void)dealloc
-{
-    [auth release];
-    [super dealloc];
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    O2Navigation *nav = beerCounterDelegate.auth.navigation;
+    
+    NSInteger row = [indexPath row];
+    if(row == 0) {
+        [nav gotoDrinkList];
+    } else if(row == 1) {
+        [nav gotoPlaceList];
+    }
 }
 
 @end

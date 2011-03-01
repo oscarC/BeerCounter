@@ -11,8 +11,21 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		3F21534C1312C2DC00CF3E52 /* CounterPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F21534A1312C2DC00CF3E52 /* CounterPage.m */; };
+		3F21534D1312C2DC00CF3E52 /* CounterPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F21534B1312C2DC00CF3E52 /* CounterPage.xib */; };
+		3F2153511312E03200CF3E52 /* FollowingList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F21534F1312E03200CF3E52 /* FollowingList.m */; };
+		3F2153521312E03200CF3E52 /* FollowingList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2153501312E03200CF3E52 /* FollowingList.xib */; };
+		3F2F4E8113130A6500992CB4 /* StartDrinking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F4E7F13130A6500992CB4 /* StartDrinking.m */; };
+		3F2F4E8213130A6500992CB4 /* StartDrinking.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2F4E8013130A6500992CB4 /* StartDrinking.xib */; };
+		3F2F4E8B131314B100992CB4 /* PlaceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F4E89131314B100992CB4 /* PlaceList.m */; };
+		3F2F4E8C131314B100992CB4 /* PlaceList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2F4E8A131314B100992CB4 /* PlaceList.xib */; };
 		3F4BBE25130C749F00D3801C /* TwitterConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BBE23130C749F00D3801C /* TwitterConnect.m */; };
 		3F9059CF130DCC6900425E47 /* O2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9059CE130DCC6900425E47 /* O2Authentication.m */; };
+		3F912EAF13109F0100902FB7 /* fb_login_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F912EAB13109F0100902FB7 /* fb_login_normal.png */; };
+		3F912EB013109F0100902FB7 /* fb_login_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F912EAC13109F0100902FB7 /* fb_login_pressed.png */; };
+		3F912EB113109F0100902FB7 /* fw_login__pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F912EAD13109F0100902FB7 /* fw_login__pressed.png */; };
+		3F912EB213109F0100902FB7 /* tw_login_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F912EAE13109F0100902FB7 /* tw_login_normal.png */; };
+		3F912EB51310A03800902FB7 /* TWLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F912EB41310A03800902FB7 /* TWLoginButton.m */; };
 		3F9873F4130D6FDE004F325C /* O2Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9873F3130D6FDE004F325C /* O2Navigation.m */; };
 		3F987492130D9DF8004F325C /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F987473130D9DF8004F325C /* MGTwitterEngine.m */; };
 		3F987493130D9DF8004F325C /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F987477130D9DF8004F325C /* MGTwitterHTTPURLConnection.m */; };
@@ -76,7 +89,9 @@
 		3FC3A31E130C6B9200B7A567 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC3A31D130C6B9200B7A567 /* libxml2.dylib */; };
 		3FD5DA07130EF0730002916F /* FriendFeeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5DA04130EF0730002916F /* FriendFeeds.xib */; };
 		3FD5DA08130EF0730002916F /* FriendFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5DA06130EF0730002916F /* FriendFeeds.m */; };
+		3FD5DA0D130F66AA0002916F /* bc_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5DA0C130F66AA0002916F /* bc_background.png */; };
 		3FDB672D130B317700145C7E /* O2FormHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB672C130B317700145C7E /* O2FormHelper.m */; };
+		3FF02A7D13159E4C0096CC84 /* O2AlertPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF02A7C13159E4C0096CC84 /* O2AlertPrompt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,10 +99,28 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F2153491312C2DC00CF3E52 /* CounterPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterPage.h; sourceTree = "<group>"; };
+		3F21534A1312C2DC00CF3E52 /* CounterPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterPage.m; sourceTree = "<group>"; };
+		3F21534B1312C2DC00CF3E52 /* CounterPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CounterPage.xib; sourceTree = "<group>"; };
+		3F21534E1312E03200CF3E52 /* FollowingList.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FollowingList.h; sourceTree = "<group>"; };
+		3F21534F1312E03200CF3E52 /* FollowingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingList.m; sourceTree = "<group>"; };
+		3F2153501312E03200CF3E52 /* FollowingList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingList.xib; sourceTree = "<group>"; };
+		3F2F4E7E13130A6500992CB4 /* StartDrinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartDrinking.h; sourceTree = "<group>"; };
+		3F2F4E7F13130A6500992CB4 /* StartDrinking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartDrinking.m; sourceTree = "<group>"; };
+		3F2F4E8013130A6500992CB4 /* StartDrinking.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartDrinking.xib; sourceTree = "<group>"; };
+		3F2F4E88131314B100992CB4 /* PlaceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceList.h; sourceTree = "<group>"; };
+		3F2F4E89131314B100992CB4 /* PlaceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceList.m; sourceTree = "<group>"; };
+		3F2F4E8A131314B100992CB4 /* PlaceList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceList.xib; sourceTree = "<group>"; };
 		3F4BBE22130C749F00D3801C /* TwitterConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnect.h; sourceTree = "<group>"; };
 		3F4BBE23130C749F00D3801C /* TwitterConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnect.m; sourceTree = "<group>"; };
 		3F9059CD130DCC6900425E47 /* O2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Authentication.h; sourceTree = "<group>"; };
 		3F9059CE130DCC6900425E47 /* O2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Authentication.m; sourceTree = "<group>"; };
+		3F912EAB13109F0100902FB7 /* fb_login_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_login_normal.png; sourceTree = "<group>"; };
+		3F912EAC13109F0100902FB7 /* fb_login_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_login_pressed.png; sourceTree = "<group>"; };
+		3F912EAD13109F0100902FB7 /* fw_login__pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fw_login__pressed.png; sourceTree = "<group>"; };
+		3F912EAE13109F0100902FB7 /* tw_login_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tw_login_normal.png; sourceTree = "<group>"; };
+		3F912EB31310A03800902FB7 /* TWLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWLoginButton.h; path = "Twitter+OAuth/TWLoginButton.h"; sourceTree = "<group>"; };
+		3F912EB41310A03800902FB7 /* TWLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWLoginButton.m; path = "Twitter+OAuth/TWLoginButton.m"; sourceTree = "<group>"; };
 		3F9873F2130D6FDE004F325C /* O2Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Navigation.h; sourceTree = "<group>"; };
 		3F9873F3130D6FDE004F325C /* O2Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Navigation.m; sourceTree = "<group>"; };
 		3F987472130D9DF8004F325C /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
@@ -218,8 +251,11 @@
 		3FD5DA04130EF0730002916F /* FriendFeeds.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendFeeds.xib; sourceTree = "<group>"; };
 		3FD5DA05130EF0730002916F /* FriendFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendFeeds.h; sourceTree = "<group>"; };
 		3FD5DA06130EF0730002916F /* FriendFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendFeeds.m; sourceTree = "<group>"; };
+		3FD5DA0C130F66AA0002916F /* bc_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bc_background.png; path = Images/bc_background.png; sourceTree = "<group>"; };
 		3FDB672B130B317700145C7E /* O2FormHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2FormHelper.h; sourceTree = "<group>"; };
 		3FDB672C130B317700145C7E /* O2FormHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2FormHelper.m; sourceTree = "<group>"; };
+		3FF02A7B13159E4C0096CC84 /* O2AlertPrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2AlertPrompt.h; sourceTree = "<group>"; };
+		3FF02A7C13159E4C0096CC84 /* O2AlertPrompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2AlertPrompt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +278,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FF02A7A13159E180096CC84 /* CustomUI */,
 				3FC7508C130320F100BE704C /* Helpers */,
 				3FC7500B1303175A00BE704C /* Models */,
 				3FC750171303182000BE704C /* Vendors */,
@@ -317,6 +354,36 @@
 			name = Welcome;
 			sourceTree = "<group>";
 		};
+		3F2F4E861313148700992CB4 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				3F2F4E871313149600992CB4 /* List */,
+			);
+			name = Places;
+			sourceTree = "<group>";
+		};
+		3F2F4E871313149600992CB4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				3F2F4E88131314B100992CB4 /* PlaceList.h */,
+				3F2F4E89131314B100992CB4 /* PlaceList.m */,
+				3F2F4E8A131314B100992CB4 /* PlaceList.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		3F912EA213109E0100902FB7 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3F912EAB13109F0100902FB7 /* fb_login_normal.png */,
+				3F912EAC13109F0100902FB7 /* fb_login_pressed.png */,
+				3F912EAD13109F0100902FB7 /* fw_login__pressed.png */,
+				3F912EAE13109F0100902FB7 /* tw_login_normal.png */,
+			);
+			name = buttons;
+			path = Images/buttons;
+			sourceTree = "<group>";
+		};
 		3F987517130D9F08004F325C /* OAuthConsumer */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +415,9 @@
 				3FB2DD5A130B03CE00D76AD5 /* Counter.h */,
 				3FB2DD5B130B03CE00D76AD5 /* Counter.m */,
 				3FB2DD5C130B03CE00D76AD5 /* Counter.xib */,
+				3F2153491312C2DC00CF3E52 /* CounterPage.h */,
+				3F21534A1312C2DC00CF3E52 /* CounterPage.m */,
+				3F21534B1312C2DC00CF3E52 /* CounterPage.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -355,6 +425,8 @@
 		3FB2DD7A130B05DA00D76AD5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3F912EA213109E0100902FB7 /* buttons */,
+				3FD5DA0C130F66AA0002916F /* bc_background.png */,
 				3FB2DD7B130B062C00D76AD5 /* user.png */,
 			);
 			name = Images;
@@ -445,6 +517,7 @@
 		3FC7500A1303174200BE704C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F2F4E861313148700992CB4 /* Places */,
 				3FD73F69130483820098BE6B /* Drinks */,
 				3FD73F3413047DDD0098BE6B /* User */,
 				3FD73F2F13047D7E0098BE6B /* Friends */,
@@ -495,6 +568,8 @@
 		3FC750451303188C00BE704C /* TwitterConnect */ = {
 			isa = PBXGroup;
 			children = (
+				3F912EB31310A03800902FB7 /* TWLoginButton.h */,
+				3F912EB41310A03800902FB7 /* TWLoginButton.m */,
 				3F4BBE22130C749F00D3801C /* TwitterConnect.h */,
 				3F4BBE23130C749F00D3801C /* TwitterConnect.m */,
 				3FC3A2AF130C663900B7A567 /* Libraries & Headers */,
@@ -563,9 +638,9 @@
 		3FD73F3013047D860098BE6B /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				3FD5DA04130EF0730002916F /* FriendFeeds.xib */,
 				3FD5DA05130EF0730002916F /* FriendFeeds.h */,
 				3FD5DA06130EF0730002916F /* FriendFeeds.m */,
+				3FD5DA04130EF0730002916F /* FriendFeeds.xib */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -573,6 +648,9 @@
 		3FD73F3113047DAB0098BE6B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				3F21534E1312E03200CF3E52 /* FollowingList.h */,
+				3F21534F1312E03200CF3E52 /* FollowingList.m */,
+				3F2153501312E03200CF3E52 /* FollowingList.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -606,6 +684,9 @@
 		3FD73F3513047DE90098BE6B /* Drinks */ = {
 			isa = PBXGroup;
 			children = (
+				3F2F4E7E13130A6500992CB4 /* StartDrinking.h */,
+				3F2F4E7F13130A6500992CB4 /* StartDrinking.m */,
+				3F2F4E8013130A6500992CB4 /* StartDrinking.xib */,
 			);
 			name = Drinks;
 			sourceTree = "<group>";
@@ -632,9 +713,9 @@
 		3FD73F6A130483910098BE6B /* List */ = {
 			isa = PBXGroup;
 			children = (
-				3FB2DD4A130B03A600D76AD5 /* DrinkList.xib */,
 				3FB2DD4B130B03A600D76AD5 /* DrinkList.h */,
 				3FB2DD4C130B03A600D76AD5 /* DrinkList.m */,
+				3FB2DD4A130B03A600D76AD5 /* DrinkList.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -644,6 +725,15 @@
 			children = (
 			);
 			name = Show;
+			sourceTree = "<group>";
+		};
+		3FF02A7A13159E180096CC84 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				3FF02A7B13159E4C0096CC84 /* O2AlertPrompt.h */,
+				3FF02A7C13159E4C0096CC84 /* O2AlertPrompt.m */,
+			);
+			name = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -712,6 +802,15 @@
 				3FC3A2FD130C663900B7A567 /* twitter_load.png in Resources */,
 				3FA281AE130ECD1B00206747 /* Settings.xib in Resources */,
 				3FD5DA07130EF0730002916F /* FriendFeeds.xib in Resources */,
+				3FD5DA0D130F66AA0002916F /* bc_background.png in Resources */,
+				3F912EAF13109F0100902FB7 /* fb_login_normal.png in Resources */,
+				3F912EB013109F0100902FB7 /* fb_login_pressed.png in Resources */,
+				3F912EB113109F0100902FB7 /* fw_login__pressed.png in Resources */,
+				3F912EB213109F0100902FB7 /* tw_login_normal.png in Resources */,
+				3F21534D1312C2DC00CF3E52 /* CounterPage.xib in Resources */,
+				3F2153521312E03200CF3E52 /* FollowingList.xib in Resources */,
+				3F2F4E8213130A6500992CB4 /* StartDrinking.xib in Resources */,
+				3F2F4E8C131314B100992CB4 /* PlaceList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +868,12 @@
 				3F9059CF130DCC6900425E47 /* O2Authentication.m in Sources */,
 				3FA281AD130ECD1B00206747 /* Settings.m in Sources */,
 				3FD5DA08130EF0730002916F /* FriendFeeds.m in Sources */,
+				3F912EB51310A03800902FB7 /* TWLoginButton.m in Sources */,
+				3F21534C1312C2DC00CF3E52 /* CounterPage.m in Sources */,
+				3F2153511312E03200CF3E52 /* FollowingList.m in Sources */,
+				3F2F4E8113130A6500992CB4 /* StartDrinking.m in Sources */,
+				3F2F4E8B131314B100992CB4 /* PlaceList.m in Sources */,
+				3FF02A7D13159E4C0096CC84 /* O2AlertPrompt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

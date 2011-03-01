@@ -9,57 +9,52 @@
 #import "Home.h"
 #import "BeerCounterAppDelegate.h"
 #import "O2Request.h"
+#import "O2Navigation.h"
 
 @implementation Home
 
 @synthesize labelStatus;
 
-- (IBAction) startDrinking:(id)sender {
-    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-	NSMutableDictionary *data = [NSMutableDictionary dictionary];
-	[data setObject:beerCounterDelegate.auth.user.user_id forKey:@"user_id"];
-    [data setObject:@"true" forKey:@"drinking"];
-	[request post:@"User/drinking" withData:data];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startDrinkingResponse) name:@"O2RequestFinished" object:request];
-}
-
-- (void) startDrinkingResponse {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"O2RequestFinished" object:request];
-	NSDictionary *data = [request data];
-	NSLog(@"%@", data);
-}
-
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"My Drinks";
     request = [O2Request request];
-    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
-    if(beerCounterDelegate.auth.user.drinking == NO) {
-        labelStatus.text = @"You're not currently drinking.";
-    } else {
-        
-    }
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStylePlain target:self action:@selector(gotoStartDrinking)];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void) gotoStartDrinking {
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    O2Navigation *nav = beerCounterDelegate.auth.navigation;
+    [nav gotoStartDrinking];
 }
-*/
+
+- (IBAction) updateStatus:(id)sender {
+    BeerCounterAppDelegate *beerCounterDelegate = (BeerCounterAppDelegate *)[[UIApplication sharedApplication] delegate];
+    Facebook *facebook = beerCounterDelegate.auth.facebook;
+    SBJSON *jsonWriter = [[SBJSON new] autorelease];
+    
+    NSDictionary* actionLinks = [NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                           @"Always Running",@"text",@"http://itsti.me/",@"href", nil], nil];
+    
+    NSString *actionLinksStr = [jsonWriter stringWithObject:actionLinks];
+    NSDictionary* attachment = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"a long run", @"name",
+                                @"The Facebook Running app", @"caption",
+                                @"it is fun", @"description",
+                                @"http://itsti.me/", @"href", nil];
+    NSString *attachmentStr = [jsonWriter stringWithObject:attachment];
+    NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                   @"Share on Facebook",  @"user_message_prompt",
+                                   actionLinksStr, @"action_links",
+                                   attachmentStr, @"attachment",
+                                   nil];
+    
+    
+    [facebook dialog:@"feed"
+            andParams:params
+          andDelegate:self];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
